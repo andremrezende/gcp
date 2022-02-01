@@ -116,7 +116,7 @@
                                             <p>A. Build a lifecycle policy to delete Cloud Storage objects after 45 days.<br/> 
                                                B. Use signed URLs to allow suppliers limited time access to store their objects.<br/> 
                                                C. Set yp an SFTP server for your application, and create a separate ser for each supplier.<br/> 
-                                               D. Build a Cloud function that triggers a timer of 45 das to delete objects that have expired.<br/>
+                                               D. Build a Cloud function that triggers a timer of 45 has to delete objects that have expired.<br/>
                                                E. Develop a script that loops throug all Cloud Storage buckets and deletes any buckets that are older than 45 days.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -131,7 +131,7 @@
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
                                             </div>
-                                            <p>7. You are using Deployment Manager to create a Google Kubernetes Engine cluster. Using the same Deployment Manager dployment, you also want to create a DaemonSet in the kube-system namespace of the cluster. You want a solution that uses the fewest possible services. What should you do?</p>
+                                            <p>7. You are using Deployment Manager to create a Google Kubernetes Engine cluster. Using the same Deployment Manager deployment, you also want to create a DaemonSet in the kube-system namespace of the cluster. You want a solution that uses the fewest possible services. What should you do?</p>
                                             <p>A. Add the cluster's API as a new Type Provider in Deployment Manager, and use the new type to create the DaemonSet.<br/> 
                                                B. Use the Deployment Manager runtime Configurator to create a new Config resource that contains the DaemonSet definition.<br/> 
                                                C. With Deployment Manager, create a Compute Engine instance with a startup script that uses kibeclt to create the DaemonSet.<br/> 
@@ -216,8 +216,8 @@
                                             <p>16. You have a development project with appropriate IAM roles defined. You are creating a production project and want to have the same IAM roles on the new project, using the fewest possible steps. What should you do?</p>
                                             <p>A. Use gcloud iam roles copy and specify the production project as the destination project.<br/>
                                                B. Use gcloud iam roles copy and specify your organization as the destination organization.<br/>
-                                               C. In the Google Cloud Platform Console, use the ג˜create role from roleג™ functionality.br/>
-                                               D. In the Google Cloud Platform Console, use the ג˜create roleג™ functionality and select all applicable permissions.</p>
+                                               C. In the Google Cloud Platform Console, use the create role from role functionality.<br/>
+                                               D. In the Google Cloud Platform Console, use the create role functionality and select all applicable permissions.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: </b><a href='https://cloud.google.com/sdk/gcloud/reference/iam/roles/copy'>https://cloud.google.com/sdk/gcloud/reference/iam/roles/copy</a></div>
@@ -368,7 +368,7 @@
                                                D. Add the auditor user accounts to two new custom IAM roles.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/iam/docs/roles-audit-logging'></a>https://cloud.google.com/iam/docs/roles-audit-logging</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/iam/docs/roles-audit-logging'>https://cloud.google.com/iam/docs/roles-audit-logging</a></b></div>
                                             </div>
                                             <p>33. You need to set up permissions for a set of Compute Engine instances to enable them to write data into a particular Cloud Storage bucket. You want to follow
                                                 Google-recommended practices. What should you do?</p>
@@ -434,7 +434,7 @@
                                             </p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <b>Explanation: <a href='https://cloud.google.com/monitoring/groups/'>https://cloud.google.com/monitoring/groups/</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/monitoring/groups/'>https://cloud.google.com/monitoring/groups/</a></b></div>
                                             </div>
                                             <p>40. You are deploying an application to a Compute Engine VM in a managed instance group. The application must be running at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance group?</p>
                                             <p>A. Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1.<br/> 
@@ -520,8 +520,8 @@
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><b>Explanation:</b> <p>gsutil -o GSUtil:parallel_composite_upload_threshold=200M,parallel_composite_upload_component_size=100M cp ./localbigfile gs://your-bucket</p></div>
                                             </div>
-                                            <p>50. You've deployed a microservice called myapp1 to a Google Kubernetes Engine cluster using the YAML file specified below:
-                                                <img src='https://www.examtopics.com/assets/media/exam-media/03754/0002100001.jpg'>
+                                            <p>50. You've deployed a microservice called myapp1 to a Google Kubernetes Engine cluster using the YAML file specified below:<br/>
+                                                <img src='https://www.examtopics.com/assets/media/exam-media/03754/0002100001.jpg'><br/>
                                                 You need to refactor this configuration so that the database password is not stored in plain text. You want to follow Google-recommended practices. What should you do?
                                             </p>
                                             <p>A. Store the database password inside the Docker image of the container, not in the YAML file.<br/>
@@ -593,32 +593,43 @@
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/storage/docs/metadata#content-type'>https://cloud.google.com/storage/docs/metadata#content-type</a></b></div>
                                             </div>
-                                            <p>57. A company has a website that is developed in PHP and WordPress and is launched using AWS Elastic Beanstalk. There is a new version of the website that needs to be deployed in the Elastic Beanstalk environment. The company cannot tolerate having the website offline if an update fails. Deployments must have minimal impact and rollback as soon as possible. What deployment method should be used?</p>
-                                            <p>A. All at once<br/> B. Rolling<br/> C. Snapshots<br/> D. Immutable</p>
+                                            <p>57. You have a virtual machine that is currently configured with 2 vCPUs and 4 GB of memory. It is running out of memory. You want to upgrade the virtual machine to have 8 GB of memory. What should you do?</p>
+                                            <p>A. Rely on live migration to move the workload to a machine with more memory.<br/> 
+                                               B. Use gcloud to add metadata to the VM. Set the key to required-memory-size and the value to 8 GB.<br/> 
+                                               C. Stop the VM, change the machine type to n1-standard-8, and start the VM.<br/> 
+                                               D. Stop the VM, increase the memory to 8 GB, and start the VM.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <a href='https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentmgmt-updates-immutable.html'>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentmgmt-updates-immutable.html</a></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <a href='https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#add_extended_memory_to_an_existing_vm_instance'>https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#add_extended_memory_to_an_existing_vm_instance</a></b></div>
                                             </div>
-                                            <p>58. A company maintains an application responsible for processing several thousand external callbacks each day. The company’s System administrators want to know how many callbacks are being received on a rolling basis, and they want this data available for 10 days. The company also wants the ability to issue automated alerts if the number of callbacks exceeds the defined thresholds. What is the MOST cost-effective way to address the need to track and alert on these statistics?</p>
-                                            <p>A. Push callback data to an Amazon RDS database that can be queried to show historical data and to alert on exceeded thresholds.<br/> B. Push callback data to AWS X-Ray and use AWS Lambda to query, display, and alert on exceeded thresholds.<br/> C. Push callback data to Amazon Kinesis Data Streams and invoke an AWS Lambda function that stores data in Amazon DynamoDB and sends the required alerts.<br/> D. Push callback data to Amazon CloudWatch as a custom metric and use the CloudWatch alerting mechanisms to alert System Administrators</p>
+                                            <p>58. You have production and test workloads that you want to deploy on Compute Engine. Production VMs need to be in a different subnet than the test VMs. All the
+                                                VMs must be able to reach each other over Internal IP without creating additional routes. You need to set up VPC and the 2 subnets. Which configuration meets these requirements?</p>
+                                            <p>A. Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range.<br/> 
+                                               B. Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.<br/> 
+                                               C. Create 2 custom VPCs, each with a single subnet. Create each subnet in a different region and with a different CIDR range.<br/> 
+                                               D. Create 2 custom VPCs, each with a single subnet. Create each subnet in the same region and with the same CIDR range.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/vpc/docs/using-vpc#subnet-rules'>https://cloud.google.com/vpc/docs/using-vpc#subnet-rules</a></b></div>
                                             </div>
-                                            <p>59. A Developer is creating an AWS Lambda function to process a stream of data from an Amazon Kinesis Data Stream. When the Lambda function parses the data and encounters a missing field, it exits the function with an error. The function is generating duplicate records from the Kinesis stream. When the Developer looks at the stream output without the Lambda function, there are no duplicate records. What is the reason for the duplicates?</p>
-                                            <p>A. The Lambda function did not advance the Kinesis stream pointer to the next record after the error.<br/> B. The Lambda event source used asynchronous invocation, resulting in duplicate records.<br/> C. The Lambda function did not handle the error, and the Lambda service attempted to reprocess the data.<br/> D. The Lambda function is not keeping up with the amount of data coming from the stream.</p>
+                                            <p>59. You need to create an autoscaling managed instance group for an HTTPS web application. You want to make sure that unhealthy VMs are recreated. What should you do?</p>
+                                            <p>A. Create a health check on port 443 and use that when creating the Managed Instance Group.<br/> 
+                                               B. Select Multi-Zone instead of Single-Zone when creating the Managed Instance Group.<br/> 
+                                               C. In the Instance Template, add the label health-check.<br/>
+                                               D. In the Instance Template, add a startup script that sends a heartbeat to the metadata server.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <a href='https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-failure-handling-features-for-kinesis-and-dynamodb-event-sources/?nc1=h_ls'>https://aws.amazon.com/about-aws/whats-new/2019/11/aws-lambda-supports-failure-handling-features-for-kinesis-and-dynamodb-event-sources/?nc1=h_ls</a></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                             </div>
-                                            <p>60. A Developer must build an application that uses Amazon DynamoDB. The requirements state that items being stored in the DynamoDB table will be 7KB in size and that reads must be strongly consistent. The maximum read rate is 3 items per second, and the maximum write rate is 10 items per second. How should the Developer size the DynamoDB table to meet these requirements?</p>
-                                            <p>A. Read: 3 read capacity units Write: 70 write capacity units<br/> B. Read: 6 read capacity units Write: 70 write capacity units<br/> C. Read: 6 read capacity units Write: 10 write capacity units<br/> D. Read: 3 read capacity units Write: 10 write capacity units</p>
+                                            <p>60. Your company has a Google Cloud Platform project that uses BigQuery for data warehousing. Your data science team changes frequently and has few members.
+                                                You need to allow members of this team to perform queries. You want to follow Google-recommended practices. What should you do?</p>
+                                            <p>A. 1. Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery jobUser role to the group.<br/>
+                                               B. 1. Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery dataViewer user role to the group.<br/> 
+                                               C. 1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery jobUser role to the group.<br/> 
+                                               D. 1. Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign the BigQuery dataViewer user role to the group.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B
-													<p>
-														We are talking about 3 strong reads of 7KB. 7KB requires 2 RCUs, so 3 x 2 = 6. Regarding the writes, we are talking about 10 itens per second. 7KB requires 7 WCUs. So 10 x 7 = 70.
-													</p>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/bigquery/docs/access-control#bigquery'>https://cloud.google.com/bigquery/docs/access-control#bigquery</b>
 												</div>
                                             </div>
                                         </div>
