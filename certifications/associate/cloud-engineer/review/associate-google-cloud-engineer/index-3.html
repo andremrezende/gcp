@@ -189,68 +189,81 @@
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                             </div>
-                                            <p>14. You have an application that looks for its licensing server on the IP 10.0.3.21. You need to deploy the licensing server on Compute Engine. You do not want to change the configuration of the application and want the application to be able to reach the licensing server. What should you do?</p>
-                                            <p>A. Reserve the IP 10.0.3.21 as a static internal IP address using gcloud and assign it to the licensing server.<br/> 
-                                               B. Reserve the IP 10.0.3.21 as a static public IP address using gcloud and assign it to the licensing server.<br/> 
-                                               C. Use the IP 10.0.3.21 as a custom ephemeral IP address and assign it to the licensing server.<br/> 
-                                               D. Start the licensing server with an automatic ephemeral IP address, and then promote it to a static internal IP address.</p>
+                                            <p>14. Your managed instance group raised an alert stating that new instance creation has failed to create new instances. You need to maintain the number of running instances specified by the template to be able to process expected application traffic. What should you do?</p>
+                                            <p>A. Create an instance template that contains valid syntax which will be used by the instance group. Delete any persistent disks with the same name as instance names.<br/> 
+                                               B. Create an instance template that contains valid syntax that will be used by the instance group. Verify that the instance name and persistent disk name values are not the same in the template.<br/> 
+                                               C. Verify that the instance template being used by the instance group contains valid syntax. Delete any persistent disks with the same name as instance names. Set the disks.autoDelete property to true in the instance template.<br/> 
+                                               D. Delete the current instance template and replace it with a new instance template. Verify that the instance name and persistent disk name values are not the same in the template. Set the disks.autoDelete property to true in the instance template.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A </div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <p>
+                                                   Always told us
+"You cannot update an existing instance template or change an instance template after it has been created"<br/>
+1.Instance templates
+https://cloud.google.com/compute/docs/instance-templates#how_to_update_instance_templates<br/>
+
+2.Creating a VM Instance from an Instance Template
+https://cloud.google.com/compute/docs/instances/create-vm-from-instance-template#gcloud_1<br/>
+
+3.Creating instance templates
+https://cloud.google.com/compute/docs/instance-templates/create-instance-templates</p>
+                                                </b> </div>
                                             </div>
-                                            <p>15. You are deploying an application to App Engine. You want the number of instances to scale based on request rate. You need at least 3 unoccupied instances at all times. Which scaling type should you use?</p>
-                                            <p>A. Manual Scaling with 3 instances.<br/> 
-                                               B. Basic Scaling with min_instances set to 3.<br/>
-                                               C. Basic Scaling with max_instances set to 3.<br/> 
-                                               D. Automatic Scaling with min_idle_instances set to 3.</p>
+                                            <p>15. You have a Compute Engine instance hosting a production application. You want to receive an email if the instance consumes more than 90% of its CPU resources for more than 15 minutes. You want to use Google services. What should you do?</p>
+                                            <p>A. 1. Create a consumer Gmail account. 2. Write a script that monitors the CPU usage. 3. When the CPU usage exceeds the threshold, have that script send an email using the Gmail account and smtp.gmail.com on port 25 as SMTP server.<br/> 
+                                               B. 1. Create a Stackdriver Workspace, and associate your Google Cloud Platform (GCP) project with it. 2. Create an Alerting Policy in Stackdriver that uses the threshold as a trigger condition. 3. Configure your email address in the notification channel.<br/>
+                                               C. 1. Create a Stackdriver Workspace, and associate your GCP project with it. 2. Write a script that monitors the CPU usage and sends it as a custom metric to Stackdriver. 3. Create an uptime check for the instance in Stackdriver.<br/> 
+                                               D. 1. In Stackdriver Logging, create a logs-based metric to extract the CPU usage by using this regular expression: CPU Usage: ([0-9] {1,3})% 2. In Stackdriver Monitoring, create an Alerting Policy based on this metric. 3. Configure your email address in the notification channel.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <a href='https://cloud.google.com/appengine/docs/standard/python/how-instances-are-managed'>https://cloud.google.com/appengine/docs/standard/python/how-instances-are-managed</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href='https://cloud.google.com/monitoring/alerts/ui-conditions-ga'>https://cloud.google.com/monitoring/alerts/ui-conditions-ga</a></b></div>
                                             </div>
-                                            <p>16. You have a development project with appropriate IAM roles defined. You are creating a production project and want to have the same IAM roles on the new project, using the fewest possible steps. What should you do?</p>
-                                            <p>A. Use gcloud iam roles copy and specify the production project as the destination project.<br/>
-                                               B. Use gcloud iam roles copy and specify your organization as the destination organization.<br/>
-                                               C. In the Google Cloud Platform Console, use the create role from role functionality.<br/>
-                                               D. In the Google Cloud Platform Console, use the create role functionality and select all applicable permissions.</p>
+                                            <p>16. You have an application that uses Cloud Spanner as a backend database. The application has a very predictable traffic pattern. You want to automatically scale up or down the number of Spanner nodes depending on traffic. What should you do?</p>
+                                            <p>A. Create a cron job that runs on a scheduled basis to review Cloud Monitoring metrics, and then resize the Spanner instance accordingly.<br/>
+                                               B. Create a Cloud Monitoring alerting policy to send an alert to oncall SRE emails when Cloud Spanner CPU exceeds the threshold. SREs would scale resources up or down accordingly.<br/>
+                                               C. Create a Cloud Monitoring alerting policy to send an alert to Google Cloud Support email when Cloud Spanner CPU exceeds your threshold. Google support would scale resources up or down accordingly.<br/>
+                                               D. Create a Cloud Monitoring alerting policy to send an alert to webhook when Cloud Spanner CPU is over or under your threshold. Create a Cloud Function that listens to HTTP and resizes Spanner resources accordingly.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: </b><a href='https://cloud.google.com/sdk/gcloud/reference/iam/roles/copy'>https://cloud.google.com/sdk/gcloud/reference/iam/roles/copy</a></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: </b><a href='https://cloud.google.com/architecture/autoscaling-cloud-spanner'>https://cloud.google.com/architecture/autoscaling-cloud-spanner</a></div>
                                             </div>
-                                            <p>17. You need a dynamic way of provisioning VMs on Compute Engine. The exact specifications will be in a dedicated configuration file. You want to follow Google's recommended practices. Which method should you use?</p>
-                                            <p>A. Deployment Manager<br/>
-                                               B. Cloud Composer<br/>
-                                               C. Managed Instance Group<br/> 
-                                               D. Unmanaged Instance Group</p>
+                                            <p>17. Your company publishes large files on an Apache web server that runs on a Compute Engine instance. The Apache web server is not the only application running in the project. You want to receive an email when the egress network costs for the server exceed 100 dollars for the current month as measured by Google Cloud.
+                                             What should you do?</p>
+                                            <p>A. Set up a budget alert on the project with an amount of 100 dollars, a threshold of 100%, and notification type of email.<br/>
+                                               B. Set up a budget alert on the billing account with an amount of 100 dollars, a threshold of 100%, and notification type of email.<br/>
+                                               C. Export the billing data to BigQuery. Create a Cloud Function that uses BigQuery to sum the egress network costs of the exported billing data for the Apache web server for the current month and sends an email if it is over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.<br/> 
+                                               D. Use the Cloud Logging Agent to export the Apache web server logs to Cloud Logging. Create a Cloud Function that uses BigQuery to parse the HTTP response log data in Cloud Logging for the current month and sends an email if the size of all HTTP responses, multiplied by current Google Cloud egress prices, totals over 100 dollars. Schedule the Cloud Function using Cloud Scheduler to run hourly.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A </div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C </div>
                                             </div>
-                                            <p>18. You have a Dockerfile that you need to deploy on Kubernetes Engine. What should you do?</p>
-                                            <p>A. Use kubectl app deploy <dockerfilename>.<br/>
-                                               B. Use gcloud app deploy <dockerfilename>.<br/>
-                                               C. Create a docker image from the Dockerfile and upload it to Container Registry. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.<br/>
-                                               D. Create a docker image from the Dockerfile and upload it to Cloud Storage. Create a Deployment YAML file to point to that image. Use kubectl to create the deployment with that file.</p>
+                                            <p>18. You have an application that receives SSL-encrypted TCP traffic on port 443. Clients for this application are located all over the world. You want to minimize latency for the clients. Which load balancing option should you use?</p>
+                                            <p>A. HTTPS Load Balancer<br/>
+                                               B. Network Load Balancer<br/>
+                                               C. SSL Proxy Load Balancer<br/>
+                                               D. Internal TCP/UDP Load Balancer. Add a firewall rule allowing ingress traffic from 0.0.0.0/0 on the target instances.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app'>https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/load-balancing/docs/choosing-load-balancer'>https://cloud.google.com/load-balancing/docs/choosing-load-balancer</a></b></div>
                                             </div>
-                                            <p>19. Your development team needs a new Jenkins server for their project. You need to deploy the server using the fewest steps possible. What should you do?</p>
-                                            <p>A. Download and deploy the Jenkins Java WAR to App Engine Standard. <dockerfilename>.<br/>
-                                               B. Create a new Compute Engine instance and install Jenkins through the command line interface.<br/> 
-                                               C. Create a Kubernetes cluster on Compute Engine and create a deployment with the Jenkins Docker image.<br/> 
-                                               D. Use GCP Marketplace to launch the Jenkins solution.</p>
+                                            <p>19. You have an application on a general-purpose Compute Engine instance that is experiencing excessive disk read throttling on its Zonal SSD Persistent Disk. The application primarily reads large files from disk. The disk size is currently 350 GB. You want to provide the maximum amount of throughput while minimizing costs.
+                                             What should you do?</p>
+                                            <p>A. Increase the size of the disk to 1 TB.<br/>
+                                               B. Increase the allocated CPU to the instance.<br/> 
+                                               C. Migrate to use a Local SSD on the instance.<br/> 
+                                               D. Migrate to use a Regional SSD on the instance.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation:  <a href='https://cloud.google.com/solutions/using-jenkins-for-distributed-builds-on-compute-engine'>https://cloud.google.com/solutions/using-jenkins-for-distributed-builds-on-compute-engine</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: We have to assume that persistent type of disk was used on purpose so we can't switch to non-persistent solution. Larger disk will- in itself- increase IOPS as well</b></div>
                                             </div>
-                                            <p>20. You need to update a deployment in Deployment Manager without any resource downtime in the deployment. Which command should you use?</p>
-                                            <p>A. gcloud deployment-manager deployments create --config <deployment-config-path><br/> 
-                                               B. gcloud deployment-manager deployments update --config <deployment-config-path><br/>
-                                               C. gcloud deployment-manager resources create --config <deployment-config-path><br/> 
-                                               D. gcloud deployment-manager resources update --config <deployment-config-path><br/></p>
+                                            <p>20. Your Dataproc cluster runs in a single Virtual Private Cloud (VPC) network in a single subnet with range 172.16.20.128/25. There are no private IP addresses available in the VPC network. You want to add new VMs to communicate with your cluster using the minimum number of steps. What should you do?</p>
+                                            <p>A. Modify the existing subnet range to 172.16.20.0/24.<br/> 
+                                               B. Create a new Secondary IP Range in the VPC and configure the VMs to use that range.<br/>
+                                               C. Create a new VPC network for the VMs. Enable VPC Peering between the VMs VPC network and the Dataproc cluster VPC network.<br/> 
+                                               D. Create a new VPC network for the VMs with a subnet of 172.32.0.0/16. Enable VPC network Peering between the Dataproc VPC network and the VMs VPC network. Configure a custom Route exchange.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href='https://cloud.google.com/sdk/gcloud/reference/deployment-manager/deployments/update'>https://cloud.google.com/sdk/gcloud/reference/deployment-manager/deployments/update</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                             </div>
                                             <p>21. You need to run an important query in BigQuery but expect it to return a lot of records. You want to find out how much it will cost to run the query. You are using on-demand pricing. What should you do?</p>
                                             <p>A. Arrange to switch to Flat-Rate pricing for this query, then move back to on-demand.<br/> 
@@ -279,14 +292,19 @@
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D </div>
                                             </div>
-                                            <p>24. You need to set up a policy so that videos stored in a specific Cloud Storage Regional bucket are moved to Coldline after 90 days, and then deleted after one year from their creation. How should you set up the policy?</p>
-                                            <p>A. Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 275 days (365 90)<br/> 
-                                               B. Use Cloud Storage Object Lifecycle Management using Age conditions with SetStorageClass and Delete actions. Set the SetStorageClass action to 90 days and the Delete action to 365 days.<br/> 
-                                               C. Use gsutil rewrite and set the Delete action to 275 days (365-90).<br/> 
-                                               D. Use gsutil rewrite and set the Delete action to 365 days.</p>
+                                            <p>24. You manage an App Engine Service that aggregates and visualizes data from BigQuery. The application is deployed with the default App Engine Service account.
+                                             The data that needs to be visualized resides in a different project managed by another team. You do not have access to this project, but you want your application to be able to read data from the BigQuery dataset. What should you do?</p>
+                                            <p>A. Ask the other team to grant your default App Engine Service account the role of BigQuery Job User.<br/> 
+                                               B. Ask the other team to grant your default App Engine Service account the role of BigQuery Data Viewer.<br/> 
+                                               C. In Cloud IAM of your project, ensure that the default App Engine service account has the role of BigQuery Data Viewer.<br/> 
+                                               D. In Cloud IAM of your project, grant a newly created service account from the other team the role of BigQuery Job User in your project.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href='https://cloud.google.com/storage/docs/lifecycle#age'>https://cloud.google.com/storage/docs/lifecycle#age</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: 
+                                                   The Owner, Editor, and Viewer primitive roles include the BigQuery Admin (roles/bigquery.dataOwner), BigQuery Data Editor (roles/bigquery.dataEditor), and
+BigQuery Data Viewer (roles/bigquery.dataViewer) roles, respectively. This means the Owner, Editor, and Viewer primitive roles have BigQuery access as defined for the respective BigQuery roles.<br/>
+Reference: <a href='https://cloud.google.com/bigquery/docs/access-control'>https://cloud.google.com/bigquery/docs/access-control</a>
+                                                </b></div>
                                             </div>
                                             <p>25. You have a Linux VM that must connect to Cloud SQL. You created a service account with the appropriate access rights. You want to make sure that the VM uses this service account instead of the default Compute Engine service account. What should you do?</p>
                                             <p>A. When creating the VM via the web console, specify the service account under the Identity and API Access™ section.<br/> 
@@ -297,100 +315,100 @@
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <a href='https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html'>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html</a></div>
                                             </div>
-                                            <p>26. You have a Linux VM that must connect to Cloud SQL. You created a service account with the appropriate access rights. You want to make sure that the VM uses this service account instead of the default Compute Engine service account. What should you do?</p>
-                                            <p>A. When creating the VM via the web console, specify the service account under the Identity and API Access section.<br/> 
-                                               B. Download a JSON Private Key for the service account. On the Project Metadata, add that JSON as the value for the key compute-engine-service- account.<br/> 
-                                               C. Download a JSON Private Key for the service account. On the Custom Metadata of the VM, add that JSON as the value for the key compute-engine- service-account.<br/> 
-                                               D. Download a JSON Private Key for the service account. After creating the VM, ssh into the VM and save the JSON under ~/.gcloud/compute-engine-service- account.json.</p>
+                                            <p>26. You need to create a copy of a custom Compute Engine virtual machine (VM) to facilitate an expected increase in application traffic due to a business acquisition.
+                                             What should you do?</p>
+                                            <p>A. Create a Compute Engine snapshot of your base VM. Create your images from that snapshot.<br/> 
+                                               B. Create a Compute Engine snapshot of your base VM. Create your instances from that snapshot.<br/> 
+                                               C. Create a custom Compute Engine image from a snapshot. Create your images from that image.<br/> 
+                                               D. Create a custom Compute Engine image from a snapshot. Create your instances from that image.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances'>https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances</a></a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href='https://cloud.google.com/compute/docs/instances/create-start-instance'>https://cloud.google.com/compute/docs/instances/create-start-instance</a></a></b></div>
                                             </div>
-                                            <p>27. You created an instance of SQL Server 2017 on Compute Engine to test features in the new version. You want to connect to this instance using the fewest number of steps. What should you do?</p>
-                                            <p>A. Install a RDP client on your desktop. Verify that a firewall rule for port 3389 exists.<br/> 
-                                               B. Install a RDP client in your desktop. Set a Windows username and password in the GCP Console. Use the credentials to log in to the instance.<br/> 
-                                               C. Set a Windows password in the GCP Console. Verify that a firewall rule for port 22 exists. Click the RDP button in the GCP Console and supply the credentials to log in.<br/> 
-                                               D. Set a Windows username and password in the GCP Console. Verify that a firewall rule for port 3389 exists. Click the RDP button in the GCP Console, and supply the credentials to log in.</p>
+                                            <p>27. You have deployed an application on a single Compute Engine instance. The application writes logs to disk. Users start reporting errors with the application. You want to diagnose the problem. What should you do?</p>
+                                            <p>A. Navigate to Cloud Logging and view the application logs.<br/> 
+                                               B. Connect to the instance serial console and read the application logs.<br/> 
+                                               C. Configure a Health Check on the instance and set a Low Healthy Threshold value.<br/> 
+                                               D. Install and configure the Cloud Logging Agent and view the logs from Cloud Logging.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <a href='https://cloud.google.com/architecture/chrome-desktop-remote-windows-compute-engine#connect_with_rdp'>https://cloud.google.com/architecture/chrome-desktop-remote-windows-compute-engine#connect_with_rdp</a></b></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/compute/docs/logging/activity-logs'>https://cloud.google.com/compute/docs/logging/activity-logs</a></b></b></div>
                                             </div>
-                                            <p>28. You have one GCP account running in your default region and zone and another account running in a non-default region and zone. You want to start a new
-                                                Compute Engine instance in these two Google Cloud Platform accounts using the command line interface. What should you do?</p>
-                                            <p>A. Create two configurations using gcloud config configurations create [NAME]. Run gcloud config configurations activate [NAME] to switch between accounts when running the commands to start the Compute Engine instances.<br/>
-                                               B. Create two configurations using gcloud config configurations create [NAME]. Run gcloud configurations list to start the Compute Engine instances.<br/> 
-                                               C. Activate two configurations using gcloud configurations activate [NAME]. Run gcloud config list to start the Compute Engine instances.<br/> 
-                                               D. Activate two configurations using gcloud configurations activate [NAME]. Run gcloud configurations list to start the Compute Engine instances.</p>
+                                            <p>28. An application generates daily reports in a Compute Engine virtual machine (VM). The VM is in the project corp-iot-insights. Your team operates only in the project corp-aggregate-reports and needs a copy of the daily exports in the bucket corp-aggregate-reports-storage. You want to configure access so that the daily reports from the VM are available in the bucket corp-aggregate-reports-storage and use as few steps as possible while following Google-recommended practices. What should you do?</p>
+                                            <p>A. Move both projects under the same folder.<br/>
+                                               B. Grant the VM Service Account the role Storage Object Creator on corp-aggregate-reports-storage.<br/> 
+                                               C. Create a Shared VPC network between both projects. Grant the VM Service Account the role Storage Object Creator on corp-iot-insights.<br/> 
+                                               D. Make corp-aggregate-reports-storage public and create a folder with a pseudo-randomized suffix name. Share the folder with the IoT team.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href='https://cloud.google.com/storage/docs/access-control/iam-roles#standard-roles'>https://cloud.google.com/storage/docs/access-control/iam-roles#standard-roles</a></a></b></div>
                                             </div>
-                                            <p>29. You significantly changed a complex Deployment Manager template and want to confirm that the dependencies of all defined resources are properly met before committing it to the project. You want the most rapid feedback on your changes. What should you do?</p>
-                                            <p>A. Use granular logging statements within a Deployment Manager template authored in Python.<br/> 
-                                               B. Monitor activity of the Deployment Manager execution on the Stackdriver Logging page of the GCP Console.<br/> 
-                                               C. Execute the Deployment Manager template against a separate project with the same configuration, and monitor for failures.<br/> 
-                                               D. Execute the Deployment Manager template using the -preview option in the same project, and observe the state of interdependent resources.</p>
+                                            <p>29. You built an application on your development laptop that uses Google Cloud services. Your application uses Application Default Credentials for authentication and works fine on your development laptop. You want to migrate this application to a Compute Engine virtual machine (VM) and set up authentication using Google- recommended practices and minimal changes. What should you do?</p>
+                                            <p>A. Assign appropriate access for Google services to the service account used by the Compute Engine VM.<br/> 
+                                               B. Create a service account with appropriate access for Google services, and configure the application to use this account.<br/> 
+                                               C. Store credentials for service accounts with appropriate access for Google services in a config file, and deploy this config file with your application.<br/> 
+                                               D. Store credentials for your user account with appropriate access for Google services in a config file, and deploy this config file with your application.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <a href="https://cloud.google.com/deployment-manager/docs/deployments/updating-deployments">https://cloud.google.com/deployment-manager/docs/deployments/updating-deployments</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href="https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances">https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances</a></b></div>
                                             </div>
-                                            <p>30. You are building a pipeline to process time-series data. Which Google Cloud Platform services should you put in boxes 1,2,3, and 4?
-                                                <img src="https://www.examtopics.com/assets/media/exam-media/03754/0001200001.jpg">
+                                            <p>30. You need to create a Compute Engine instance in a new project that doesn't exist yet. What should you do?
                                             </p>
-                                            <p>A. Cloud Pub/Sub, Cloud Dataflow, Cloud Datastore, BigQuery<br/> 
-                                               B. Firebase Messages, Cloud Pub/Sub, Cloud Spanner, BigQuery<br/> 
-                                               C. Cloud Pub/Sub, Cloud Storage, BigQuery, Cloud Bigtable<br/> 
-                                               D. Cloud Pub/Sub, Cloud Dataflow, Cloud Bigtable, BigQuery</p>
+                                            <p>A. Using the Cloud SDK, create a new project, enable the Compute Engine API in that project, and then create the instance specifying your new project.<br/> 
+                                               B. Enable the Compute Engine API in the Cloud Console, use the Cloud SDK to create the instance, and then use the --project flag to specify a new project.<br/> 
+                                               C. Using the Cloud SDK, create the new instance, and use the --project flag to specify the new project. Answer yes when prompted by Cloud SDK to enable the Compute Engine API.<br/> 
+                                               D. Enable the Compute Engine API in the Cloud Console. Go to the Compute Engine section of the Console to create a new instance, and look for the Create In A New Project option in the creation form.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <a href='https://cloud.google.com/solutions/correlating-time-series-dataflow'>https://cloud.google.com/solutions/correlating-time-series-dataflow</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/sdk/gcloud/reference/projects/create'>https://cloud.google.com/sdk/gcloud/reference/projects/create</a></b></div>
                                             </div>
-                                            <p>31. You have a project for your App Engine application that serves a development environment. The required testing has succeeded and you want to create a new project to serve as your production environment. What should you do?</p>
-                                            <p>A. Use gcloud to create the new project, and then deploy your application to the new project.<br/> 
-                                               B. Use gcloud to create the new project and to copy the deployed application to the new project.<br/> 
-                                               C. Create a Deployment Manager configuration file that copies the current App Engine deployment into a new project.<br/>
-                                               D. Deploy your application again using gcloud and specify the project parameter with the new project name to create the new project.
+                                            <p>31. Your company runs one batch process in an on-premises server that takes around 30 hours to complete. The task runs monthly, can be performed offline, and must be restarted if interrupted. You want to migrate this workload to the cloud while minimizing cost. What should you do?</p>
+                                            <p>A. Migrate the workload to a Compute Engine Preemptible VM.<br/> 
+                                               B. Migrate the workload to a Google Kubernetes Engine cluster with Preemptible nodes.<br/> 
+                                               C. Migrate the workload to a Compute Engine VM. Start and stop the instance as needed.<br/>
+                                               D. Create an Instance Template with Preemptible VMs On. Create a Managed Instance Group from the template and adjust Target CPU Utilization. Migrate the workload.
                                             </p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/compute/docs/instances/preemptible'>https://cloud.google.com/compute/docs/instances/preemptible</a></b></div>
                                             </div>
-                                            <p>32. You need to configure IAM access audit logging in BigQuery for external auditors. You want to follow Google-recommended practices. What should you do?</p>
-                                            <p>A. Add the auditors group to the logging.viewer and bigQuery.dataViewer predefined IAM roles.<br/> 
-                                               B. Add the auditors group to two new custom IAM roles.<br/> 
-                                               C. Add the auditor user accounts to the logging.viewer and bigQuery.dataViewer predefined IAM roles.<br/> 
-                                               D. Add the auditor user accounts to two new custom IAM roles.</p>
+                                            <p>32. You are developing a new application and are looking for a Jenkins installation to build and deploy your source code. You want to automate the installation as quickly and easily as possible. What should you do?</p>
+                                            <p>A. Deploy Jenkins through the Google Cloud Marketplace.<br/> 
+                                               B. Create a new Compute Engine instance. Run the Jenkins executable.<br/> 
+                                               C. Create a new Kubernetes Engine cluster. Create a deployment for the Jenkins image.<br/> 
+                                               D. Create an instance template with the Jenkins executable. Create a managed instance group with this template.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/iam/docs/roles-audit-logging'>https://cloud.google.com/iam/docs/roles-audit-logging</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A </div>
                                             </div>
-                                            <p>33. You need to set up permissions for a set of Compute Engine instances to enable them to write data into a particular Cloud Storage bucket. You want to follow
-                                                Google-recommended practices. What should you do?</p>
-                                            <p>A. Create a service account with an access scope. Use the access scope https://www.googleapis.com/auth/devstorage.write_only.<br/> 
-                                               B. Create a service account with an access scope. Use the access scope https://www.googleapis.com/auth/cloud-platform.<br/> 
-                                               C. Create a service account and add it to the IAM role storage.objectCreatorגfor that bucket. <br/> 
-                                               D. Create a service account and add it to the IAM role storage.objectAdminגfor that bucket.</p>
+                                            <p>33. You have downloaded and installed the gcloud command line interface (CLI) and have authenticated with your Google Account. Most of your Compute Engine instances in your project run in the europe-west1-d zone. You want to avoid having to specify this zone with each CLI command when managing these instances.
+                                             What should you do?
+                                             </p>
+                                            <p>A. Set the europe-west1-d zone as the default zone using the gcloud config subcommand.<br/> 
+                                               B. In the Settings page for Compute Engine under Default location, set the zone to europewest1-d.<br/> 
+                                               C. In the CLI installation directory, create a file called default.conf containing zone=europewest1d.<br/> 
+                                               D. Create a Metadata entry on the Compute Engine page with key compute/zone and value europewest1d.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/storage/docs/authentication'>https://cloud.google.com/storage/docs/authentication</a></b></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/kubernetes-engine/docs/how-to/enable-oslogin?hl=nl#gcloud-config'>https://cloud.google.com/kubernetes-engine/docs/how-to/enable-oslogin?hl=nl#gcloud-config</a></b></div>
                                             </div>
-                                            <p>34. You have sensitive data stored in three Cloud Storage buckets and have enabled data access logging. You want to verify activities for a particular user for these buckets, using the fewest possible steps. You need to verify the addition of metadata labels and which files have been viewed from those buckets. What should you do?</p>
-                                            <p>A. Using the GCP Console, filter the Activity log to view the information.<br/> 
-                                               B. Using the GCP Console, filter the Stackdriver log to view the information.<br/>
-                                               C. View the bucket in the Storage section of the GCP Console.<br/> 
-                                               D. Create a trace in Stackdriver to view the information.</p>
+                                            <p>34. The core business of your company is to rent out construction equipment at large scale. All the equipment that is being rented out has been equipped with multiple sensors that send event information every few seconds. These signals can vary from engine status, distance traveled, fuel level, and more. Customers are billed based on the consumption monitored by these sensors. You expect high throughput `" up to thousands of events per hour per device `" and need to retrieve consistent data based on the time of the event. Storing and retrieving individual signals should be atomic. What should you do?</p>
+                                            <p>A. Create a file in Cloud Storage per device and append new data to that file.<br/> 
+                                               B. Create a file in Cloud Filestore per device and append new data to that file.<br/>
+                                               C. Ingest the data into Datastore. Store data in an entity group based on the device.<br/> 
+                                               D. Ingest the data into Cloud Bigtable. Create a row key based on the event timestamp.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
                                             </div>
-                                            <p>35. You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets and files in Cloud Storage. You want to follow Google- recommended practices. Which IAM roles should you grant your colleagues?</p>
-                                            <p>A. Project Editor<br/>
-                                               B. Storage Admin<br/> 
-                                               C. Storage Object Admin<br/> 
-                                               D. Storage Object Creator</p>
+                                            <p>35. You are asked to set up application performance monitoring on Google Cloud projects A, B, and C as a single pane of glass. You want to monitor CPU, memory, and disk. What should you do?</p>
+                                            <p>A. Enable API and then share charts from project A, B, and C.<br/>
+                                               B. Enable API and then give the metrics.reader role to projects A, B, and C.<br/> 
+                                               C. Enable API and then use default dashboards to view all projects in sequence.<br/> 
+                                               D. Enable API, create a workspace under project A, and then add projects B and C.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <a href='https://cloud.google.com/monitoring/groups'>https://cloud.google.com/monitoring/groups</a></b></div>
                                             </div>
                                             <p>36. You have an object in a Cloud Storage bucket that you want to share with an external company. The object contains sensitive data. You want access to the content to be removed after four hours. The external company does not have a Google account to which you can grant specific user-based access privileges. You want to use the most secure method that requires the fewest steps. What should you do?</p>
                                             <p>A. Create a signed URL with a four-hour expiration and share the URL with the company.<br/> 
