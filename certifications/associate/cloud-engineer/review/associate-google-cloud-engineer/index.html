@@ -93,7 +93,7 @@
                                             <p>4. You company implemented BigQuery as an enterprise data warehouse. Users from multiple business unites run queries on this data warehouse. However, you notice that query costs for BigQuery are very high, and you need to control costs. Which two methods should you use? (Choose two)</p>
                                             <p>A. Split the users from business units to multiple projets.<br/> 
                                                B. Apply a user or projet-level custom query quota for BigQuery data warehouse.<br/> 
-                                               C. Create separate copies of your BigQuery data wareose for each business unit.<br/> 
+                                               C. Create separate copies of your BigQuery data warehouse for each business unit.<br/> 
                                                D. Split your BigQuery data warehouse into multiple data warehouse for each business unit.<br/>
                                                E. Change your BigQuery query model from on-demand to flat rate. Appy the appropriate number of slots to each Project.
                                             </p>
@@ -291,14 +291,16 @@
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href='https://cloud.google.com/storage/docs/lifecycle#age'>https://cloud.google.com/storage/docs/lifecycle#age</a></b></div>
                                             </div>
-                                            <p>25. You have a Linux VM that must connect to Cloud SQL. You created a service account with the appropriate access rights. You want to make sure that the VM uses this service account instead of the default Compute Engine service account. What should you do?</p>
-                                            <p>A. When creating the VM via the web console, specify the service account under the Identity and API Access™ section.<br/> 
-                                               B. Download a JSON Private Key for the service account. On the Project Metadata, add that JSON as the value for the key compute-engine-service- account.<br/> 
-                                               C. Download a JSON Private Key for the service account. On the Custom Metadata of the VM, add that JSON as the value for the key compute-engine- service-account.<br/> 
-                                               D. Download a JSON Private Key for the service account. After creating the VM, ssh into the VM and save the JSON under ~/.gcloud/compute-engine-service- account.json.</p>
+                                            <p>25. You are performing a monthly security check of your Google Cloud environment and want to know who has access to view data stored in your Google Cloud
+                                             Project. What should you?
+                                             </p>
+                                            <p>A. Enable Audit Logs for all APIs that are related to data storage.<br/> 
+                                               B. Review the IAM permissions for any role that allows for data access.<br/> 
+                                               C. Review the Identity-Aware Proxy settings for each resource.<br/> 
+                                               D. Create a Data Loss Prevention job.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <a href='https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html'>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.rolling-version-deploy.html</a></div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <a href='https://cloud.google.com/compute/docs/access'>https://cloud.google.com/compute/docs/access</a></div>
                                             </div>
                                             <p>26. You have a Linux VM that must connect to Cloud SQL. You created a service account with the appropriate access rights. You want to make sure that the VM uses this service account instead of the default Compute Engine service account. What should you do?</p>
                                             <p>A. When creating the VM via the web console, specify the service account under the Identity and API Access section.<br/> 
@@ -371,8 +373,8 @@
                                                 Google-recommended practices. What should you do?</p>
                                             <p>A. Create a service account with an access scope. Use the access scope https://www.googleapis.com/auth/devstorage.write_only.<br/> 
                                                B. Create a service account with an access scope. Use the access scope https://www.googleapis.com/auth/cloud-platform.<br/> 
-                                               C. Create a service account and add it to the IAM role storage.objectCreatorגfor that bucket. <br/> 
-                                               D. Create a service account and add it to the IAM role storage.objectAdminגfor that bucket.</p>
+                                               C. Create a service account and add it to the IAM role storage.objectCreator for that bucket. <br/> 
+                                               D. Create a service account and add it to the IAM role storage.objectAdmin for that bucket.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/storage/docs/authentication'>https://cloud.google.com/storage/docs/authentication</a></b></div>
@@ -384,7 +386,7 @@
                                                D. Create a trace in Stackdriver to view the information.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                                <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/storage/docs/audit-logs'>https://cloud.google.com/storage/docs/audit-logs</a></b></div>
                                             </div>
                                             <p>35. You are the project owner of a GCP project and want to delegate control to colleagues to manage buckets and files in Cloud Storage. You want to follow Google- recommended practices. Which IAM roles should you grant your colleagues?</p>
                                             <p>A. Project Editor<br/>
