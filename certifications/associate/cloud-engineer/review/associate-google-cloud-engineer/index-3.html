@@ -392,7 +392,7 @@ Reference: <a href='https://cloud.google.com/bigquery/docs/access-control'>https
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A <br/><b>Explanation: <a href='https://cloud.google.com/kubernetes-engine/docs/how-to/enable-oslogin?hl=nl#gcloud-config'>https://cloud.google.com/kubernetes-engine/docs/how-to/enable-oslogin?hl=nl#gcloud-config</a></b></div>
                                             </div>
-                                            <p>34. The core business of your company is to rent out construction equipment at large scale. All the equipment that is being rented out has been equipped with multiple sensors that send event information every few seconds. These signals can vary from engine status, distance traveled, fuel level, and more. Customers are billed based on the consumption monitored by these sensors. You expect high throughput `" up to thousands of events per hour per device `" and need to retrieve consistent data based on the time of the event. Storing and retrieving individual signals should be atomic. What should you do?</p>
+                                            <p>34. The core business of your company is to rent out construction equipment at large scale. All the equipment that is being rented out has been equipped with multiple sensors that send event information every few seconds. These signals can vary from engine status, distance traveled, fuel level, and more. Customers are billed based on the consumption monitored by these sensors. You expect high throughput - up to thousands of events per hour per device - and need to retrieve consistent data based on the time of the event. Storing and retrieving individual signals should be atomic. What should you do?</p>
                                             <p>A. Create a file in Cloud Storage per device and append new data to that file.<br/> 
                                                B. Create a file in Cloud Filestore per device and append new data to that file.<br/>
                                                C. Ingest the data into Datastore. Store data in an entity group based on the device.<br/> 
@@ -449,11 +449,11 @@ Reference: <a href='https://cloud.google.com/bigquery/docs/access-control'>https
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><b>Explanation: <a href='https://cloud.google.com/monitoring/groups/'>https://cloud.google.com/monitoring/groups/</a></b></div>
                                             </div>
-                                            <p>40. Your existing application running in Google Kubernetes Engine (GKE) consists of multiple pods running on four GKE n1`"standard`"2 nodes. You need to deploy additional pods requiring n2`"highmem`"16 nodes without any downtime. What should you do?</p>
+                                            <p>40. Your existing application running in Google Kubernetes Engine (GKE) consists of multiple pods running on four GKE n1-standard-2 nodes. You need to deploy additional pods requiring n2-highmem-16 nodes without any downtime. What should you do?</p>
                                             <p>A. Use gcloud container clusters upgrade. Deploy the new services.<br/> 
-                                               B. Create a new Node Pool and specify machine type n2highmem16. Deploy the new pods.<br/> 
-                                               C. Create a new cluster with n2highmem16 nodes. Redeploy the pods and delete the old cluster.<br/> 
-                                               D. Create a new cluster with both n1standard2 and n2highmem16 nodes. Redeploy the pods and delete the old cluster.</p>
+                                               B. Create a new Node Pool and specify machine type n2-highmem-16. Deploy the new pods.<br/> 
+                                               C. Create a new cluster with n2-highmem-16 nodes. Redeploy the pods and delete the old cluster.<br/> 
+                                               D. Create a new cluster with both n1standard2 and n2-highmem-16 nodes. Redeploy the pods and delete the old cluster.</p>
                                             <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                                 <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B <br/><b>Explanation: <a href='https://cloud.google.com/kubernetes-engine/docs/tutorials/migrating-node-pool#creating_a_node_pool_with_large_machine_type'>https://cloud.google.com/kubernetes-engine/docs/tutorials/migrating-node-pool#creating_a_node_pool_with_large_machine_type</a></b></div>
@@ -469,7 +469,7 @@ Reference: <a href='https://cloud.google.com/bigquery/docs/access-control'>https
                                                 <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><b>Explanation: <a href='https://cloud.google.com/bigquery/external-data-sources'>https://cloud.google.com/bigquery/external-data-sources</a></b>
 												</div>
                                             </div>
-                                            <p>42.You are hosting an application from Compute Engine virtual machines (VMs) in us`"central1`"a. You want to adjust your design to support the failure of a single
+                                            <p>42.You are hosting an application from Compute Engine virtual machines (VMs) in us-central1-a. You want to adjust your design to support the failure of a single
                                              Compute Engine zone, eliminate downtime, and minimize cost. What should you do?</p>
                                             <p>A. Create Compute Engine resources in uscentral1b.  Balance the load across both uscentral1a and uscentral1b.<br/> 
                                                B. Create a Managed Instance Group and specify uscentral1a as the zone.  Configure the Health Check with a short Health Interval.<br/> 
