@@ -250,12 +250,11 @@
                                </div>
 
                                <div class="entry-content">
-											<p>66. You have been asked to select the storage system for the click-data of your companyג€™s large portfolio of websites. This data is streamed in from a custom website analytics package at a typical rate of 6,000 clicks per minute. With bursts of up to 8,500 clicks per second. It must have been stored for future analysis by your data science and user experience teams.
-                                    Which storage infrastructure should you choose?</p>
-                                 <p>A. Google Cloud SQL<br/> 
-                                    B. Google Cloud Bigtable<br/> 
-                                    C. Google Cloud Storage<br/>
-                                    D. Google Cloud Datastore</p>
+											<p>66. Your customer wants to capture multiple GBs of aggregate real-time key performance indicators (KPIs) from their game servers running on Google Cloud Platform and monitor the KPIs with low latency. How should they capture the KPIs?</p>
+                                 <p>A. Store time-series data from the game servers in Google Bigtable, and view it using Google Data Studio.<br/> 
+                                    B. Output custom metrics to Stackdriver from the game servers, and create a Dashboard in Stackdriver Monitoring Console to view them.<br/> 
+                                    C. Schedule BigQuery load jobs to ingest analytics files uploaded to Cloud Storage every ten minutes, and visualize the results in Google Data Studio.<br/>
+                                    D. Insert the KPIs into Cloud Datastore entities, and run ad hoc analysis and visualizations of them in Cloud Datalab.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -263,12 +262,24 @@
                                </div>
 
                                <div class="entry-content">
-											<p>67. You are creating a solution to remove backup files older than 90 days from your backup Cloud Storage bucket. You want to optimize ongoing Cloud Storage spend.
+											<p>67. You have a Python web application with many dependencies that requires 0.1 CPU cores and 128 MB of memory to operate in production. You want to monitor and maximize machine utilization. You also want to reliably deploy new versions of the application. Which set of steps should you take?</p>
+                                 <p>A. Perform the following: 1. Create a managed instance group with f1-micro type machines. 2. Use a startup script to clone the repository, check out the production branch, install the dependencies, and start the Python app. 3. Restart the instances to automatically deploy new production releases.<br/> 
+                                    B. Perform the following: 1. Create a managed instance group with n1-standard-1 type machines. 2. Build a Compute Engine image from the production branch that contains all of the dependencies and automatically starts the Python app. 3. Rebuild the Compute Engine image, and update the instance template to deploy new production releases.<br/> 
+                                    C. Perform the following: 1. Create a Google Kubernetes Engine (GKE) cluster with n1-standard-1 type machines. 2. Build a Docker image from the production branch with all of the dependencies, and tag it with the version number. 3. Create a Kubernetes Deployment with the imagePullPolicy set to 'IfNotPresent' in the staging namespace, and then promote it to the production namespace after testing.<br/>
+                                    D. Perform the following: 1. Create a GKE cluster with n1-standard-4 type machines. 2. Build a Docker image from the master branch with all of the dependencies, and tag it with 'latest'. 3. Create a Kubernetes Deployment in the default namespace with the imagePullPolicy set to 'Always'. Restart the pods to automatically deploy new production releases.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>68. Your company wants to start using Google Cloud resources but wants to retain their on-premises Active Directory domain controller for identity management.
                                     What should you do?</p>
-                                 <p>A. Write a lifecycle management rule in XML and push it to the bucket with gsutil<br/> 
-                                    B. Write a lifecycle management rule in JSON and push it to the bucket with gsutil<br/> 
-                                    C. Schedule a cron script using gsutil ls ג€"lr gs://backups/** to find and remove items older than 90 days<br/>
-                                    D. Schedule a cron script using gsutil ls ג€"l gs://backups/** to find and remove items older than 90 days and schedule it with cron</p>
+                                 <p>A. Use the Admin Directory API to authenticate against the Active Directory domain controller.<br/> 
+                                    B. Use Google Cloud Directory Sync to synchronize Active Directory usernames with cloud identities and configure SAML SSO.<br/> 
+                                    C. Use Cloud Identity-Aware Proxy configured to use the on-premises Active Directory domain controller as an identity provider.<br/>
+                                    D. Use Compute Engine to create an Active Directory (AD) domain controller that is a replica of the on-premises AD domain controller using Google Cloud Directory Sync.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -276,12 +287,11 @@
                                </div>
 
                                <div class="entry-content">
-											<p>68. Your company is forecasting a sharp increase in the number and size of Apache Spark and Hadoop jobs being run on your local datacenter. You want to utilize the cloud to help you scale this upcoming demand with the least amount of operations work and code change.
-                                    Which product should you use?</p>
-                                 <p>A. Google Cloud Dataflow<br/> 
-                                    B. Google Cloud Dataproc<br/> 
-                                    C. Google Compute Engine<br/>
-                                    D. Google Kubernetes Engine</p>
+											<p>69. You are running a cluster on Kubernetes Engine (GKE) to serve a web application. Users are reporting that a specific part of the application is not responding anymore. You notice that all pods of your deployment keep restarting after 2 seconds. The application writes logs to standard output. You want to inspect the logs to find the cause of the issue. Which approach can you take?</p>
+                                 <p>A. Review the Stackdriver logs for each Compute Engine instance that is serving as a node in the cluster.<br/> 
+                                    B. Review the Stackdriver logs for the specific GKE container that is serving the unresponsive part of the application.<br/> 
+                                    C. Connect to the cluster using gcloud credentials and connect to a container in one of the pods to read the logs.<br/>
+                                    D. Review the Serial Port logs for each Compute Engine instance that is serving as a node in the cluster.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -289,69 +299,25 @@
                                </div>
 
                                <div class="entry-content">
-											<p>69. The database administration team has asked you to help them improve the performance of their new database server running on Google Compute Engine. The database is for importing and normalizing their performance statistics and is built with MySQL running on Debian Linux. They have an n1-standard-8 virtual machine with 80 GB of SSD persistent disk.
-                                    What should they change to get better performance from this system?</p>
-                                 <p>A. Increase the virtual machineג€™s memory to 64 GB<br/> 
-                                    B. Create a new virtual machine running PostgreSQL<br/> 
-                                    C. Dynamically resize the SSD persistent disk to 500 GB<br/>
-                                    D. Migrate their performance metrics warehouse to BigQuery<br/>
-                                    E. Modify all of their batch jobs to use bulk inserts into the database</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>70. You want to optimize the performance of an accurate, real-time, weather-charting application. The data comes from 50,000 sensors sending 10 readings a second, in the format of a timestamp and sensor reading.
-                                    Where should you store the data?</p>
-                                 <p>A. Google BigQuery<br/> 
-                                    B. Google Cloud SQL<br/> 
-                                    C. Google Cloud Bigtable<br/>
-                                    D. Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>71. Your companyג€™s user-feedback portal comprises a standard LAMP stack replicated across two zones. It is deployed in the us-central1 region and uses autoscaled managed instance groups on all layers, except the database. Currently, only a small group of select customers have access to the portal. The portal meets a
+											<p>70. Your companyג€™s user-feedback portal comprises a standard LAMP stack replicated across two zones. It is deployed in the us-central1 region and uses autoscaled managed instance groups on all layers, except the database. Currently, only a small group of select customers have access to the portal. The portal meets a
                                     99,99% availability SLA under these conditions. However next quarter, your company will be making the portal available to all users, including unauthenticated users. You need to develop a resiliency testing strategy to ensure the system maintains the SLA once they introduce additional user load.
                                     What should you do?</p>
-                                 <p>A. Capture existing users input, and replay captured user load until autoscale is triggered on all layers. At the same time, terminate all resources in one of the zones<br/> 
-                                    B. Create synthetic random user input, replay synthetic load until autoscale logic is triggered on at least one layer, and introduce ג€chaosג€ to the system by terminating random resources on both zones<br/> 
-                                    C. Expose the new system to a larger group of users, and increase group size each day until autoscale logic is triggered on all layers. At the same time, terminate random resources on both zones<br/>
-                                    D. Capture existing users input, and replay captured user load until resource utilization crosses 80%. Also, derive estimated number of users based on existing userג€™s usage of the app, and deploy enough resources to handle 200% of expected load</p>
+                                 <p>A. Create a read replica instance in a different region<br/> 
+                                    B. Create a failover replica instance in a different region<br/> 
+                                    C. Create a read replica instance in the same region, but in a different zone<br/>
+                                    D. Create a failover replica instance in the same region, but in a different zone</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>72. One of the developers on your team deployed their application in Google Container Engine with the Dockerfile below. They report that their application deployments are taking too long.
-                                    <img src="https://www.examtopics.com/assets/media/exam-media/04136/0008300001.png"><br/>
-                                    You want to optimize this Dockerfile for faster deployment times without adversely affecting the appג€™s functionality. Which two actions should you take? (Choose two.)
-                                 </p>
-                                 <p>A. Remove Python after running pip<br/> 
-                                    B. Remove dependencies from requirements.txt<br/> 
-                                    C. Use a slimmed-down base image like Alpine Linux<br/>
-                                    D. Use larger machine types for your Google Container Engine node pools<br/>
-                                    E. Copy the source after he package dependencies (Python and pip) are installed</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: CE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>73. Your solution is producing performance bugs in production that you did not see in staging and test environments. You want to adjust your test and deployment procedures to avoid this problem in the future.
-                                    What should you do?</p>
-                                 <p>A. Deploy fewer changes to production<br/> 
-                                    B. Deploy smaller changes to production<br/> 
-                                    C. Increase the load on your test and staging environments<br/>
-                                    D. Deploy changes to a small subset of users before rolling out to production</p>
+											<p>71. Your company is running a stateless application on a Compute Engine instance. The application is used heavily during regular business hours and lightly outside of business hours. Users are reporting that the application is slow during peak hours. You need to optimize the applicationג€™s performance. What should you do?</p>
+                                 <p>A. Create a snapshot of the existing disk. Create an instance template from the snapshot. Create an autoscaled managed instance group from the instance template.<br/> 
+                                    B. Create a snapshot of the existing disk. Create a custom image from the snapshot. Create an autoscaled managed instance group from the custom image.<br/> 
+                                    C. Create a custom image from the existing disk. Create an instance template from the custom image. Create an autoscaled managed instance group from the instance template.<br/>
+                                    D. Create an instance template from the existing disk. Create a custom image from the instance template. Create an autoscaled managed instance group from the custom image.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
@@ -359,13 +325,37 @@
                                </div>
 
                                <div class="entry-content">
-											<p>74. A small number of API requests to your microservices-based application take a very long time. You know that each request to the API can traverse many services.
-                                    You want to know which service takes the longest in those cases.
-                                    What should you do?</p>
-                                 <p>A. Set timeouts on your application so that you can fail requests faster<br/> 
-                                    B. Send custom metrics for each of your requests to Stackdriver Monitoring<br/> 
-                                    C. Use Stackdriver Monitoring to look for insights that show when your API latencies are high<br/>
-                                    D. Instrument your application with Stackdriver Trace in order to break down the request latencies at each microservice
+											<p>72. Your web application has several VM instances running within a VPC. You want to restrict communications between instances to only the paths and ports you authorize, but you donג€™t want to rely on static IP addresses or subnets because the app can autoscale. How should you restrict communications?
+                                 </p>
+                                 <p>A. Use separate VPCs to restrict traffic<br/> 
+                                    B. Use firewall rules based on network tags attached to the compute instances<br/> 
+                                    C. Use a slimmed-down base image like Alpine Linux<br/>
+                                    D. Use Cloud DNS and only allow connections from authorized hostnames<br/>
+                                    E. Use service accounts and configure the web application to authorize particular service accounts to have access</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>73. You are using Cloud SQL as the database backend for a large CRM deployment. You want to scale as usage increases and ensure that you donג€™t run out of storage, maintain 75% CPU usage cores, and keep replication lag below 60 seconds. What are the correct steps to meet your requirements?</p>
+                                 <p>A. 1. Enable automatic storage increase for the instance. 2. Create a Stackdriver alert when CPU usage exceeds 75%, and change the instance type to reduce CPU usage. 3. Create a Stackdriver alert for replication lag, and shard the database to reduce replication time.<br/> 
+                                    B. 1. Enable automatic storage increase for the instance. 2. Change the instance type to a 32-core machine type to keep CPU usage below 75%. 3. Create a Stackdriver alert for replication lag, and deploy memcache to reduce load on the master.<br/> 
+                                    C. 1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Change the instance type to a 32-core machine type to reduce replication lag.<br/>
+                                    D. 1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Create a Stackdriver alert for replication lag, and change the instance type to a 32-core machine type to reduce replication lag.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>74. You are tasked with building an online analytical processing (OLAP) marketing analytics and reporting tool. This requires a relational database that can operate on hundreds of terabytes of data. What is the Google-recommended tool for such applications?</p>
+                                 <p>A. Cloud Spanner, because it is globally distributed<br/> 
+                                    B. Cloud SQL, because it is a fully managed relational database<br/> 
+                                    C. Cloud Firestore, because it offers real-time synchronization across devices<br/>
+                                    D. BigQuery, because it is designed for large-scale processing of tabular data
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -374,12 +364,11 @@
                                </div>
 
                                <div class="entry-content">
-											<p>75. During a high traffic portion of the day, one of your relational databases crashes, but the replica is never promoted to a master. You want to avoid this in the future.
-                                    What should you do?</p>
-                                 <p>A. Use a different database<br/> 
-                                    B. Choose larger instances for your database<br/> 
-                                    C. Create snapshots of your database more regularly<br/>
-                                    D. Implement routinely scheduled failovers of your databases</p>
+											<p>75. You have deployed an application to Google Kubernetes Engine (GKE), and are using the Cloud SQL proxy container to make the Cloud SQL database available to the services running on Kubernetes. You are notified that the application is reporting database connection issues. Your company policies require a post- mortem. What should you do?</p>
+                                 <p>A. Use gcloud sql instances restart.<br/> 
+                                    B. Validate that the Service Account used by the Cloud SQL proxy container still has the Cloud Build Editor role.<br/> 
+                                    C. In the GCP Console, navigate to Stackdriver Logging. Consult logs for (GKE) and Cloud SQL.<br/>
+                                    D. In the GCP Console, navigate to Cloud SQL. Restore the latest backup. Use kubectl to restart all pods.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
