@@ -376,193 +376,37 @@
                                </div>
 
                                <div class="entry-content">
-											<p>76. Your organization requires that metrics from all applications be retained for 5 years for future analysis in possible legal proceedings.
-                                    Which approach should you use?</p>
-                                 <p>A. Grant the security team access to the logs in each Project<br/> 
-                                    B. Configure Stackdriver Monitoring for all Projects, and export to BigQuery<br/> 
-                                    C. Configure Stackdriver Monitoring for all Projects with the default retention policies<br/>
-                                    D. Configure Stackdriver Monitoring for all Projects, and export to Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>77. Your company has decided to build a backup replica of their on-premises user authentication PostgreSQL database on Google Cloud Platform. The database is 4
-                                    TB, and large updates are frequent. Replication requires private address space communication.
-                                    Which networking approach should you use?</p>
-                                 <p>A. Google Cloud Dedicated Interconnect<br/> 
-                                    B. Google Cloud VPN connected to the data center network<br/> 
-                                    C. A NAT and TLS translation gateway installed on-premises<br/>
-                                    D.A Google Compute Engine instance with a VPN server installed connected to the data center network</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: DA/div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>78. Auditors visit your teams every 12 months and ask to review all the Google Cloud Identity and Access Management (Cloud IAM) policy changes in the previous 12 months. You want to streamline and expedite the analysis and audit process.
-                                    What should you do?</p>
-                                 <p>A. Create custom Google Stackdriver alerts and send them to the auditor<br/> 
-                                    B. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor<br/> 
-                                    C. Use cloud functions to transfer log entries to Google Cloud SQL and use ACLs and views to limit an auditorג€™s view<br/>
-                                    D. Enable Google Cloud Storage (GCS) log export to audit logs into a GCS bucket and delegate access to the bucket</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>79. You are designing a large distributed application with 30 microservices. Each of your distributed microservices needs to connect to a database back-end. You want to store the credentials securely.
-                                    Where should you store the credentials?</p>
-                                 <p>A. In the source code<br/> 
-                                    B. In an environment variable<br/> 
-                                    C. In a secret management system<br/>
-                                    D. In a config file that has restricted access through ACLs</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>80. During a high traffic portion of the day, one of your relational databases crashes, but the replica is never promoted to a master. You want to avoid this in the future.
-                                    What should you do?</p>
-                                 <p>A. Cloud Deployment Manager uses Python<br/> 
-                                    B. Cloud Deployment Manager APIs could be deprecated in the future<br/> 
-                                    C. Cloud Deployment Manager is unfamiliar to the companyג€™s engineers<br/>
-                                    D. Cloud Deployment Manager requires a Google APIs service account to run<br/>
-                                    E. Cloud Deployment Manager can be used to permanently delete cloud resources<br/>
-                                    F. Cloud Deployment Manager only supports automation of Google Cloud resources</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: CF</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>81. A development manager is building a new application. He asks you to review his requirements and identify what cloud technologies he can use to meet them. The application must:
-                                    1. Be based on open-source technology for cloud portability
-                                    2. Dynamically scale compute capacity based on demand
-                                    3. Support continuous software delivery
-                                    4. Run multiple segregated copies of the same application stack
-                                    5. Deploy application bundles using dynamic templates
-                                    6. Route network traffic to specific services based on URL
-                                    Which combination of technologies will meet all of his requirements?</p>
-                                 <p>A. Google Kubernetes Engine, Jenkins, and Helm<br/> 
-                                    B. Google Kubernetes Engine and Cloud Load Balancing<br/> 
-                                    C. Google Kubernetes Engine and Cloud Deployment Manager<br/>
-                                    D. Google Kubernetes Engine, Jenkins, and Cloud Load Balancing</p>
+											<p>76. Your company pushes batches of sensitive transaction data from its application server VMs to Cloud Pub/Sub for processing and storage. What is the Google- recommended way for your application to authenticate to the required Google Cloud services?</p>
+                                 <p>A. Ensure that VM service accounts are granted the appropriate Cloud Pub/Sub IAM roles.<br/> 
+                                    B. Ensure that VM service accounts do not have access to Cloud Pub/Sub, and use VM access scopes to grant the appropriate Cloud Pub/Sub IAM roles.<br/> 
+                                    C. Generate an OAuth2 access token for accessing Cloud Pub/Sub, encrypt it, and store it in Cloud Storage for access from each VM.<br/>
+                                    D. Create a gateway to Cloud Pub/Sub using a Cloud Function, and grant the Cloud Function service account the appropriate Cloud Pub/Sub IAM roles.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
-                               
+
                                <div class="entry-content">
-											<p>82. You have created several pre-emptible Linux virtual machine instances using Google Compute Engine. You want to properly shut down your application before the virtual machines are preempted.
-                                    What should you do?</p>
-                                 <p>A. Create a shutdown script named k99.shutdown in the /etc/rc.6.d/ directory<br/> 
-                                    B. Create a shutdown script registered as a xinetd service in Linux and configure a Stackdriver endpoint check to call the service<br/> 
-                                    C. Create a shutdown script and use it as the value for a new metadata entry with the key shutdown-script in the Cloud Platform Console when you create the new virtual machine instance<br/>
-                                    D. Create a shutdown script, registered as a xinetd service in Linux, and use the gcloud compute instances add-metadata command to specify the service URL as the value for a new metadata entry with the key shutdown-script-url</p>
+											<p>77. You want to establish a Compute Engine application in a single VPC across two regions. The application must communicate over VPN to an on-premises network.
+                                    How should you deploy the VPN?</p>
+                                 <p>A. Use VPC Network Peering between the VPC and the on-premises network.<br/> 
+                                    B. Expose the VPC to the on-premises network using IAM and VPC Sharing.<br/> 
+                                    C. Create a global Cloud VPN Gateway with VPN tunnels from each region to the on-premises peer gateway.<br/>
+                                    D. Deploy Cloud VPN Gateway in each region. Ensure that each region has at least one VPN tunnel to the on-premises peer gateway.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D/div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>83. Your organization has a 3-tier web application deployed in the same network on Google Cloud Platform. Each tier (web, API, and database) scales independently of the others. Network traffic should flow through the web to the API tier and then on to the database tier. Traffic should not flow between the web and the database tier.
-                                    How should you configure the network?</p>
-                                 <p>A. Add each tier to a different subnetwork<br/> 
-                                    B. Set up software based firewalls on individual VMs<br/> 
-                                    C. Add tags to each tier and set up routes to allow the desired traffic flow<br/>
-                                    D. Add tags to each tier and set up firewall rules to allow the desired traffic flow</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>84. Your development team has installed a new Linux kernel module on the batch servers in Google Compute Engine (GCE) virtual machines (VMs) to speed up the nightly batch process. Two days after the installation, 50% of the batch servers failed the nightly batch run. You want to collect details on the failure to pass back to the development team.
-                                    Which three actions should you take? (Choose three.)</p>
-                                 <p>A. Use Stackdriver Logging to search for the module log entries<br/> 
-                                    B. Read the debug GCE Activity log using the API or Cloud Console<br/> 
-                                    C. Use gcloud or Cloud Console to connect to the serial console and observe the logs<br/>
-                                    D. Identify whether a live migration event of the failed server occurred, using in the activity log<br/>
-                                    E. Adjust the Google Stackdriver timeline to match the failure time, and observe the batch server metrics<br/>
-                                    F. Export a debug VM into an image, and run the image on a local server where kernel log messages will be displayed on the native screen</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: ACF</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>85. Your company wants to try out the cloud with low risk. They want to archive approximately 100 TB of their log data to the cloud and test the analytics features available to them there, while also retaining that data as a long-term disaster recovery backup.
-                                    Which two steps should you take? (Choose two.)</p>
-                                 <p>A. Load logs into Google BigQuery<br/> 
-                                    B. Load logs into Google Cloud SQL<br/> 
-                                    C. Import logs into Google Stackdriver<br/>
-                                    D. Insert logs into Google Cloud Bigtable<br/>
-                                    E. Upload log files into Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>85. Your company wants to try out the cloud with low risk. They want to archive approximately 100 TB of their log data to the cloud and test the analytics features available to them there, while also retaining that data as a long-term disaster recovery backup.
-                                    Which two steps should you take? (Choose two.)</p>
-                                 <p>A. Load logs into Google BigQuery<br/> 
-                                    B. Load logs into Google Cloud SQL<br/> 
-                                    C. Import logs into Google Stackdriver<br/>
-                                    D. Insert logs into Google Cloud Bigtable<br/>
-                                    E. Upload log files into Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>86. You created a pipeline that can deploy your source code changes to your infrastructure in instance groups for self-healing. One of the changes negatively affects your key performance indicator. You are not sure how to fix it, and investigation could take up to a week.
-                                    What should you do?</p>
-                                 <p>A. Log in to a server, and iterate on the fox locally<br/> 
-                                    B. Log into the servers with the bad code change, and swap in the previous code<br/> 
-                                    C. Change the instance group template to the previous one, and delete all instances</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>87. Your organization wants to control IAM policies for different departments independently, but centrally.
-                                    Which approach should you take?</p>
-                                 <p>A. Multiple Organizations with multiple Folders<br/> 
-                                    B. Multiple Organizations, one for each department<br/> 
-                                    C. A single Organization with Folders for each department<br/>
-                                    D. A single Organization with multiple projects, each with a central owner</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>88. You deploy your custom Java application to Google App Engine. It fails to deploy and gives you the following stack trace.
-                                    What should you do?
-                                 <img src="https://www.examtopics.com/assets/media/exam-media/04136/0009300001.png"></p>
-                                 <p>A. Upload missing JAR files and redeploy your application.<br/> 
-                                    B. Digitally sign all of your JAR files and redeploy your application<br/> 
-                                    C. Recompile the CLoakedServlet class using and MD5 hash instead of SHA1</p>
+											<p>78. Your applications will be writing their logs to BigQuery for analysis. Each application should have its own table. Any logs older than 45 days should be removed.
+                                    You want to optimize storage and follow Google-recommended practices. What should you do?</p>
+                                 <p>A. Configure the expiration time for your tables at 45 days<br/> 
+                                    B. Make the tables time-partitioned, and configure the partition expiration at 45 days<br/> 
+                                    C. Rely on BigQueryג€™s default behavior to prune application logs older than 45 days<br/>
+                                    D. Create a script that uses the BigQuery command line tool (bq) to remove records older than 45 days</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -570,12 +414,51 @@
                                </div>
 
                                <div class="entry-content">
-											<p>89. You are designing a mobile chat application. You want to ensure people cannot spoof chat messages, by providing a message were sent by a specific user.
+											<p>79. You want your Google Kubernetes Engine cluster to automatically add or remove nodes based on CPU load.
                                     What should you do?</p>
-                                 <p>A. Tag messages client side with the originating user identifier and the destination user.<br/> 
-                                    B. Encrypt the message client side using block-based encryption with a shared key.<br/> 
-                                    C. Use public key infrastructure (PKI) to encrypt the message client side using the originating user's private key.<br/> 
-                                    D. Use a trusted certificate authority to enable SSL connectivity between the client application and the server.</p>
+                                 <p>A. Configure a HorizontalPodAutoscaler with a target CPU usage. Enable the Cluster Autoscaler from the GCP Console.<br/> 
+                                    B. Configure a HorizontalPodAutoscaler with a target CPU usage. Enable autoscaling on the managed instance group for the cluster using the gcloud command.<br/> 
+                                    C. Create a deployment and set the maxUnavailable and maxSurge properties. Enable the Cluster Autoscaler using the gcloud command.<br/>
+                                    D. Create a deployment and set the maxUnavailable and maxSurge properties. Enable autoscaling on the cluster managed instance group from the GCP Console.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>80. You need to develop procedures to verify resilience of disaster recovery for remote recovery using GCP. Your production environment is hosted on-premises. You need to establish a secure, redundant connection between your on-premises network and the GCP network.
+                                    What should you do?</p>
+                                 <p>A. Verify that Dedicated Interconnect can replicate files to GCP. Verify that direct peering can establish a secure connection between your networks if Dedicated Interconnect fails.<br/> 
+                                    B. Verify that Dedicated Interconnect can replicate files to GCP. Verify that Cloud VPN can establish a secure connection between your networks if Dedicated Interconnect fails.<br/> 
+                                    C. Verify that the Transfer Appliance can replicate files to GCP. Verify that direct peering can establish a secure connection between your networks if the Transfer Appliance fails.<br/>
+                                    D. Verify that the Transfer Appliance can replicate files to GCP. Verify that Cloud VPN can establish a secure connection between your networks if the Transfer Appliance fails.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>81. Your company operates nationally and plans to use GCP for multiple batch workloads, including some that are not time-critical. You also need to use GCP services that are HIPAA-certified and manage service costs.
+                                    How should you design to meet Google best practices?</p>
+                                 <p>A. Provision preemptible VMs to reduce cost. Discontinue use of all GCP services and APIs that are not HIPAA-compliant.<br/> 
+                                    B. Provision preemptible VMs to reduce cost. Disable and then discontinue use of all GCP services and APIs that are not HIPAA-compliant.<br/> 
+                                    C. Provision standard VMs in the same region to reduce cost. Discontinue use of all GCP services and APIs that are not HIPAA-compliant.<br/>
+                                    D. Provision standard VMs to the same region to reduce cost. Disable and then discontinue use of all GCP services and APIs that are not HIPAA-compliant.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+                               
+                               <div class="entry-content">
+											<p>82. Your customer wants to do resilience testing of their authentication layer. This consists of a regional managed instance group serving a public REST API that reads from and writes to a Cloud SQL instance.
+                                    What should you do?</p>
+                                 <p>A. Engage with a security company to run web scrapers that look your for usersג€™ authentication data om malicious websites and notify you if any is found.br/> 
+                                    B. Deploy intrusion detection software to your virtual machines to detect and log unauthorized access.<br/> 
+                                    C. Schedule a disaster simulation exercise during which you can shut off all VMs in a zone to see how your application behaves.br/>
+                                    D. Configure a read replica for your Cloud SQL instance in a different zone than the master, and then manually trigger a failover while monitoring KPIs for our REST API./p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
@@ -583,14 +466,103 @@
                                </div>
 
                                <div class="entry-content">
-											<p>90. As part of implementing their disaster recovery plan, your company is trying to replicate their production MySQL database from their private data center to their
-                                    GCP project using a Google Cloud VPN connection. They are experiencing latency issues and a small amount of packet loss that is disrupting the replication.
-                                    What should they do?</p>
-                                 <p>A. Configure their replication to use UDP.<br/> 
-                                    B. Configure a Google Cloud Dedicated Interconnect.<br/> 
-                                    C. Restore their database daily using Google Cloud SQL.<br/>
-                                    D. Add additional VPN connections and load balance them.<br/>
-                                    E. Send the replicated transaction to Google Cloud Pub/Sub.</p>
+											<p>83. Your BigQuery project has several users. For audit purposes, you need to see how many queries each user ran in the last month. What should you do?</p>
+                                 <p>A. Connect Google Data Studio to BigQuery. Create a dimension for the users and a metric for the amount of queries per user.<br/> 
+                                    B. In the BigQuery interface, execute a query on the JOBS table to get the required information.<br/> 
+                                    C. Use ג€˜bq showג€™ to list all jobs. Per job, use ג€˜bq lsג€™ to list job information and get the required information.<br/>
+                                    D. Use Cloud Audit Logging to view Cloud Audit Logs, and create a filter on the query operation to get the required information.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>84. You want to automate the creation of a managed instance group. The VMs have many OS package dependencies. You want to minimize the startup time for new
+                                    VMs in the instance group.
+                                    What should you do?</p>
+                                 <p>A. Use Terraform to create the managed instance group and a startup script to install the OS package dependencies.<br/> 
+                                    B. Create a custom VM image with all OS package dependencies. Use Deployment Manager to create the managed instance group with the VM image.<br/> 
+                                    C. Use Puppet to create the managed instance group and install the OS package dependencies.<br/>
+                                    D. Use Deployment Manager to create the managed instance group and Ansible to install the OS package dependencies.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>85. Your company captures all web traffic data in Google Analytics 360 and stores it in BigQuery. Each country has its own dataset. Each dataset has multiple tables.
+                                    You want analysts from each country to be able to see and query only the data for their respective countries.
+                                    How should you configure the access rights?</p>
+                                 <p>A. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery jobUser. Share the appropriate dataset with view access with each respective analyst country-group.<br/> 
+                                    B. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery jobUser. Share the appropriate tables with view access with each respective analyst country-group.<br/> 
+                                    C. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery dataViewer. Share the appropriate dataset with view access with each respective analyst country- group.<br/>
+                                    D. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery dataViewer. Share the appropriate table with view access with each respective analyst country-group.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>86. You have been engaged by your client to lead the migration of their application infrastructure to GCP. One of their current problems is that the on-premises high performance SAN is requiring frequent and expensive upgrades to keep up with the variety of workloads that are identified as follows: 20 TB of log archives retained for legal reasons; 500 GB of VM boot/data volumes and templates; 500 GB of image thumbnails; 200 GB of customer session state data that allows customers to restart sessions even if off-line for several days.
+                                       Which of the following best reflects your recommendations for a cost-effective storage allocation?</p>
+                                 <p>A. Local SSD for customer session state data. Lifecycle-managed Cloud Storage for log archives, thumbnails, and VM boot/data volumes.<br/> 
+                                    B. Memcache backed by Cloud Datastore for the customer session state data. Lifecycle-managed Cloud Storage for log archives, thumbnails, and VM boot/data volumes.<br/> 
+                                    C. Memcache backed by Cloud SQL for customer session state data. Assorted local SSD-backed instances for VM boot/data volumes. Cloud Storage for log archives and thumbnails.<br/>
+                                    D. Memcache backed by Persistent Disk SSD storage for customer session state data. Assorted local SSD-backed instances for VM boot/data volumes. Cloud Storage for log archives and thumbnails.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>87. Your web application uses Google Kubernetes Engine to manage several workloads. One workload requires a consistent set of hostnames even after pod scaling and relaunches.
+                                    Which feature of Kubernetes should you use to accomplish this?</p>
+                                 <p>A. StatefulSets<br/> 
+                                    B. Role-based access control<br/> 
+                                    C. Persistent Volumes</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>88. You are using Cloud CDN to deliver static HTTP(S) website content hosted on a Compute Engine instance group. You want to improve the cache hit ratio.
+                                    What should you do?</p>
+                                 <p>A. Customize the cache keys to omit the protocol from the key.<br/> 
+                                    B. Shorten the expiration time of the cached objects.<br/> 
+                                    C. Make sure the HTTP(S) header ג€Cache-Regionג€ points to the closest region of your users.<br/>
+                                    D. Replicate the static content in a Cloud Storage bucket. Point CloudCDN toward a load balancer on that bucket.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>89. Your architecture calls for the centralized collection of all admin activity and VM system logs within your project.
+                                    How should you collect these logs from both VMs and services?</p>
+                                 <p>A. Tag messages client side with the originating user identifier and the destination user.<br/> 
+                                    B. Stackdriver automatically collects admin activity logs for most services. The Stackdriver Logging agent must be installed on each instance to collect system logs.<br/> 
+                                    C. Launch a custom syslogd compute instance and configure your GCP project and VMs to forward all logs to it.<br/> 
+                                    D. Install the Stackdriver Logging agent on a single compute instance and let it collect all audit and access logs for your environment.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>90. You have an App Engine application that needs to be updated. You want to test the update with production traffic before replacing the current application version.
+                                    What should you do?</p>
+                                 <p>A. Deploy the update using the Instance Group Updater to create a partial rollout, which allows for canary testing.<br/> 
+                                    B. Deploy the update as a new version in the App Engine application, and split traffic between the new and current versions.<br/> 
+                                    C. Deploy the update in a new VPC, and use Googleג€™s global HTTP load balancing to split traffic between the update and current applications.<br/>
+                                    D. Deploy the update as a new App Engine application, and use Googleג€™s global HTTP load balancing to split traffic between the new and current applications.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
