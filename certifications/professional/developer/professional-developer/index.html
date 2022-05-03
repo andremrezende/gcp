@@ -450,59 +450,65 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>29. You are designing a large distributed application with 30 microservices. Each of your distributed microservices needs to connect to a database back-end. You want to store the credentials securely.
-                                    Where should you store the credentials?</p>
-                                 <p>A. In the source code<br/> 
-                                    B. In an environment variable<br/> 
-                                    C. In a secret management system<br/>
-                                    D. In a config file that has restricted access through ACLs</p>
+											<p>29. You are parsing a log file that contains three columns: a timestamp, an account number (a string), and a transaction amount (a number). You want to calculate the sum of all transaction amounts for each unique account number efficiently.
+                                    Which data structure should you use?</p>
+                                 <p>A. A linked list<br/> 
+                                    B. A hash table<br/> 
+                                    C. A two-dimensional array<br/>
+                                    D. A comma-delimited string</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>30. During a high traffic portion of the day, one of your relational databases crashes, but the replica is never promoted to a master. You want to avoid this in the future.
+											<p>30. Your company has a BigQuery dataset named "Master" that keeps information about employee travel and expenses. This information is organized by employee department. That means employees should only be able to view information for their department. You want to apply a security framework to enforce this requirement with the minimum number of steps.
                                     What should you do?</p>
-                                 <p>A. Cloud Deployment Manager uses Python<br/> 
-                                    B. Cloud Deployment Manager APIs could be deprecated in the future<br/> 
-                                    C. Cloud Deployment Manager is unfamiliar to the companyג€™s engineers<br/>
-                                    D. Cloud Deployment Manager requires a Google APIs service account to run<br/>
-                                    E. Cloud Deployment Manager can be used to permanently delete cloud resources<br/>
-                                    F. Cloud Deployment Manager only supports automation of Google Cloud resources</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: CF</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>31. A development manager is building a new application. He asks you to review his requirements and identify what cloud technologies he can use to meet them. The application must:
-                                    1. Be based on open-source technology for cloud portability
-                                    2. Dynamically scale compute capacity based on demand
-                                    3. Support continuous software delivery
-                                    4. Run multiple segregated copies of the same application stack
-                                    5. Deploy application bundles using dynamic templates
-                                    6. Route network traffic to specific services based on URL
-                                    Which combination of technologies will meet all of his requirements?</p>
-                                 <p>A. Google Kubernetes Engine, Jenkins, and Helm<br/> 
-                                    B. Google Kubernetes Engine and Cloud Load Balancing<br/> 
-                                    C. Google Kubernetes Engine and Cloud Deployment Manager<br/>
-                                    D. Google Kubernetes Engine, Jenkins, and Cloud Load Balancing</p>
+                                 <p>A. Create a separate dataset for each department. Create a view with an appropriate WHERE clause to select records from a particular dataset for the specific department. Authorize this view to access records from your Master dataset. Give employees the permission to this department-specific dataset.<br/> 
+                                    B. Create a separate dataset for each department. Create a data pipeline for each department to copy appropriate information from the Master dataset to the specific dataset for the department. Give employees the permission to this department-specific dataset.<br/> 
+                                    C. Create a dataset named Master dataset. Create a separate view for each department in the Master dataset. Give employees access to the specific view for their department.<br/>
+                                    D. Create a dataset named Master dataset. Create a separate table for each department in the Master dataset. Give employees access to the specific table for their department.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>31. You have an application in production. It is deployed on Compute Engine virtual machine instances controlled by a managed instance group. Traffic is routed to the instances via a HTTP(s) load balancer. Your users are unable to access your application. You want to implement a monitoring technique to alert you when the application is unavailable.
+                                    Which technique should you choose?</p>
+                                 <p>A. Smoke tests<br/> 
+                                    B. Stackdriver uptime checks<br/> 
+                                    C. Cloud Load Balancing - heath checks<br/>
+                                    D. Managed instance group - heath checks</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
                                  </div>
                                </div>
                                
                                <div class="entry-content">
-											<p>32. You have created several pre-emptible Linux virtual machine instances using Google Compute Engine. You want to properly shut down your application before the virtual machines are preempted.
+											<p>32. You are load testing your server application. During the first 30 seconds, you observe that a previously inactive Cloud Storage bucket is now servicing 2000 write requests per second and 7500 read requests per second. Your application is now receiving intermittent 5xx and 429 HTTP responses from the Cloud Storage
+                                    JSON API as the demand escalates. You want to decrease the failed responses from the Cloud Storage API.
                                     What should you do?</p>
-                                 <p>A. Create a shutdown script named k99.shutdown in the /etc/rc.6.d/ directory<br/> 
-                                    B. Create a shutdown script registered as a xinetd service in Linux and configure a Stackdriver endpoint check to call the service<br/> 
-                                    C. Create a shutdown script and use it as the value for a new metadata entry with the key shutdown-script in the Cloud Platform Console when you create the new virtual machine instance<br/>
-                                    D. Create a shutdown script, registered as a xinetd service in Linux, and use the gcloud compute instances add-metadata command to specify the service URL as the value for a new metadata entry with the key shutdown-script-url</p>
+                                 <p>A. Distribute the uploads across a large number of individual storage buckets.<br/> 
+                                    B. Use the XML API instead of the JSON API for interfacing with Cloud Storage.<br/> 
+                                    C. Pass the HTTP response codes back to clients that are invoking the uploads from your application.<br/>
+                                    D. Limit the upload rate from your application clients so that the dormant bucket's peak request rate is reached more gradually.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>33. Your application is controlled by a managed instance group. You want to share a large read-only data set between all the instances in the managed instance group. You want to ensure that each instance can start quickly and can access the data set via its filesystem with very low latency. You also want to minimize the total cost of the solution.
+                                    What should you do?</p>
+                                 <p>A. Move the data to a Cloud Storage bucket, and mount the bucket on the filesystem using Cloud Storage FUSE.<br/> 
+                                    B. Move the data to a Cloud Storage bucket, and copy the data to the boot disk of the instance via a startup script.<br/> 
+                                    C. Move the data to a Compute Engine persistent disk, and attach the disk in read-only mode to multiple Compute Engine virtual machine instances.<br/>
+                                    D. Move the data to a Compute Engine persistent disk, take a snapshot, create multiple disks from the snapshot, and attach each disk to its own instance.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
@@ -510,80 +516,39 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>33. Your organization has a 3-tier web application deployed in the same network on Google Cloud Platform. Each tier (web, API, and database) scales independently of the others. Network traffic should flow through the web to the API tier and then on to the database tier. Traffic should not flow between the web and the database tier.
-                                    How should you configure the network?</p>
-                                 <p>A. Add each tier to a different subnetwork<br/> 
-                                    B. Set up software based firewalls on individual VMs<br/> 
-                                    C. Add tags to each tier and set up routes to allow the desired traffic flow<br/>
-                                    D. Add tags to each tier and set up firewall rules to allow the desired traffic flow</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>34. Your development team has installed a new Linux kernel module on the batch servers in Google Compute Engine (GCE) virtual machines (VMs) to speed up the nightly batch process. Two days after the installation, 50% of the batch servers failed the nightly batch run. You want to collect details on the failure to pass back to the development team.
-                                    Which three actions should you take? (Choose three.)</p>
-                                 <p>A. Use Stackdriver Logging to search for the module log entries<br/> 
-                                    B. Read the debug GCE Activity log using the API or Cloud Console<br/> 
-                                    C. Use gcloud or Cloud Console to connect to the serial console and observe the logs<br/>
-                                    D. Identify whether a live migration event of the failed server occurred, using in the activity log<br/>
-                                    E. Adjust the Google Stackdriver timeline to match the failure time, and observe the batch server metrics<br/>
-                                    F. Export a debug VM into an image, and run the image on a local server where kernel log messages will be displayed on the native screen</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: ACF</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>35. Your company wants to try out the cloud with low risk. They want to archive approximately 100 TB of their log data to the cloud and test the analytics features available to them there, while also retaining that data as a long-term disaster recovery backup.
-                                    Which two steps should you take? (Choose two.)</p>
-                                 <p>A. Load logs into Google BigQuery<br/> 
-                                    B. Load logs into Google Cloud SQL<br/> 
-                                    C. Import logs into Google Stackdriver<br/>
-                                    D. Insert logs into Google Cloud Bigtable<br/>
-                                    E. Upload log files into Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>35. Your company wants to try out the cloud with low risk. They want to archive approximately 100 TB of their log data to the cloud and test the analytics features available to them there, while also retaining that data as a long-term disaster recovery backup.
-                                    Which two steps should you take? (Choose two.)</p>
-                                 <p>A. Load logs into Google BigQuery<br/> 
-                                    B. Load logs into Google Cloud SQL<br/> 
-                                    C. Import logs into Google Stackdriver<br/>
-                                    D. Insert logs into Google Cloud Bigtable<br/>
-                                    E. Upload log files into Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>36. You created a pipeline that can deploy your source code changes to your infrastructure in instance groups for self-healing. One of the changes negatively affects your key performance indicator. You are not sure how to fix it, and investigation could take up to a week.
+											<p>34. You are developing an HTTP API hosted on a Compute Engine virtual machine instance that needs to be invoked by multiple clients within the same Virtual
+                                    Private Cloud (VPC). You want clients to be able to get the IP address of the service.
                                     What should you do?</p>
-                                 <p>A. Log in to a server, and iterate on the fox locally<br/> 
-                                    B. Log into the servers with the bad code change, and swap in the previous code<br/> 
-                                    C. Change the instance group template to the previous one, and delete all instances</p>
+                                 <p>A. Reserve a static external IP address and assign it to an HTTP(S) load balancing service's forwarding rule. Clients should use this IP address to connect to the service.<br/> 
+                                    B. Reserve a static external IP address and assign it to an HTTP(S) load balancing service's forwarding rule. Then, define an A record in Cloud DNS. Clients should use the name of the A record to connect to the service.<br/> 
+                                    C. Ensure that clients use Compute Engine internal DNS by connecting to the instance name with the url https://[INSTANCE_NAME].[ZONE].c. [PROJECT_ID].internal/.<br/>
+                                    D. Ensure that clients use Compute Engine internal DNS by connecting to the instance name with the url https://[API_NAME]/[API_VERSION]/.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>37. Your organization wants to control IAM policies for different departments independently, but centrally.
+											<p>35. Your application is logging to Stackdriver. You want to get the count of all requests on all /api/alpha/* endpoints.
+                                    What should you do?</p>
+                                 <p>A. Add a Stackdriver counter metric for path:/api/alpha/.<br/> 
+                                    B. Add a Stackdriver counter metric for endpoint:/api/alpha/*.<br/> 
+                                    C. Export the logs to Cloud Storage and count lines matching /api/alpha.<br/>
+                                    D. Export the logs to Cloud Pub/Sub and count lines matching /api/alpha.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>36. You want to re-architect a monolithic application so that it follows a microservices model. You want to accomplish this efficiently while minimizing the impact of this change to the business.
                                     Which approach should you take?</p>
-                                 <p>A. Multiple Organizations with multiple Folders<br/> 
-                                    B. Multiple Organizations, one for each department<br/> 
-                                    C. A single Organization with Folders for each department<br/>
-                                    D. A single Organization with multiple projects, each with a central owner</p>
+                                 <p>A. Deploy the application to Compute Engine and turn on autoscaling.<br/> 
+                                    B. Replace the application's features with appropriate microservices in phases.<br/> 
+                                    C. Refactor the monolithic application with appropriate microservices in a single effort and deploy it.<br/>
+                                    D. Build a new application with the appropriate microservices separate from the monolith and replace it when it is complete.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
@@ -591,103 +556,12 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>38. You deploy your custom Java application to Google App Engine. It fails to deploy and gives you the following stack trace.
-                                    What should you do?
-                                 <img src="https://www.examtopics.com/assets/media/exam-media/04136/0009300001.png"></p>
-                                 <p>A. Upload missing JAR files and redeploy your application.<br/> 
-                                    B. Digitally sign all of your JAR files and redeploy your application<br/> 
-                                    C. Recompile the CLoakedServlet class using and MD5 hash instead of SHA1</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>39. You are designing a mobile chat application. You want to ensure people cannot spoof chat messages, by providing a message were sent by a specific user.
-                                    What should you do?</p>
-                                 <p>A. Tag messages client side with the originating user identifier and the destination user.<br/> 
-                                    B. Encrypt the message client side using block-based encryption with a shared key.<br/> 
-                                    C. Use public key infrastructure (PKI) to encrypt the message client side using the originating user's private key.<br/> 
-                                    D. Use a trusted certificate authority to enable SSL connectivity between the client application and the server.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>40. As part of implementing their disaster recovery plan, your company is trying to replicate their production MySQL database from their private data center to their
-                                    GCP project using a Google Cloud VPN connection. They are experiencing latency issues and a small amount of packet loss that is disrupting the replication.
-                                    What should they do?</p>
-                                 <p>A. Configure their replication to use UDP.<br/> 
-                                    B. Configure a Google Cloud Dedicated Interconnect.<br/> 
-                                    C. Restore their database daily using Google Cloud SQL.<br/>
-                                    D. Add additional VPN connections and load balance them.<br/>
-                                    E. Send the replicated transaction to Google Cloud Pub/Sub.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>41. Your customer support tool logs all email and chat conversations to Cloud Bigtable for retention and analysis. 
-                                    What is the recommended approach for sanitizing this data of personally identifiable information or payment card information before initial storage?</p>
-                                 <p>A. Hash all data using SHA256<br/> 
-                                    B. Encrypt all data using elliptic curve cryptography<br/> 
-                                    C. De-identify the data with the Cloud Data Loss Prevention API<br/>
-                                    D. Use regular expressions to find and redact phone numbers, email addresses, and credit card numbers</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>42. You are using Cloud Shell and need to install a custom utility for use in a few weeks. Where can you store the file so it is in the default execution path and persists across sessions?</p>
-                                 <p>A. ~/bin<br/> 
+											<p>37. Your existing application keeps user state information in a single MySQL database. This state information is very user-specific and depends heavily on how long a user has been using an application. The MySQL database is causing challenges to maintain and enhance the schema for various users.
+                                    Which storage option should you choose?</p>
+                                 <p>A. Cloud SQL<br/> 
                                     B. Cloud Storage<br/> 
-                                    C. /google/scripts<br/>
-                                    D. /usr/local/bin</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>43. You want to create a private connection between your instances on Compute Engine and your on-premises data center. You require a connection of at least 20
-                                    Gbps. You want to follow Google-recommended practices. How should you set up the connection?</p>
-                                 <p>A. Create a VPC and connect it to your on-premises data center using Dedicated Interconnect.<br/> 
-                                    B. Create a VPC and connect it to your on-premises data center using a single Cloud VPN.<br/> 
-                                    C. Create a Cloud Content Delivery Network (Cloud CDN) and connect it to your on-premises datacenter using a single Cloud VPN.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>44. You are analyzing and defining business processes to support your startupג€™s trial usage of GCP, and you donג€™t yet know what consumer demand for your product will be.
-                                     Your manager requires you to minimize GCP service costs and adhere to Google best practices. What should you do?</p>
-                                 <p>A. Utilize free tier and sustained use discounts. Provision a staff position for service cost management.<br/> 
-                                    B. Utilize free tier and sustained use discounts. Provide training to the team about service cost management.<br/> 
-                                    C. Utilize free tier and committed use discounts. Provision a staff position for service cost management.<br/>
-                                    D. Utilize free tier and committed use discounts. Provide training to the team about service cost management.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>45. You are building a continuous deployment pipeline for a project stored in a Git source repository and want to ensure that code changes can be verified before deploying to production.
-                                     What should you do?</p>
-                                 <p>A. Use Spinnaker to deploy builds to production using the red/black deployment strategy so that changes can easily be rolled back.<br/> 
-                                    B. Use Spinnaker to deploy builds to production and run tests on production deployments.<br/> 
-                                    C. Use Jenkins to build the staging branches and the master branch. Build and deploy changes to production for 10% of users before doing a complete rollout.<br/>
-                                    D. Use Jenkins to monitor tags in the repository. Deploy staging tags to a staging environment for testing. After testing, tag the repository for production and deploy that to the production environment.</p>
+                                    C. Cloud Spanner<br/>
+                                    D. Cloud Datastore/Firestore</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
@@ -695,38 +569,26 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>46. You have an outage in your Compute Engine managed instance group: all instances keep restarting after 5 seconds. You have a health check configured, but autoscaling is disabled. 
-                                    Your colleague, who is a Linux expert, offered to look into the issue. You need to make sure that he can access the VMs. What should you do?</p>
-                                 <p>A. Grant your colleague the IAM role of project Viewer<br/> 
-                                    B. Perform a rolling restart on the instance group<br/> 
-                                    C. Disable the health check for the instance group. Add his SSH key to the project-wide SSH Keys<br/>
-                                    D. Disable autoscaling for the instance group. Add his SSH key to the project-wide SSH Keys</p>
+											<p>38. You are building a new API. You want to minimize the cost of storing and reduce the latency of serving images.
+                                    Which architecture should you use?</p>
+                                 <p>A. App Engine backed by Cloud Storage<br/> 
+                                    B. Compute Engine backed by Persistent Disk<br/> 
+                                    C. Transfer Appliance backed by Cloud Filestore<br/>
+                                    D. Cloud Content Delivery Network (CDN) backed by Cloud Storage</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>47. Your company is migrating its on-premises data center into the cloud. As part of the migration, you want to integrate Google Kubernetes Engine (GKE) for workload orchestration. 
-                                    Parts of your  Developerure must also be PCI DSS-compliant. Which of the following is most accurate?</p>
-                                 <p>A. App Engine is the only compute platform on GCP that is certified for PCI DSS hosting.<br/> 
-                                    B. GKE cannot be used under PCI DSS because it is considered shared hosting.<br/> 
-                                    C. GKE and GCP provide the tools you need to build a PCI DSS-compliant environment.<br/>
-                                    D. All Google Cloud services are usable because Google Cloud Platform is certified PCI-compliant.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>48. Your company has multiple on-premises systems that serve as sources for reporting. The data has not been maintained well and has become degraded over time.
-                                    You want to use Google-recommended practices to detect anomalies in your company data. What should you do?</p>
-                                 <p>A. Upload your files into Cloud Storage. Use Cloud Datalab to explore and clean your data.<br/> 
-                                    B. Upload your files into Cloud Storage. Use Cloud Dataprep to explore and clean your data.<br/> 
-                                    C. Connect Cloud Datalab to your on-premises systems. Use Cloud Datalab to explore and clean your data.<br/>
-                                    D. Connect Cloud Dataprep to your on-premises systems. Use Cloud Dataprep to explore and clean your data.</p>
+											<p>39. Your company's development teams want to use Cloud Build in their projects to build and push Docker images to Container Registry. The operations team requires all Docker images to be published to a centralized, securely managed Docker registry that the operations team manages.
+                                    What should you do?
+                                    </p>
+                                 <p>A. Use Container Registry to create a registry in each development team's project. Configure the Cloud Build build to push the Docker image to the project's registry. Grant the operations team access to each development team's registry.<br/> 
+                                    B. Create a separate project for the operations team that has Container Registry configured. Assign appropriate permissions to the Cloud Build service account in each developer team's project to allow access to the operation team's registry.<br/> 
+                                    C. Create a separate project for the operations team that has Container Registry configured. Create a Service Account for each development team and assign the appropriate permissions to allow it access to the operations team's registry. Store the service account key file in the source code repository and use it to authenticate against the operations team's registry.<br/> 
+                                    D. Create a separate project for the operations team that has the open source Docker Registry deployed on a Compute Engine virtual machine instance. Create a username and password for each development team. Store the username and password in the source code repository and use it to authenticate against the operations team's Docker registry.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -734,12 +596,38 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>49. Google Cloud Platform resources are managed hierarchically using organization, folders, and projects. 
-                                    When Cloud Identity and Access Management (IAM) policies exist at these different levels, what is the effective policy at a particular node of the hierarchy?</p>
-                                 <p>A. The effective policy is determined only by the policy set at the node<br/> 
-                                    B. The effective policy is the policy set at the node and restricted by the policies of its ancestors<br/> 
-                                    C. The effective policy is the union of the policy set at the node and policies inherited from its ancestors<br/>
-                                    D. The effective policy is the intersection of the policy set at the node and policies inherited from its ancestors</p>
+											<p>40. You are planning to deploy your application in a Google Kubernetes Engine (GKE) cluster. Your application can scale horizontally, and each instance of your application needs to have a stable network identity and its own persistent disk.
+                                    Which GKE object should you use?</p>
+                                 <p>A. Deployment<br/> 
+                                    B. StatefulSet<br/> 
+                                    C. ReplicaSet<br/>
+                                    D. ReplicaController</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>41. You are using Cloud Build to build a Docker image. You need to modify the build to execute unit and run integration tests. When there is a failure, you want the build history to clearly display the stage at which the build failed.
+                                    What should you do?</p>
+                                 <p>A. Add RUN commands in the Dockerfile to execute unit and integration tests.<br/> 
+                                    B. Create a Cloud Build build config file with a single build step to compile unit and integration tests.<br/> 
+                                    C. Create a Cloud Build build config file that will spawn a separate cloud build pipeline for unit and integration tests.<br/>
+                                    D. Create a Cloud Build build config file with separate cloud builder steps to compile and execute unit and integration tests.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>42. Your code is running on Cloud Functions in project A. It is supposed to write an object in a Cloud Storage bucket owned by project B. However, the write call is failing with the error "403 Forbidden".
+                                    What should you do to correct the problem?</p>
+                                 <p>A. Grant your user account the roles/storage.objectCreator role for the Cloud Storage bucket.<br/> 
+                                    B. Grant your user account the roles/iam.serviceAccountUser role for the service-PROJECTA@gcf-admin-robot.iam.gserviceaccount.com service account.<br/> 
+                                    C. Grant the service-PROJECTA@gcf-admin-robot.iam.gserviceaccount.com service account the roles/storage.objectCreator role for the Cloud Storage bucket.<br/>
+                                    D. Enable the Cloud Storage API in project B.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
@@ -747,12 +635,446 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>50. You are migrating your on-premises solution to Google Cloud in several phases. You will use Cloud VPN to maintain a connection between your on-premises systems and
-                                     Google Cloud until the migration is completed. You want to make sure all your on-premise systems remain reachable during this period. How should you organize your networking in Google Cloud?</p>
-                                 <p>A. Use the same IP range on Google Cloud as you use on-premises<br/> 
-                                    B. Use the same IP range on Google Cloud as you use on-premises for your primary IP range and use a secondary range that does not overlap with the range you use on-premises<br/> 
-                                    C. Use an IP range on Google Cloud that does not overlap with the range you use on-premises<br/>
-                                    D. Use an IP range on Google Cloud that does not overlap with the range you use on-premises for your primary IP range and use a secondary range with the same IP range as you use on-premises</p>
+											<p>43. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    HipLocal's .net-based auth service fails under intermittent load.
+                                    What should they do?</p>
+                                 <p>A. Use App Engine for autoscaling.<br/> 
+                                    B. Use Cloud Functions for autoscaling.<br/> 
+                                    C. Use a Compute Engine cluster for the service.<br/>
+                                    D. Use a dedicated Compute Engine virtual machine instance for the service.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>44. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    HipLocal's APIs are having occasional application failures. They want to collect application information specifically to troubleshoot the issue. What should they do?</p>
+                                 <p>A. Take frequent snapshots of the virtual machines.<br/> 
+                                    B. Install the Cloud Logging agent on the virtual machines.<br/> 
+                                    C. Install the Cloud Monitoring agent on the virtual machines.<br/>
+                                    D. Use Cloud Trace to look for performance bottlenecks.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>45. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    HipLocal has connected their Hadoop infrastructure to GCP using Cloud Interconnect in order to query data stored on persistent disks.
+                                    Which IP strategy should they use?</p>
+                                 <p>A. Create manual subnets.<br/> 
+                                    B. Create an auto mode subnet.<br/> 
+                                    C. Create multiple peered VPCs.<br/>
+                                    D. Provision a single instance for NAT.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>46. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    Which service should HipLocal use to enable access to internal apps?
+                                    </p>
+                                 <p>A. Cloud VPN<br/> 
+                                    B. Cloud Armor<br/> 
+                                    C. Virtual Private Cloud<br/>
+                                    D. Cloud Identity-Aware Proxy</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>47. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    HipLocal wants to reduce the number of on-call engineers and eliminate manual scaling.
+                                    Which two services should they choose? (Choose two.)</p>
+                                 <p>A. Use Google App Engine services.<br/> 
+                                    B. Use serverless Google Cloud Functions.<br/> 
+                                    C. Use Knative to build and deploy serverless applications.<br/>
+                                    D. Use Google Kubernetes Engine for automated deployments.<br/>
+                                    E. Use a large Google Compute Engine cluster for deployments.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AB</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>48. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    In order to meet their business requirements, how should HipLocal store their application state?</p>
+                                 <p>A. Use local SSDs to store state.<br/> 
+                                    B. Put a memcache layer in front of MySQL.<br/> 
+                                    C. Move the state storage to Cloud Spanner.<br/>
+                                    D. Replace the MySQL instance with Cloud SQL.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>49. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    Which service should HipLocal use for their public APIs?
+                                 </p>
+                                 <p>A. Cloud Armor<br/> 
+                                    B. Cloud Functions<br/> 
+                                    C. Cloud Endpoints<br/>
+                                    D. Shielded Virtual Machines</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>50. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    HipLocal wants to improve the resilience of their MySQL deployment, while also meeting their business and technical requirements.
+                                    Which configuration should they choose?</p>
+                                 <p>A. Use the current single instance MySQL on Compute Engine and several read-only MySQL servers on Compute Engine.<br/> 
+                                    B. Use the current single instance MySQL on Compute Engine, and replicate the data to Cloud SQL in an external master configuration.<br/> 
+                                    C. Replace the current single instance MySQL instance with Cloud SQL, and configure high availability.<br/>
+                                    D. Replace the current single instance MySQL instance with Cloud SQL, and Google provides redundancy without further configuration.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
