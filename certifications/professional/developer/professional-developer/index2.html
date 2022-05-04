@@ -60,13 +60,96 @@
                            <div class="post-content">
                               <h2 class="entry-title">Google Cloud Professional  Developer Exam Part 1</h2>
                               <div class="entry-content">
-											<p>1. You want to upload files from an on-premises virtual machine to Google Cloud Storage as part of a data migration. These files will be consumed by Cloud
-                                    DataProc Hadoop cluster in a GCP environment.
+											<p>51. Your application is running in multiple Google Kubernetes Engine clusters. It is managed by a Deployment in each cluster. The Deployment has created multiple replicas of your Pod in each cluster. You want to view the logs sent to stdout for all of the replicas in your Deployment in all clusters.
                                     Which command should you use?</p>
-                                 <p>A. gsutil cp [LOCAL_OBJECT] gs://[DESTINATION_BUCKET_NAME]/<br/> 
-                                    B. gcloud cp [LOCAL_OBJECT] gs://[DESTINATION_BUCKET_NAME]/<br/> 
-                                    C. hadoop fs cp [LOCAL_OBJECT] gs://[DESTINATION_BUCKET_NAME]/<br/>
-                                    D. gcloud dataproc cp [LOCAL_OBJECT] gs://[DESTINATION_BUCKET_NAME]/</p>
+                                 <p>A. kubectl logs [PARAM]<br/> 
+                                    B. gcloud logging read [PARAM]<br/> 
+                                    C. kubectl exec ג€"it [PARAM] journalctl<br/>
+                                    D. gcloud compute ssh [PARAM] ג€"-command= ג€sudo journalctlג€</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>52. You are using Cloud Build to create a new Docker image on each source code commit to a Cloud Source Repositories repository. Your application is built on every commit to the master branch. You want to release specific commits made to the master branch in an automated method.
+                                    What should you do?
+                                 </p>
+                                 <p>A. Manually trigger the build for new releases.<br/> 
+                                    B. Create a build trigger on a Git tag pattern. Use a Git tag convention for new releases.<br/> 
+                                    C. Create a build trigger on a Git branch name pattern. Use a Git branch naming convention for new releases.<br/>
+                                    D. Commit your source code to a second Cloud Source Repositories repository with a second Cloud Build trigger. Use this repository for new releases only.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>53. You are designing a schema for a table that will be moved from MySQL to Cloud Bigtable. The MySQL table is as follows:
+                                    <img src="https://www.examtopics.com/assets/media/exam-media/04137/0004000001.png">
+                                    How should you design a row key for Cloud Bigtable for this table?
+                                 </p>
+                                 <p>A. Set Account_id as a key.<br/> 
+                                    B. Set Account_id_Event_timestamp as a key.<br/> 
+                                    C. Set Event_timestamp_Account_id as a key.<br/>
+                                    D. Set Event_timestamp as a key.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>54. You want to view the memory usage of your application deployed on Compute Engine.
+                                    What should you do?
+                                 </p>
+                                 <p>A. Install the Stackdriver Client Library.<br/> 
+                                    B. Install the Stackdriver Monitoring Agent.<br/> 
+                                    C. Use the Stackdriver Metrics Explorer.<br/>
+                                    D. Use the Google Cloud Platform Console.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>55. You have an analytics application that runs hundreds of queries on BigQuery every few minutes using BigQuery API. You want to find out how much time these queries take to execute.
+                                    What should you do?</p>
+                                 <p>A. Use Stackdriver Monitoring to plot slot usage.<br/> 
+                                    B. Use Stackdriver Trace to plot API execution time.<br/> 
+                                    C. Use Stackdriver Trace to plot query execution time.<br/> 
+                                    D. Use Stackdriver Monitoring to plot query execution times.
+                                 </p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>56. You are designing a schema for a Cloud Spanner customer database. You want to store a phone number array field in a customer table. You also want to allow users to search customers by phone number.
+                                    How should you design this schema?</p>
+                                 <p>A. Create a table named Customers. Add an Array field in a table that will hold phone numbers for the customer.<br/> 
+                                    B. Create a table named Customers. Create a table named Phones. Add a CustomerId field in the Phones table to find the CustomerId from a phone number.<br/> 
+                                    C. Create a table named Customers. Add an Array field in a table that will hold phone numbers for the customer. Create a secondary index on the Array field.<br/>
+                                    D. Create a table named Customers as a parent table. Create a table named Phones, and interleave this table into the Customer table. Create an index on the phone number field in the Phones table.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>57. You are deploying a single website on App Engine that needs to be accessible via the URL http://www.altostrat.com/.
+                                    What should you do?
+                                    </p>
+                                 <p>A. Verify domain ownership with Webmaster Central. Create a DNS CNAME record to point to the App Engine canonical name ghs.googlehosted.com.<br/> 
+                                    B. Verify domain ownership with Webmaster Central. Define an A record pointing to the single global App Engine IP address.<br/> 
+                                    C. Define a mapping in dispatch.yaml to point the domain www.altostrat.com to your App Engine service. Create a DNS CNAME record to point to the App Engine canonical name ghs.googlehosted.com.<br/>
+                                    D. Define a mapping in dispatch.yaml to point the domain www.altostrat.com to your App Engine service. Define an A record pointing to the single global App Engine IP address.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
@@ -74,12 +157,305 @@
                                </div>
 
                                <div class="entry-content">
-											<p>2. You migrated your applications to Google Cloud Platform and kept your existing monitoring platform. You now find that your notification system is too slow for time critical problems.
+											<p>58. You are running an application on App Engine that you inherited. You want to find out whether the application is using insecure binaries or is vulnerable to XSS attacks.
+                                    Which service should you use?</p>
+                                 <p>A. Cloud Amor<br/> 
+                                    B. Stackdriver Debugger<br/> 
+                                    C. Cloud Security Scanner<br/>
+                                    D. Stackdriver Error Reporting</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>59. You are working on a social media application. You plan to add a feature that allows users to upload images. These images will be 2 MB ג€" 1 GB in size. You want to minimize their infrastructure operations overhead for this feature.
                                     What should you do?</p>
-                                 <p>A. Replace your entire monitoring platform with Stackdriver.<br/> 
-                                    B. Install the Stackdriver agents on your Compute Engine instances.<br/> 
-                                    C. Use Stackdriver to capture and alert on logs, then ship them to your existing platform.<br/>
-                                    D. Migrate some traffic back to your old platform and perform AB testing on the two platforms concurrently.</p>
+                                 <p>A. Change the application to accept images directly and store them in the database that stores other user information.<br/> 
+                                    B. Change the application to create signed URLs for Cloud Storage. Transfer these signed URLs to the client application to upload images to Cloud Storage.<br/> 
+                                    C. Set up a web server on GCP to accept user images and create a file store to keep uploaded files. Change the application to retrieve images from the file store.<br/>
+                                    D. Create a separate bucket for each user in Cloud Storage. Assign a separate service account to allow write access on each bucket. Transfer service account credentials to the client application based on user information. The application uses this service account to upload images to Cloud Storage.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>60. YYour application is built as a custom machine image. You have multiple unique deployments of the machine image. Each deployment is a separate managed instance group with its own template. Each deployment requires a unique set of configuration values. You want to provide these unique values to each deployment but use the same custom machine image in all deployments. You want to use out-of-the-box features of Compute Engine.
+                                    What should you do?</p>
+                                 <p>A. Place the unique configuration values in the persistent disk.<br/> 
+                                    B. Place the unique configuration values in a Cloud Bigtable table.<br/> 
+                                    C. Place the unique configuration values in the instance template startup script.<br/>
+                                    D. Place the unique configuration values in the instance template instance metadata.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>61. Your application performs well when tested locally, but it runs significantly slower after you deploy it to a Compute Engine instance. You need to diagnose the problem. What should you do?</p>
+                                 <p>A. File a ticket with Cloud Support indicating that the application performs faster locally.<br/> 
+                                    B. Use Cloud Debugger snapshots to look at a point-in-time execution of the application.<br/> 
+                                    C. Use Cloud Profiler to determine which functions within the application take the longest amount of time.<br/>
+                                    D. Add logging commands to the application and use Cloud Logging to check where the latency problem occurs.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>62. You have an application running in App Engine. Your application is instrumented with Stackdriver Trace. The /product-details request reports details about four known unique products at /sku-details as shown below. You want to reduce the time it takes for the request to complete.
+                                    What should you do?
+                                    <img src="https://www.examtopics.com/assets/media/exam-media/04137/0004500001.jpg">
+                                 </p>
+                                 <p>A. Increase the size of the instance class.<br/> 
+                                    B. Change the Persistent Disk type to SSD.<br/> 
+                                    C. Change /product-details to perform the requests in parallel.<br/>
+                                    D. Store the /sku-details information in a database, and replace the webservice call with a database query.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>63. Your company has a data warehouse that keeps your application information in BigQuery. The BigQuery data warehouse keeps 2 PBs of user data. Recently, your company expanded your user base to include EU users and needs to comply with these requirements:
+                                    ✑ Your company must be able to delete all user account information upon user request.
+                                    ✑ All EU user data must be stored in a single region specifically for EU users.
+                                    Which two actions should you take? (Choose two.)</p>
+                                 <p>A. Use BigQuery federated queries to query data from Cloud Storage.<br/> 
+                                    B. Create a dataset in the EU region that will keep information about EU users only.<br/> 
+                                    C. Create a Cloud Storage bucket in the EU region to store information for EU users only.<br/>
+                                    D. Re-upload your data using to a Cloud Dataflow pipeline by filtering your user records out.<br/>
+                                    E. Use DML statements in BigQuery to update/delete user records based on their requests.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: BE</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>64.Your App Engine standard configuration is as follows:
+                                    service: production
+                                    instance_class: B1
+                                    You want to limit the application to 5 instances.
+                                    Which code snippet should you include in your configuration?</p>
+                                 <p>A. manual_scaling: instances: 5 min_pending_latency: 30ms<br/> 
+                                    B. manual_scaling: max_instances: 5 idle_timeout: 10m<br/> 
+                                    C. basic_scaling: instances: 5 min_pending_latency: 30ms<br/>
+                                    D. basic_scaling: max_instances: 5 idle_timeout: 10m</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>65. YYour analytics system executes queries against a BigQuery dataset. The SQL query is executed in batch and passes the contents of a SQL file to the BigQuery
+                                    CLI. Then it redirects the BigQuery CLI output to another process. However, you are getting a permission error from the BigQuery CLI when the queries are executed.
+                                    You want to resolve the issue. What should you do?</p>
+                                 <p>A. Grant the service account BigQuery Data Viewer and BigQuery Job User roles.<br/> 
+                                    B. Grant the service account BigQuery Data Editor and BigQuery Data Viewer roles.<br/> 
+                                    C. Create a view in BigQuery from the SQL query and SELECT* from the view in the CLI.<br/>
+                                    D. Create a new dataset in BigQuery, and copy the source table to the new dataset Query the new dataset and table from the CLI.
+                                 </p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>66. Your application is running on Compute Engine and is showing sustained failures for a small number of requests. You have narrowed the cause down to a single
+                                    Compute Engine instance, but the instance is unresponsive to SSH.
+                                    What should you do next?</p>
+                                 <p>A. Reboot the machine.<br/> 
+                                    B. Enable and check the serial port output.<br/> 
+                                    C. Delete the machine and create a new one.<br/>
+                                    D. Take a snapshot of the disk and attach it to a new machine.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>67. You configured your Compute Engine instance group to scale automatically according to overall CPU usage. However, your application's response latency increases sharply before the cluster has finished adding up instances. You want to provide a more consistent latency experience for your end users by changing the configuration of the instance group autoscaler.
+                                    Which two configuration changes should you make? (Choose two.)</p>
+                                 <p>A. Add the label ג€AUTOSCALEג€ to the instance group template.<br/> 
+                                    B. Decrease the cool-down period for instances added to the group.<br/> 
+                                    C. Decrease the target CPU usage for the instance group autoscaler.<br/>
+                                    D. Remove the health-check for individual VMs in the instance group.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: BD</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>68. You have an application controlled by a managed instance group. When you deploy a new version of the application, costs should be minimized and the number of instances should not increase. You want to ensure that, when each new instance is created, the deployment only continues if the new instance is healthy.
+                                    What should you do?</p>
+                                 <p>A. Perform a rolling-action with maxSurge set to 1, maxUnavailable set to 0.<br/> 
+                                    B. Perform a rolling-action with maxSurge set to 0, maxUnavailable set to 1<br/> 
+                                    C. Perform a rolling-action with maxHealthy set to 1, maxUnhealthy set to 0.<br/>
+                                    D. Perform a rolling-action with maxHealthy set to 0, maxUnhealthy set to 1.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>69. Your application requires service accounts to be authenticated to GCP products via credentials stored on its host Compute Engine virtual machine instances. You want to distribute these credentials to the host instances as securely as possible.
+                                    What should you do?</p>
+                                 <p>A. Use HTTP signed URLs to securely provide access to the required resources.<br/> 
+                                    B. Use the instance's service account Application Default Credentials to authenticate to the required resources.<br/> 
+                                    C. Generate a P12 file from the GCP Console after the instance is deployed, and copy the credentials to the host instance before starting the application.<br/>
+                                    D. Commit the credential JSON file into your application's source repository, and have your CI/CD process package it with the software that is deployed to the instance.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>70. Your application is deployed in a Google Kubernetes Engine (GKE) cluster. You want to expose this application publicly behind a Cloud Load Balancing HTTP(S) load balancer.
+                                    What should you do?
+                                 </p>
+                                 <p>A. Configure a GKE Ingress resource.<br/> 
+                                    B. Configure a GKE Service resource.<br/> 
+                                    C. Configure a GKE Ingress resource with type: LoadBalancer.<br/>
+                                    D. Configure a GKE Service resource with type: LoadBalancer.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>71. Your company is planning to migrate their on-premises Hadoop environment to the cloud. Increasing storage cost and maintenance of data stored in HDFS is a major concern for your company. You also want to make minimal changes to existing data analytics jobs and existing architecture.
+                                    How should you proceed with the migration?</p>
+                                 <p>A. Migrate your data stored in Hadoop to BigQuery. Change your jobs to source their information from BigQuery instead of the on-premises Hadoop environment.<br/> 
+                                    B. Create Compute Engine instances with HDD instead of SSD to save costs. Then perform a full migration of your existing environment into the new one in Compute Engine instances.<br/> 
+                                    C. Create a Cloud Dataproc cluster on Google Cloud Platform, and then migrate your Hadoop environment to the new Cloud Dataproc cluster. Move your HDFS data into larger HDD disks to save on storage costs.<br/>
+                                    D. Create a Cloud Dataproc cluster on Google Cloud Platform, and then migrate your Hadoop code objects to the new cluster. Move your data to Cloud Storage and leverage the Cloud Dataproc connector to run jobs on that data.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>72. Your data is stored in Cloud Storage buckets. Fellow developers have reported that data downloaded from Cloud Storage is resulting in slow API performance.
+                                    You want to research the issue to provide details to the GCP support team.
+                                    Which command should you run?
+                                 </p>
+                                 <p>A. gsutil test ג€"o output.json gs://my-bucket<br/> 
+                                    B. gsutil perfdiag ג€"o output.json gs://my-bucket<br/> 
+                                    C. gcloud compute scp example-instance:~/test-data ג€"o output.json gs://my-bucket<br/>
+                                    D. gcloud services test ג€"o output.json gs://my-bucket</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>73. You are using Cloud Build build to promote a Docker image to Development, Test, and Production environments. You need to ensure that the same Docker image is deployed to each of these environments.
+                                    How should you identify the Docker image in your build?</p>
+                                 <p>A. Use the latest Docker image tag.<br/> 
+                                    B. Use a unique Docker image name.<br/> 
+                                    C. Use the digest of the Docker image.<br/>
+                                    D. Use a semantic version Docker image tag.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>74. Your company has created an application that uploads a report to a Cloud Storage bucket. When the report is uploaded to the bucket, you want to publish a message to a Cloud Pub/Sub topic. You want to implement a solution that will take a small amount to effort to implement.
+                                    What should you do?</p>
+                                 <p>A. Configure the Cloud Storage bucket to trigger Cloud Pub/Sub notifications when objects are modified.<br/> 
+                                    B. Create an App Engine application to receive the file; when it is received, publish a message to the Cloud Pub/Sub topic.<br/> 
+                                    C. Create a Cloud Function that is triggered by the Cloud Storage bucket. In the Cloud Function, publish a message to the Cloud Pub/Sub topic.<br/>
+                                    D. Create an application deployed in a Google Kubernetes Engine cluster to receive the file; when it is received, publish a message to the Cloud Pub/Sub topic.
+                                 </p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>75. Your teammate has asked you to review the code below, which is adding a credit to an account balance in Cloud Datastore.
+                                    Which improvement should you suggest your teammate make?
+                                    <img src="https://www.examtopics.com/assets/media/exam-media/04137/0005200001.png">
+
+                                 </p>
+                                 <p>A. Get the entity with an ancestor query.<br/> 
+                                    B. Get and put the entity in a transaction.<br/> 
+                                    C. Use a strongly consistent transactional database.<br/>
+                                    D. Don't return the account entity from the function.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>76. Your company stores their source code in a Cloud Source Repositories repository. Your company wants to build and test their code on each source code commit to the repository and requires a solution that is managed and has minimal operations overhead.
+                                    Which method should they use?
+                                 </p>
+                                 <p>A. Use Cloud Build with a trigger configured for each source code commit.<br/> 
+                                    B. Use Jenkins deployed via the Google Cloud Platform Marketplace, configured to watch for source code commits.<br/> 
+                                    C. Use a Compute Engine virtual machine instance with an open source continuous integration tool, configured to watch for source code commits.<br/>
+                                    D. Use a source code commit trigger to push a message to a Cloud Pub/Sub topic that triggers an App Engine service to build the source code.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>77. You are writing a Compute Engine hosted application in project A that needs to securely authenticate to a Cloud Pub/Sub topic in project B.
+                                    What should you do?</p>
+                                 <p>A. Configure the instances with a service account owned by project B. Add the service account as a Cloud Pub/Sub publisher to project A.<br/> 
+                                    B. Configure the instances with a service account owned by project A. Add the service account as a publisher on the topic.<br/> 
+                                    C. Configure Application Default Credentials to use the private key of a service account owned by project B. Add the service account as a Cloud Pub/Sub publisher to project A.<br/>
+                                    D. Configure Application Default Credentials to use the private key of a service account owned by project A. Add the service account as a publisher on the topic</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>78. You are developing a corporate tool on Compute Engine for the finance department, which needs to authenticate users and verify that they are in the finance department. All company employees use G Suite.
+                                    What should you do?</p>
+                                 <p>A. Enable Cloud Identity-Aware Proxy on the HTTP(s) load balancer and restrict access to a Google Group containing users in the finance department. Verify the provided JSON Web Token within the application.<br/> 
+                                    B. Enable Cloud Identity-Aware Proxy on the HTTP(s) load balancer and restrict access to a Google Group containing users in the finance department. Issue client-side certificates to everybody in the finance team and verify the certificates in the application.<br/> 
+                                    C. Configure Cloud Armor Security Policies to restrict access to only corporate IP address ranges. Verify the provided JSON Web Token within the application.<br/>
+                                    D. Configure Cloud Armor Security Policies to restrict access to only corporate IP address ranges. Issue client side certificates to everybody in the finance team and verify the certificates in the application.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>79. Your API backend is running on multiple cloud providers. You want to generate reports for the network latency of your API.
+                                    Which two steps should you take? (Choose two.)</p>
+                                 <p>A. Use Zipkin collector to gather data.<br/> 
+                                    B. Use Fluentd agent to gather data.<br/> 
+                                    C. Use Stackdriver Trace to generate reports.<br/>
+                                    D. Use Stackdriver Debugger to generate report.<br/>
+                                    E. Use Stackdriver Profiler to generate report.
+                                 </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AC</div>
@@ -87,300 +463,55 @@
                                </div>
 
                                <div class="entry-content">
-											<p>3. You are planning to migrate a MySQL database to the managed Cloud SQL database for Google Cloud. You have Compute Engine virtual machine instances that will connect with this Cloud SQL instance. You do not want to whitelist IPs for the Compute Engine instances to be able to access Cloud SQL.
-                                    What should you do?</p>
-                                 <p>A. Enable private IP for the Cloud SQL instance.<br/> 
-                                    B. Whitelist a project to access Cloud SQL, and add Compute Engine instances in the whitelisted project.<br/> 
-                                    C. Create a role in Cloud SQL that allows access to the database from external instances, and assign the Compute Engine instances to that role.<br/>
-                                    D. Create a CloudSQL instance on one project. Create Compute engine instances in a different project. Create a VPN between these two projects to allow internal access to CloudSQL.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>4. You have deployed an HTTP(s) Load Balancer with the gcloud commands shown below.
-                                    <img src="https://www.examtopics.com/assets/media/exam-media/04137/0000300001.jpg">
-                                    Health checks to port 80 on the Compute Engine virtual machine instance are failing and no traffic is sent to your instances. You want to resolve the problem.
-Which commands should you run?
+											<p>80. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    Which database should HipLocal use for storing user activity?
                                  </p>
-                                 <p>A. gcloud compute instances add-access-config ${NAME}-backend-instance-1<br/> 
-                                    B. gcloud compute instances add-tags ${NAME}-backend-instance-1 --tags http-server<br/> 
-                                    C. gcloud compute firewall-rules create allow-lb --network load-balancer --allow tcp --source-ranges 130.211.0.0/22,35.191.0.0/16 --direction INGRESS<br/>
-                                    D. gcloud compute firewall-rules create allow-lb --network load-balancer --allow tcp --destination-ranges 130.211.0.0/22,35.191.0.0/16 --direction EGRESS</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>5. Your website is deployed on Compute Engine. Your marketing team wants to test conversion rates between 3 different website designs.
-                                    Which approach should you use?</p>
-                                 <p>A. Deploy the website on App Engine and use traffic splitting.<br/> 
-                                    B. Deploy the website on App Engine as three separate services.<br/> 
-                                    C. Deploy the website on Cloud Functions as three separate functions.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>6. You need to copy directory local-scripts and all of its contents from your local workstation to a Compute Engine virtual machine instance.
-                                    Which command should you use?</p>
-                                 <p>A. gsutil cp --project ג€my-gcp-projectג€ -r ~/local-scripts/ gcp-instance-name:~/server-scripts/ --zone ג€us-east1-bג€<br/> 
-                                    B. gsutil cp --project ג€my-gcp-projectג€ -R ~/local-scripts/ gcp-instance-name:~/server-scripts/ --zone ג€us-east1-bג€<br/> 
-                                    C. gcloud compute scp --project ג€my-gcp-projectג€ --recurse ~/local-scripts/ gcp-instance-name:~/server-scripts/ --zone ג€us-east1-bג€<br/>
-                                    D. gcloud compute mv --project ג€my-gcp-projectג€ --recurse ~/local-scripts/ gcp-instance-name:~/server-scripts/ --zone ג€us-east1-bג€</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>7. You are deploying your application to a Compute Engine virtual machine instance with the Stackdriver Monitoring Agent installed. Your application is a unix process on the instance. You want to be alerted if the unix process has not run for at least 5 minutes. You are not able to change the application to generate metrics or logs.
-                                    Which alert condition should you configure?
-                                    </p>
-                                 <p>A. Uptime check<br/> 
-                                    B. Process health<br/> 
-                                    C. Metric absence<br/>
-                                    D. Metric threshold</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>8. You have two tables in an ANSI-SQL compliant database with identical columns that you need to quickly combine into a single table, removing duplicate rows from the result set.
-                                    What should you do?</p>
-                                 <p>A. Use the JOIN operator in SQL to combine the tables.<br/> 
-                                    B. Use nested WITH statements to combine the tables.<br/> 
-                                    C. Use the UNION operator in SQL to combine the tables.<br/>
-                                    D. Use the UNION ALL operator in SQL to combine the tables.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>9. You have an application deployed in production. When a new version is deployed, some issues don't arise until the application receives traffic from users in production. You want to reduce both the impact and the number of users affected.
-                                    Which deployment strategy should you use?</p>
-                                 <p>A. Blue/green deployment<br/> 
-                                    B. Canary deployment<br/> 
-                                    C. ERolling deployment<br/>
-                                    D. Recreate deployment</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>10. Your company wants to expand their users outside the United States for their popular application. The company wants to ensure 99.999% availability of the database for their application and also wants to minimize the read latency for their users across the globe.
-                                    Which two actions should they take? (Choose two.)</p>
-                                 <p>A. Create a multi-regional Cloud Spanner instance with "nam-asia-eur1" configuration.<br/> 
-                                    B. Create a multi-regional Cloud Spanner instance with "nam3" configuration.<br/> 
-                                    C. Create a cluster with at least 3 Spanner nodes.<br/>
-                                    D. Create a cluster with at least 1 Spanner node.<br/>
-                                    E. Create a minimum of two Cloud Spanner instances in separate regions with at least one node.<br/>
-                                    F. Create a Cloud Dataflow pipeline to replicate data across different databases.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: BF</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>11. Your customer is moving an existing corporate application to Google Cloud Platform from an on-premises data center. The business owners require minimal user disruption. There are strict security team requirements for storing passwords.
-                                    What authentication strategy should they use?</p>
-                                 <p>A. Use G Suite Password Sync to replicate passwords into Google<br/> 
-                                    B. Federate authentication via SAML 2.0 to the existing Identity Provider<br/> 
-                                    C. Provision users in Google using the Google Cloud Directory Sync tool<br/>
-                                    D. Ask users to set their Google password to match their corporate password</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>12. Your company has successfully migrated to the cloud and wants to analyze their data stream to optimize operations. They do not have any existing code for this analysis, so they are exploring all their options. These options include a mix of batch and stream processing, as they are running some hourly jobs and live- processing some data as it comes in.
-                                    Which technology should they use for this?</p>
-                                 <p>A. Google Cloud Dataproc<br/> 
-                                    B. Google Cloud Dataflow<br/> 
-                                    C. Google Container Engine with Bigtable<br/>
-                                    D. Google Compute Engine with Google BigQuery</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>13. Your customer is receiving reports that their recently updated Google App Engine application is taking approximately 30 seconds to load for some of their users.
-                                    This behavior was not reported before the update.
-                                    What strategy should you take?</p>
-                                 <p>A. Work with your ISP to diagnose the problem<br/> 
-                                    B. Run your script on a new virtual machine with the BigQuery access scope enabled<br/> 
-                                    C. Roll back to an earlier known good release initially, then use Stackdriver Trace and Logging to diagnose the problem in a development/test/staging environment<br/>
-                                    D. Roll back to an earlier known good release, then push the release again at a quieter period to investigate. Then use Stackdriver Trace and Logging to diagnose the problem</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>14.A production database virtual machine on Google Compute Engine has an ext4-formatted persistent disk for data files. The database is about to run out of storage space.
-                                    How can you remediate the problem with the least amount of downtime?</p>
-                                 <p>A. In the Cloud Platform Console, increase the size of the persistent disk and use the resize2fs command in Linux.<br/> 
-                                    B. Shut down the virtual machine, use the Cloud Platform Console to increase the persistent disk size, then restart the virtual machine<br/> 
-                                    C. In the Cloud Platform Console, increase the size of the persistent disk and verify the new space is ready to use with the fdisk command in Linux<br/>
-                                    D. In the Cloud Platform Console, create a new persistent disk attached to the virtual machine, format and mount it, and configure the database service to move the files to the new disk<br/>
-                                    E. In the Cloud Platform Console, create a snapshot of the persistent disk restore the snapshot to a new larger disk, unmount the old disk, mount the new disk and restart the database service</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>15. Your application needs to process credit card transactions. You want the smallest scope of Payment Card Industry (PCI) compliance without compromising the ability to analyze transactional data and trends relating to which payment methods are used.
-                                    How should you design your  Developerure?</p>
-                                 <p>A. Create a tokenizer service and store only tokenized data<br/> 
-                                    B. Create separate projects that only process credit card data<br/> 
-                                    C. Create separate subnetworks and isolate the components that process credit card data<br/>
-                                    D. Streamline the audit discovery phase by labeling all of the virtual machines (VMs) that process PCI data<br/>
-                                    E. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>16. You have been asked to select the storage system for the click-data of your companyג€™s large portfolio of websites. This data is streamed in from a custom website analytics package at a typical rate of 6,000 clicks per minute. With bursts of up to 8,500 clicks per second. It must have been stored for future analysis by your data science and user experience teams.
-                                    Which storage infrastructure should you choose?</p>
-                                 <p>A. Google Cloud SQL<br/> 
-                                    B. Google Cloud Bigtable<br/> 
-                                    C. Google Cloud Storage<br/>
-                                    D. Google Cloud Datastore</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>17. You are creating a solution to remove backup files older than 90 days from your backup Cloud Storage bucket. You want to optimize ongoing Cloud Storage spend.
-                                    What should you do?</p>
-                                 <p>A. Write a lifecycle management rule in XML and push it to the bucket with gsutil<br/> 
-                                    B. Write a lifecycle management rule in JSON and push it to the bucket with gsutil<br/> 
-                                    C. Schedule a cron script using gsutil ls ג€"lr gs://backups/** to find and remove items older than 90 days<br/>
-                                    D. Schedule a cron script using gsutil ls ג€"l gs://backups/** to find and remove items older than 90 days and schedule it with cron</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>18. Your company is forecasting a sharp increase in the number and size of Apache Spark and Hadoop jobs being run on your local datacenter. You want to utilize the cloud to help you scale this upcoming demand with the least amount of operations work and code change.
-                                    Which product should you use?</p>
-                                 <p>A. Google Cloud Dataflow<br/> 
-                                    B. Google Cloud Dataproc<br/> 
-                                    C. Google Compute Engine<br/>
-                                    D. Google Kubernetes Engine</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>19. The database administration team has asked you to help them improve the performance of their new database server running on Google Compute Engine. The database is for importing and normalizing their performance statistics and is built with MySQL running on Debian Linux. They have an n1-standard-8 virtual machine with 80 GB of SSD persistent disk.
-                                    What should they change to get better performance from this system?</p>
-                                 <p>A. Increase the virtual machineג€™s memory to 64 GB<br/> 
-                                    B. Create a new virtual machine running PostgreSQL<br/> 
-                                    C. Dynamically resize the SSD persistent disk to 500 GB<br/>
-                                    D. Migrate their performance metrics warehouse to BigQuery<br/>
-                                    E. Modify all of their batch jobs to use bulk inserts into the database</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>20. You want to optimize the performance of an accurate, real-time, weather-charting application. The data comes from 50,000 sensors sending 10 readings a second, in the format of a timestamp and sensor reading.
-                                    Where should you store the data?</p>
-                                 <p>A. Google BigQuery<br/> 
-                                    B. Google Cloud SQL<br/> 
-                                    C. Google Cloud Bigtable<br/>
-                                    D. Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>21. Your companyג€™s user-feedback portal comprises a standard LAMP stack replicated across two zones. It is deployed in the us-central1 region and uses autoscaled managed instance groups on all layers, except the database. Currently, only a small group of select customers have access to the portal. The portal meets a
-                                    99,99% availability SLA under these conditions. However next quarter, your company will be making the portal available to all users, including unauthenticated users. You need to develop a resiliency testing strategy to ensure the system maintains the SLA once they introduce additional user load.
-                                    What should you do?</p>
-                                 <p>A. Capture existing users input, and replay captured user load until autoscale is triggered on all layers. At the same time, terminate all resources in one of the zones<br/> 
-                                    B. Create synthetic random user input, replay synthetic load until autoscale logic is triggered on at least one layer, and introduce ג€chaosג€ to the system by terminating random resources on both zones<br/> 
-                                    C. Expose the new system to a larger group of users, and increase group size each day until autoscale logic is triggered on all layers. At the same time, terminate random resources on both zones<br/>
-                                    D. Capture existing users input, and replay captured user load until resource utilization crosses 80%. Also, derive estimated number of users based on existing userג€™s usage of the app, and deploy enough resources to handle 200% of expected load</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>22. One of the developers on your team deployed their application in Google Container Engine with the Dockerfile below. They report that their application deployments are taking too long.
-                                    <img src="https://www.examtopics.com/assets/media/exam-media/04136/0008300001.png"><br/>
-                                    You want to optimize this Dockerfile for faster deployment times without adversely affecting the appג€™s functionality. Which two actions should you take? (Choose two.)
-                                 </p>
-                                 <p>A. Remove Python after running pip<br/> 
-                                    B. Remove dependencies from requirements.txt<br/> 
-                                    C. Use a slimmed-down base image like Alpine Linux<br/>
-                                    D. Use larger machine types for your Google Container Engine node pools<br/>
-                                    E. Copy the source after he package dependencies (Python and pip) are installed</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: CE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>23. Your solution is producing performance bugs in production that you did not see in staging and test environments. You want to adjust your test and deployment procedures to avoid this problem in the future.
-                                    What should you do?</p>
-                                 <p>A. Deploy fewer changes to production<br/> 
-                                    B. Deploy smaller changes to production<br/> 
-                                    C. Increase the load on your test and staging environments<br/>
-                                    D. Deploy changes to a small subset of users before rolling out to production</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>24. A small number of API requests to your microservices-based application take a very long time. You know that each request to the API can traverse many services.
-                                    You want to know which service takes the longest in those cases.
-                                    What should you do?</p>
-                                 <p>A. Set timeouts on your application so that you can fail requests faster<br/> 
-                                    B. Send custom metrics for each of your requests to Stackdriver Monitoring<br/> 
-                                    C. Use Stackdriver Monitoring to look for insights that show when your API latencies are high<br/>
-                                    D. Instrument your application with Stackdriver Trace in order to break down the request latencies at each microservice
-                                 </p>
+                                 <p>A. BigQuery<br/> 
+                                    B. Cloud SQL<br/> 
+                                    C. Cloud Spanner<br/>
+                                    D. Cloud Datastore</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
@@ -388,259 +519,198 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>25. During a high traffic portion of the day, one of your relational databases crashes, but the replica is never promoted to a master. You want to avoid this in the future.
-                                    What should you do?</p>
-                                 <p>A. Use a different database<br/> 
-                                    B. Choose larger instances for your database<br/> 
-                                    C. Create snapshots of your database more regularly<br/>
-                                    D. Implement routinely scheduled failovers of your databases</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>26. Your organization requires that metrics from all applications be retained for 5 years for future analysis in possible legal proceedings.
-                                    Which approach should you use?</p>
-                                 <p>A. Grant the security team access to the logs in each Project<br/> 
-                                    B. Configure Stackdriver Monitoring for all Projects, and export to BigQuery<br/> 
-                                    C. Configure Stackdriver Monitoring for all Projects with the default retention policies<br/>
-                                    D. Configure Stackdriver Monitoring for all Projects, and export to Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>27. Your company has decided to build a backup replica of their on-premises user authentication PostgreSQL database on Google Cloud Platform. The database is 4
-                                    TB, and large updates are frequent. Replication requires private address space communication.
-                                    Which networking approach should you use?</p>
-                                 <p>A. Google Cloud Dedicated Interconnect<br/> 
-                                    B. Google Cloud VPN connected to the data center network<br/> 
-                                    C. A NAT and TLS translation gateway installed on-premises<br/>
-                                    D.A Google Compute Engine instance with a VPN server installed connected to the data center network</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: DA/div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>28. Auditors visit your teams every 12 months and ask to review all the Google Cloud Identity and Access Management (Cloud IAM) policy changes in the previous 12 months. You want to streamline and expedite the analysis and audit process.
-                                    What should you do?</p>
-                                 <p>A. Create custom Google Stackdriver alerts and send them to the auditor<br/> 
-                                    B. Enable Logging export to Google BigQuery and use ACLs and views to scope the data shared with the auditor<br/> 
-                                    C. Use cloud functions to transfer log entries to Google Cloud SQL and use ACLs and views to limit an auditorג€™s view<br/>
-                                    D. Enable Google Cloud Storage (GCS) log export to audit logs into a GCS bucket and delegate access to the bucket</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>29. You are designing a large distributed application with 30 microservices. Each of your distributed microservices needs to connect to a database back-end. You want to store the credentials securely.
-                                    Where should you store the credentials?</p>
-                                 <p>A. In the source code<br/> 
-                                    B. In an environment variable<br/> 
-                                    C. In a secret management system<br/>
-                                    D. In a config file that has restricted access through ACLs</p>
+											<p>81. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    HipLocal is configuring their access controls.
+                                    Which firewall configuration should they implement?
+                                 </p>
+                                 <p>A. Block all traffic on port 443.<br/> 
+                                    B. Allow all traffic into the network.<br/> 
+                                    C. Allow traffic on port 443 for a specific tag.<br/>
+                                    D. Allow all traffic on port 443 into the network.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>30. During a high traffic portion of the day, one of your relational databases crashes, but the replica is never promoted to a master. You want to avoid this in the future.
-                                    What should you do?</p>
-                                 <p>A. Cloud Deployment Manager uses Python<br/> 
-                                    B. Cloud Deployment Manager APIs could be deprecated in the future<br/> 
-                                    C. Cloud Deployment Manager is unfamiliar to the companyג€™s engineers<br/>
-                                    D. Cloud Deployment Manager requires a Google APIs service account to run<br/>
-                                    E. Cloud Deployment Manager can be used to permanently delete cloud resources<br/>
-                                    F. Cloud Deployment Manager only supports automation of Google Cloud resources</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: CF</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>31. A development manager is building a new application. He asks you to review his requirements and identify what cloud technologies he can use to meet them. The application must:
-                                    1. Be based on open-source technology for cloud portability
-                                    2. Dynamically scale compute capacity based on demand
-                                    3. Support continuous software delivery
-                                    4. Run multiple segregated copies of the same application stack
-                                    5. Deploy application bundles using dynamic templates
-                                    6. Route network traffic to specific services based on URL
-                                    Which combination of technologies will meet all of his requirements?</p>
-                                 <p>A. Google Kubernetes Engine, Jenkins, and Helm<br/> 
-                                    B. Google Kubernetes Engine and Cloud Load Balancing<br/> 
-                                    C. Google Kubernetes Engine and Cloud Deployment Manager<br/>
-                                    D. Google Kubernetes Engine, Jenkins, and Cloud Load Balancing</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
                                
                                <div class="entry-content">
-											<p>32. You have created several pre-emptible Linux virtual machine instances using Google Compute Engine. You want to properly shut down your application before the virtual machines are preempted.
-                                    What should you do?</p>
-                                 <p>A. Create a shutdown script named k99.shutdown in the /etc/rc.6.d/ directory<br/> 
-                                    B. Create a shutdown script registered as a xinetd service in Linux and configure a Stackdriver endpoint check to call the service<br/> 
-                                    C. Create a shutdown script and use it as the value for a new metadata entry with the key shutdown-script in the Cloud Platform Console when you create the new virtual machine instance<br/>
-                                    D. Create a shutdown script, registered as a xinetd service in Linux, and use the gcloud compute instances add-metadata command to specify the service URL as the value for a new metadata entry with the key shutdown-script-url</p>
+											<p>82. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    HipLocal's data science team wants to analyze user reviews.
+                                    How should they prepare the data?
+                                 </p>
+                                 <p>A. Use the Cloud Data Loss Prevention API for redaction of the review dataset.<br/> 
+                                    B. Use the Cloud Data Loss Prevention API for de-identification of the review dataset.<br/> 
+                                    C. Use the Cloud Natural Language Processing API for redaction of the review dataset.<br/>
+                                    D. Use the Cloud Natural Language Processing API for de-identification of the review dataset.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>33. Your organization has a 3-tier web application deployed in the same network on Google Cloud Platform. Each tier (web, API, and database) scales independently of the others. Network traffic should flow through the web to the API tier and then on to the database tier. Traffic should not flow between the web and the database tier.
-                                    How should you configure the network?</p>
-                                 <p>A. Add each tier to a different subnetwork<br/> 
-                                    B. Set up software based firewalls on individual VMs<br/> 
-                                    C. Add tags to each tier and set up routes to allow the desired traffic flow<br/>
-                                    D. Add tags to each tier and set up firewall rules to allow the desired traffic flow</p>
+											<p>83. Case study -
+                                    This is a case study. Case studies are not timed separately. You can use as much exam time as you would like to complete each case. However, there may be additional case studies and sections on this exam. You must manage your time to ensure that you are able to complete all questions included on this exam in the time provided.
+                                    To answer the questions included in a case study, you will need to reference information that is provided in the case study. Case studies might contain exhibits and other resources that provide more information about the scenario that is described in the case study. Each question is independent of the other questions in this case study.
+                                    At the end of this case study, a review screen will appear. This screen allows you to review your answers and to make changes before you move to the next section of the exam. After you begin a new section, you cannot return to this section.
+                                    
+                                    To start the case study -
+                                    To display the first question in this case study, click the Next button. Use the buttons in the left pane to explore the content of the case study before you answer the questions. Clicking these buttons displays information such as business requirements, existing environment, and problem statements. If the case study has an
+                                    All Information tab, note that the information displayed is identical to the information displayed on the subsequent tabs. When you are ready to answer a question, click the Question button to return to the question.
+                                    
+                                    Company Overview -
+                                    HipLocal is a community application designed to facilitate communication between people in close proximity. It is used for event planning and organizing sporting events, and for businesses to connect with their local communities. HipLocal launched recently in a few neighborhoods in Dallas and is rapidly growing into a global phenomenon. Its unique style of hyper-local community communication and business outreach is in demand around the world.
+                                    
+                                    Executive Statement -
+                                    We are the number one local community app; it's time to take our local community services global. Our venture capital investors want to see rapid growth and the same great experience for new local and virtual communities that come online, whether their members are 10 or 10000 miles away from each other.
+                                    
+                                    Solution Concept -
+                                    HipLocal wants to expand their existing service, with updated functionality, in new regions to better serve their global customers. They want to hire and train a new team to support these regions in their time zones. They will need to ensure that the application scales smoothly and provides clear uptime data.
+                                    
+                                    Existing Technical Environment -
+                                    HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
+                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                    ג€¢ State is stored in a single instance MySQL database in GCP.
+                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
+                                    ג€¢ The application has no logging.
+                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                    
+                                    Business Requirements -
+                                    HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
+                                    ג€¢ Expand availability of the application to new regions.
+                                    ג€¢ Increase the number of concurrent users that can be supported.
+                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
+                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
+                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
+                                    ג€¢ Reduce infrastructure management time and cost.
+                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                    
+                                    Technical Requirements -
+                                    ג€¢ The application and backend must provide usage metrics and monitoring.
+                                    ג€¢ APIs require strong authentication and authorization.
+                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
+                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
+                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    In order for HipLocal to store application state and meet their stated business requirements, which database service should they migrate to?
+                                 </p>
+                                 <p>A. Cloud Spanner<br/> 
+                                    B. Cloud Datastore<br/> 
+                                    C. Cloud Memorystore as a cache<br/>
+                                    D. Separate Cloud SQL clusters for each region</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>34. Your development team has installed a new Linux kernel module on the batch servers in Google Compute Engine (GCE) virtual machines (VMs) to speed up the nightly batch process. Two days after the installation, 50% of the batch servers failed the nightly batch run. You want to collect details on the failure to pass back to the development team.
-                                    Which three actions should you take? (Choose three.)</p>
-                                 <p>A. Use Stackdriver Logging to search for the module log entries<br/> 
-                                    B. Read the debug GCE Activity log using the API or Cloud Console<br/> 
-                                    C. Use gcloud or Cloud Console to connect to the serial console and observe the logs<br/>
-                                    D. Identify whether a live migration event of the failed server occurred, using in the activity log<br/>
-                                    E. Adjust the Google Stackdriver timeline to match the failure time, and observe the batch server metrics<br/>
-                                    F. Export a debug VM into an image, and run the image on a local server where kernel log messages will be displayed on the native screen</p>
+											<p>84. You have an application deployed in production. When a new version is deployed, you want to ensure that all production traffic is routed to the new version of your application. You also want to keep the previous version deployed so that you can revert to it if there is an issue with the new version.
+                                    Which deployment strategy should you use?
+                                 </p>
+                                 <p>A. Blue/green deployment<br/> 
+                                    B. Canary deployment<br/> 
+                                    C. Rolling deployment<br/>
+                                    D. Recreate deployment</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: ACF</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>35. Your company wants to try out the cloud with low risk. They want to archive approximately 100 TB of their log data to the cloud and test the analytics features available to them there, while also retaining that data as a long-term disaster recovery backup.
-                                    Which two steps should you take? (Choose two.)</p>
-                                 <p>A. Load logs into Google BigQuery<br/> 
-                                    B. Load logs into Google Cloud SQL<br/> 
-                                    C. Import logs into Google Stackdriver<br/>
-                                    D. Insert logs into Google Cloud Bigtable<br/>
-                                    E. Upload log files into Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>35. Your company wants to try out the cloud with low risk. They want to archive approximately 100 TB of their log data to the cloud and test the analytics features available to them there, while also retaining that data as a long-term disaster recovery backup.
-                                    Which two steps should you take? (Choose two.)</p>
-                                 <p>A. Load logs into Google BigQuery<br/> 
-                                    B. Load logs into Google Cloud SQL<br/> 
-                                    C. Import logs into Google Stackdriver<br/>
-                                    D. Insert logs into Google Cloud Bigtable<br/>
-                                    E. Upload log files into Google Cloud Storage</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AE</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>36. You created a pipeline that can deploy your source code changes to your infrastructure in instance groups for self-healing. One of the changes negatively affects your key performance indicator. You are not sure how to fix it, and investigation could take up to a week.
-                                    What should you do?</p>
-                                 <p>A. Log in to a server, and iterate on the fox locally<br/> 
-                                    B. Log into the servers with the bad code change, and swap in the previous code<br/> 
-                                    C. Change the instance group template to the previous one, and delete all instances</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>37. Your organization wants to control IAM policies for different departments independently, but centrally.
-                                    Which approach should you take?</p>
-                                 <p>A. Multiple Organizations with multiple Folders<br/> 
-                                    B. Multiple Organizations, one for each department<br/> 
-                                    C. A single Organization with Folders for each department<br/>
-                                    D. A single Organization with multiple projects, each with a central owner</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>38. You deploy your custom Java application to Google App Engine. It fails to deploy and gives you the following stack trace.
+											<p>85. You are porting an existing Apache/MySQL/PHP application stack from a single machine to Google
+                                    Kubernetes Engine. You need to determine how to containerize the application. Your approach should follow Google-recommended best practices for availability.
                                     What should you do?
-                                 <img src="https://www.examtopics.com/assets/media/exam-media/04136/0009300001.png"></p>
-                                 <p>A. Upload missing JAR files and redeploy your application.<br/> 
-                                    B. Digitally sign all of your JAR files and redeploy your application<br/> 
-                                    C. Recompile the CLoakedServlet class using and MD5 hash instead of SHA1</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>39. You are designing a mobile chat application. You want to ensure people cannot spoof chat messages, by providing a message were sent by a specific user.
-                                    What should you do?</p>
-                                 <p>A. Tag messages client side with the originating user identifier and the destination user.<br/> 
-                                    B. Encrypt the message client side using block-based encryption with a shared key.<br/> 
-                                    C. Use public key infrastructure (PKI) to encrypt the message client side using the originating user's private key.<br/> 
-                                    D. Use a trusted certificate authority to enable SSL connectivity between the client application and the server.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>40. As part of implementing their disaster recovery plan, your company is trying to replicate their production MySQL database from their private data center to their
-                                    GCP project using a Google Cloud VPN connection. They are experiencing latency issues and a small amount of packet loss that is disrupting the replication.
-                                    What should they do?</p>
-                                 <p>A. Configure their replication to use UDP.<br/> 
-                                    B. Configure a Google Cloud Dedicated Interconnect.<br/> 
-                                    C. Restore their database daily using Google Cloud SQL.<br/>
-                                    D. Add additional VPN connections and load balance them.<br/>
-                                    E. Send the replicated transaction to Google Cloud Pub/Sub.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>41. Your customer support tool logs all email and chat conversations to Cloud Bigtable for retention and analysis. 
-                                    What is the recommended approach for sanitizing this data of personally identifiable information or payment card information before initial storage?</p>
-                                 <p>A. Hash all data using SHA256<br/> 
-                                    B. Encrypt all data using elliptic curve cryptography<br/> 
-                                    C. De-identify the data with the Cloud Data Loss Prevention API<br/>
-                                    D. Use regular expressions to find and redact phone numbers, email addresses, and credit card numbers</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>42. You are using Cloud Shell and need to install a custom utility for use in a few weeks. Where can you store the file so it is in the default execution path and persists across sessions?</p>
-                                 <p>A. ~/bin<br/> 
-                                    B. Cloud Storage<br/> 
-                                    C. /google/scripts<br/>
-                                    D. /usr/local/bin</p>
+                                 </p>
+                                 <p>A. Package each component in a separate container. Implement readiness and liveness probes.<br/> 
+                                    B. Package the application in a single container. Use a process management tool to manage each component.<br/> 
+                                    C. Package each component in a separate container. Use a script to orchestrate the launch of the components.<br/>
+                                    D. Package the application in a single container. Use a bash script as an entrypoint to the container, and then spawn each component as a background job.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
@@ -648,24 +718,13 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>43. You want to create a private connection between your instances on Compute Engine and your on-premises data center. You require a connection of at least 20
-                                    Gbps. You want to follow Google-recommended practices. How should you set up the connection?</p>
-                                 <p>A. Create a VPC and connect it to your on-premises data center using Dedicated Interconnect.<br/> 
-                                    B. Create a VPC and connect it to your on-premises data center using a single Cloud VPN.<br/> 
-                                    C. Create a Cloud Content Delivery Network (Cloud CDN) and connect it to your on-premises datacenter using a single Cloud VPN.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>44. You are analyzing and defining business processes to support your startupג€™s trial usage of GCP, and you donג€™t yet know what consumer demand for your product will be.
-                                     Your manager requires you to minimize GCP service costs and adhere to Google best practices. What should you do?</p>
-                                 <p>A. Utilize free tier and sustained use discounts. Provision a staff position for service cost management.<br/> 
-                                    B. Utilize free tier and sustained use discounts. Provide training to the team about service cost management.<br/> 
-                                    C. Utilize free tier and committed use discounts. Provision a staff position for service cost management.<br/>
-                                    D. Utilize free tier and committed use discounts. Provide training to the team about service cost management.</p>
+											<p>86. You are developing an application that will be launched on Compute Engine instances into multiple distinct projects, each corresponding to the environments in your software development process (development, QA, staging, and production). The instances in each project have the same application code but a different configuration. During deployment, each instance should receive the application's configuration based on the environment it serves. You want to minimize the number of steps to configure this flow. What should you do?
+                                 </p>
+                                 <p>A. When creating your instances, configure a startup script using the gcloud command to determine the project name that indicates the correct environment.<br/> 
+                                    B. In each project, configure a metadata key ג€environmentג€ whose value is the environment it serves. Use your deployment tool to query the instance metadata and configure the application based on the ג€environmentג€ value.<br/> 
+                                    C. Deploy your chosen deployment tool on an instance in each project. Use a deployment job to retrieve the appropriate configuration file from your version control system, and apply the configuration when deploying the application on each instance.<br/>
+                                    D. During each instance launch, configure an instance custom-metadata key named ג€environmentג€ whose value is the environment the instance serves. Use your deployment tool to query the instance metadata, and configure the application based on the ג€environmentג€ value.
+                                 </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -673,12 +732,27 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>45. You are building a continuous deployment pipeline for a project stored in a Git source repository and want to ensure that code changes can be verified before deploying to production.
-                                     What should you do?</p>
-                                 <p>A. Use Spinnaker to deploy builds to production using the red/black deployment strategy so that changes can easily be rolled back.<br/> 
-                                    B. Use Spinnaker to deploy builds to production and run tests on production deployments.<br/> 
-                                    C. Use Jenkins to build the staging branches and the master branch. Build and deploy changes to production for 10% of users before doing a complete rollout.<br/>
-                                    D. Use Jenkins to monitor tags in the repository. Deploy staging tags to a staging environment for testing. After testing, tag the repository for production and deploy that to the production environment.</p>
+											<p>87. You are developing an ecommerce application that stores customer, order, and inventory data as relational tables inside Cloud Spanner. During a recent load test,
+                                     you discover that Spanner performance is not scaling linearly as expected. Which of the following is the cause?</p>
+                                 <p>A. The use of 64-bit numeric types for 32-bit numbers.<br/> 
+                                    B. The use of the STRING data type for arbitrary-precision values.<br/> 
+                                    C. The use of Version 1 UUIDs as primary keys that increase monotonically.<br/>
+                                    D. The use of LIKE instead of STARTS_WITH keyword for parameterized SQL queries.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>88. You are developing an application that reads credit card data from a Pub/Sub subscription. You have written code and completed unit testing. You need to test the
+                                    Pub/Sub integration before deploying to Google Cloud. What should you do?                                    
+                                 </p>
+                                 <p>A. Create a service to publish messages, and deploy the Pub/Sub emulator. Generate random content in the publishing service, and publish to the emulator.<br/> 
+                                    B. Create a service to publish messages to your application. Collect the messages from Pub/Sub in production, and replay them through the publishing service.<br/> 
+                                    C. Create a service to publish messages, and deploy the Pub/Sub emulator. Collect the messages from Pub/Sub in production, and publish them to the emulator.<br/>
+                                    D. Create a service to publish messages, and deploy the Pub/Sub emulator. Publish a standard set of testing messages from the publishing service to the emulator.
+                                 </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
@@ -686,12 +760,12 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>46. You have an outage in your Compute Engine managed instance group: all instances keep restarting after 5 seconds. You have a health check configured, but autoscaling is disabled. 
-                                    Your colleague, who is a Linux expert, offered to look into the issue. You need to make sure that he can access the VMs. What should you do?</p>
-                                 <p>A. Grant your colleague the IAM role of project Viewer<br/> 
-                                    B. Perform a rolling restart on the instance group<br/> 
-                                    C. Disable the health check for the instance group. Add his SSH key to the project-wide SSH Keys<br/>
-                                    D. Disable autoscaling for the instance group. Add his SSH key to the project-wide SSH Keys</p>
+											<p>89. You are designing an application that will subscribe to and receive messages from a single Pub/Sub topic and insert corresponding rows into a database. Your application runs on Linux and leverages preemptible virtual machines to reduce costs. You need to create a shutdown script that will initiate a graceful shutdown.
+                                    What should you do?</p>
+                                 <p>A. Write a shutdown script that uses inter-process signals to notify the application process to disconnect from the database.<br/> 
+                                    B. Write a shutdown script that broadcasts a message to all signed-in users that the Compute Engine instance is going down and instructs them to save current work and sign out.<br/> 
+                                    C. Write a shutdown script that writes a file in a location that is being polled by the application once every five minutes. After the file is read, the application disconnects from the database.<br/> 
+                                    D. Write a shutdown script that publishes a message to the Pub/Sub topic announcing that a shutdown is in progress. After the application reads the message, it disconnects from the database.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
@@ -699,12 +773,13 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>47. Your company is migrating its on-premises data center into the cloud. As part of the migration, you want to integrate Google Kubernetes Engine (GKE) for workload orchestration. 
-                                    Parts of your  Developerure must also be PCI DSS-compliant. Which of the following is most accurate?</p>
-                                 <p>A. App Engine is the only compute platform on GCP that is certified for PCI DSS hosting.<br/> 
-                                    B. GKE cannot be used under PCI DSS because it is considered shared hosting.<br/> 
-                                    C. GKE and GCP provide the tools you need to build a PCI DSS-compliant environment.<br/>
-                                    D. All Google Cloud services are usable because Google Cloud Platform is certified PCI-compliant.</p>
+											<p>90. You work for a web development team at a small startup. Your team is developing a Node.js application using Google Cloud services, including Cloud Storage and Cloud Build. The team uses a Git repository for version control. Your manager calls you over the weekend and instructs you to make an emergency update to one of the company's websites, and you're the only developer available. You need to access Google Cloud to make the update, but you don't have your work laptop. You are not allowed to store source code locally on a non-corporate computer. How should you set up your developer environment?
+                                  </p>
+                                 <p>A. Use a text editor and the Git command line to send your source code updates as pull requests from a public computer.<br/> 
+                                    B. Use a text editor and the Git command line to send your source code updates as pull requests from a public computer.<br/> 
+                                    C. Use Cloud Shell and the built-in code editor for development. Send your source code updates as pull requests.<br/>
+                                    D. Use a Cloud Storage bucket to store the source code that you need to edit. Mount the bucket to a public computer as a drive, and use a code editor to update the code. Turn on versioning for the bucket, and point it to the team's Git repository.
+                                 </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
@@ -712,12 +787,96 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>48. Your company has multiple on-premises systems that serve as sources for reporting. The data has not been maintained well and has become degraded over time.
-                                    You want to use Google-recommended practices to detect anomalies in your company data. What should you do?</p>
-                                 <p>A. Upload your files into Cloud Storage. Use Cloud Datalab to explore and clean your data.<br/> 
-                                    B. Upload your files into Cloud Storage. Use Cloud Dataprep to explore and clean your data.<br/> 
-                                    C. Connect Cloud Datalab to your on-premises systems. Use Cloud Datalab to explore and clean your data.<br/>
-                                    D. Connect Cloud Dataprep to your on-premises systems. Use Cloud Dataprep to explore and clean your data.</p>
+											<p>91. Your team develops services that run on Google Kubernetes Engine. You need to standardize their log data using Google-recommended practices and make the data more useful in the fewest number of steps. What should you do? (Choose two.)
+                                 </p>
+                                 <p>A. Create aggregated exports on application logs to BigQuery to facilitate log analytics.<br/> 
+                                    B. Create aggregated exports on application logs to Cloud Storage to facilitate log analytics.<br/> 
+                                    C. Write log output to standard output (stdout) as single-line JSON to be ingested into Cloud Logging as structured logs.<br/>
+                                    D. Mandate the use of the Logging API in the application code to write structured logs to Cloud Logging.<br/>
+                                    E. Mandate the use of the Pub/Sub API to write structured data to Pub/Sub and create a Dataflow streaming pipeline to normalize logs and write them to BigQuery for analytics.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AE</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>92. You are designing a deployment technique for your new applications on Google Cloud. As part of your deployment planning, you want to use live traffic to gather performance metrics for both new and existing applications. You need to test against the full production load prior to launch. What should you do?
+                                 </p>
+                                 <p>A. Use canary deployment<br/> 
+                                    B. Use blue/green deployment<br/> 
+                                    C. Use rolling updates deployment<br/>
+                                    D. Use A/B testing with traffic mirroring during deployment</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>93. You support an application that uses the Cloud Storage API. You review the logs and discover multiple HTTP 503 Service Unavailable error responses from the
+                                    API. Your application logs the error and does not take any further action. You want to implement Google-recommended retry logic to improve success rates.
+                                    Which approach should you take?</p>
+                                 <p>A. Retry the failures in batch after a set number of failures is logged.<br/> 
+                                    B. Retry each failure at a set time interval up to a maximum number of times.<br/> 
+                                    C. Retry each failure at increasing time intervals up to a maximum number of tries.<br/>
+                                    E. Retry each failure at decreasing time intervals up to a maximum number of tries.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>94. You need to redesign the ingestion of audit events from your authentication service to allow it to handle a large increase in traffic. Currently, the audit service and the authentication system run in the same Compute Engine virtual machine. You plan to use the following Google Cloud tools in the new architecture:
+                                    ✑ Multiple Compute Engine machines, each running an instance of the authentication service
+                                    ✑ Multiple Compute Engine machines, each running an instance of the audit service
+                                    ✑ Pub/Sub to send the events from the authentication services.
+                                    How should you set up the topics and subscriptions to ensure that the system can handle a large volume of messages and can scale efficiently?</p>
+                                 <p>A. Create one Pub/Sub topic. Create one pull subscription to allow the audit services to share the messages.<br/> 
+                                    B. Create one Pub/Sub topic. Create one pull subscription per audit service instance to allow the services to share the messages.<br/> 
+                                    C. Create one Pub/Sub topic. Create one push subscription with the endpoint pointing to a load balancer in front of the audit services.<br/>
+                                    D. Create one Pub/Sub topic per authentication service. Create one pull subscription per topic to be used by one audit service.<br/>
+                                    E. Create one Pub/Sub topic per authentication service. Create one push subscription per topic, with the endpoint pointing to one audit service.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>95. You are developing a marquee stateless web application that will run on Google Cloud. The rate of the incoming user traffic is expected to be unpredictable, with no traffic on some days and large spikes on other days. You need the application to automatically scale up and down, and you need to minimize the cost associated with running the application. What should you do?
+                                 </p>
+                                 <p>A. Build the application in Python with Firestore as the database. Deploy the application to Cloud Run.<br/> 
+                                    B. Build the application in C# with Firestore as the database. Deploy the application to App Engine flexible environment.<br/> 
+                                    C. Build the application in Python with CloudSQL as the database. Deploy the application to App Engine standard environment.<br/>
+                                    D. Build the application in Python with Firestore as the database. Deploy the application to a Compute Engine managed instance group with autoscaling.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>96. You have written a Cloud Function that accesses other Google Cloud resources. You want to secure the environment using the principle of least privilege. What should you do?                                    
+                                 </p>
+                                 <p>A. Create a new service account that has Editor authority to access the resources. The deployer is given permission to get the access token.<br/> 
+                                    B. Create a new service account that has a custom IAM role to access the resources. The deployer is given permission to get the access token.<br/> 
+                                    C. Create a new service account that has Editor authority to access the resources. The deployer is given permission to act as the new service account.<br/>
+                                    D. Create a new service account that has a custom IAM role to access the resources. The deployer is given permission to act as the new service account.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>97.You are a SaaS provider deploying dedicated blogging software to customers in your Google Kubernetes Engine (GKE) cluster. You want to configure a secure multi-tenant platform to ensure that each customer has access to only their own blog and can't affect the workloads of other customers. What should you do?
+                                 </p>
+                                 <p>A. Enable Application-layer Secrets on the GKE cluster to protect the cluster.<br/> 
+                                    B. Deploy a namespace per tenant and use Network Policies in each blog deployment.<br/> 
+                                    C. Use GKE Audit Logging to identify malicious containers and delete them on discovery.<br/>
+                                    D. Build a custom image of the blogging software and use Binary Authorization to prevent untrusted image deployments.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -725,31 +884,48 @@ Which commands should you run?
                                </div>
 
                                <div class="entry-content">
-											<p>49. Google Cloud Platform resources are managed hierarchically using organization, folders, and projects. 
-                                    When Cloud Identity and Access Management (IAM) policies exist at these different levels, what is the effective policy at a particular node of the hierarchy?</p>
-                                 <p>A. The effective policy is determined only by the policy set at the node<br/> 
-                                    B. The effective policy is the policy set at the node and restricted by the policies of its ancestors<br/> 
-                                    C. The effective policy is the union of the policy set at the node and policies inherited from its ancestors<br/>
-                                    D. The effective policy is the intersection of the policy set at the node and policies inherited from its ancestors</p>
+											<p>98. You have decided to migrate your Compute Engine application to Google Kubernetes Engine. You need to build a container image and push it to Artifact Registry using Cloud Build. What should you do? (Choose two.)
+                                 </p>
+                                 <p>A. Run gcloud builds submit in the directory that contains the application source code.<br/> 
+                                    B. Run gcloud run deploy app-name --image gcr.io/$PROJECT_ID/app-name in the directory that contains the application source code.<br/> 
+                                    C. Run gcloud container images add-tag gcr.io/$PROJECT_ID/app-name gcr.io/$PROJECT_ID/app-name:latest in the directory that contains the application source code.<br/>
+                                    D. In the application source directory, create a file named cloudbuild.yaml that contains the following contents:
+                                       <img src="https://www.examtopics.com/assets/media/exam-media/04137/0006800001.png"><br/>
+                                    E. In the application source directory, create a file named cloudbuild.yaml that contains the following contents:
+                                       <img src="https://www.examtopics.com/assets/media/exam-media/04137/0006900001.png">
+                                 </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AD</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>50. You are migrating your on-premises solution to Google Cloud in several phases. You will use Cloud VPN to maintain a connection between your on-premises systems and
-                                     Google Cloud until the migration is completed. You want to make sure all your on-premise systems remain reachable during this period. How should you organize your networking in Google Cloud?</p>
-                                 <p>A. Use the same IP range on Google Cloud as you use on-premises<br/> 
-                                    B. Use the same IP range on Google Cloud as you use on-premises for your primary IP range and use a secondary range that does not overlap with the range you use on-premises<br/> 
-                                    C. Use an IP range on Google Cloud that does not overlap with the range you use on-premises<br/>
-                                    D. Use an IP range on Google Cloud that does not overlap with the range you use on-premises for your primary IP range and use a secondary range with the same IP range as you use on-premises</p>
+											<p>99. You are developing an internal application that will allow employees to organize community events within your company. You deployed your application on a single Compute Engine instance. Your company uses Google Workspace (formerly G Suite), and you need to ensure that the company employees can authenticate to the application from anywhere. What should you do?
+                                 </p>
+                                 <p>A. Add a public IP address to your instance, and restrict access to the instance using firewall rules. Allow your company's proxy as the only source IP address.<br/> 
+                                    B. Add an HTTP(S) load balancer in front of the instance, and set up Identity-Aware Proxy (IAP). Configure the IAP settings to allow your company domain to access the website.<br/> 
+                                    C. Set up a VPN tunnel between your company network and your instance's VPC location on Google Cloud. Configure the required firewall rules and routing information to both the on-premises and Google Cloud networks.<br/>
+                                    D. Add a public IP address to your instance, and allow traffic from the internet. Generate a random hash, and create a subdomain that includes this hash and points to your instance. Distribute this DNS address to your company's employees.
+                                 </p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>100. Your development team is using Cloud Build to promote a Node.js application built on App Engine from your staging environment to production. The application relies on several directories of photos stored in a Cloud Storage bucket named webphotos-staging in the staging environment. After the promotion, these photos must be available in a Cloud Storage bucket named webphotos-prod in the production environment. You want to automate the process where possible. What should you do?
+                                 </p>
+                                 <p>A. Manually copy the photos to webphotos-prod.<br/> 
+                                    B. Add a startup script in the application's app.yami file to move the photos from webphotos-staging to webphotos-prod.<br/> 
+                                    C. Add a build step in the cloudbuild.yaml file before the promotion step with the arguments: <img src="https://www.examtopics.com/assets/media/exam-media/04137/0007000001.png"><br/>
+                                    D. Add a build step in the cloudbuild.yaml file before the promotion step with the arguments: <img src="https://www.examtopics.com/assets/media/exam-media/04137/0007000002.png"></p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
                                  </div>
                                </div>
-
                                
                               </div>
                            </div>
