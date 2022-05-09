@@ -64,8 +64,8 @@
                                     Which command should you use?</p>
                                  <p>A. kubectl logs [PARAM]<br/> 
                                     B. gcloud logging read [PARAM]<br/> 
-                                    C. kubectl exec ג€"it [PARAM] journalctl<br/>
-                                    D. gcloud compute ssh [PARAM] ג€"-command= ג€sudo journalctlג€</p>
+                                    C. kubectl exec it [PARAM] journalctl<br/>
+                                    D. gcloud compute ssh [PARAM] -command= sudo journalctl</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -88,7 +88,7 @@
 
                                <div class="entry-content">
 											<p>53. You are designing a schema for a table that will be moved from MySQL to Cloud Bigtable. The MySQL table is as follows:
-                                    <img src="https://www.examtopics.com/assets/media/exam-media/04137/0004000001.png">
+                                    <img src="https://www.examtopics.com/assets/media/exam-media/04137/0004000001.png"><br/>
                                     How should you design a row key for Cloud Bigtable for this table?
                                  </p>
                                  <p>A. Set Account_id as a key.<br/> 
@@ -170,7 +170,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>59. You are working on a social media application. You plan to add a feature that allows users to upload images. These images will be 2 MB ג€" 1 GB in size. You want to minimize their infrastructure operations overhead for this feature.
+											<p>59. You are working on a social media application. You plan to add a feature that allows users to upload images. These images will be 2 MB  1 GB in size. You want to minimize their infrastructure operations overhead for this feature.
                                     What should you do?</p>
                                  <p>A. Change the application to accept images directly and store them in the database that stores other user information.<br/> 
                                     B. Change the application to create signed URLs for Cloud Storage. Transfer these signed URLs to the client application to upload images to Cloud Storage.<br/> 
@@ -183,7 +183,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>60. YYour application is built as a custom machine image. You have multiple unique deployments of the machine image. Each deployment is a separate managed instance group with its own template. Each deployment requires a unique set of configuration values. You want to provide these unique values to each deployment but use the same custom machine image in all deployments. You want to use out-of-the-box features of Compute Engine.
+											<p>60. Your application is built as a custom machine image. You have multiple unique deployments of the machine image. Each deployment is a separate managed instance group with its own template. Each deployment requires a unique set of configuration values. You want to provide these unique values to each deployment but use the same custom machine image in all deployments. You want to use out-of-the-box features of Compute Engine.
                                     What should you do?</p>
                                  <p>A. Place the unique configuration values in the persistent disk.<br/> 
                                     B. Place the unique configuration values in a Cloud Bigtable table.<br/> 
@@ -224,8 +224,8 @@
 
                                <div class="entry-content">
 											<p>63. Your company has a data warehouse that keeps your application information in BigQuery. The BigQuery data warehouse keeps 2 PBs of user data. Recently, your company expanded your user base to include EU users and needs to comply with these requirements:
-                                    ✑ Your company must be able to delete all user account information upon user request.
-                                    ✑ All EU user data must be stored in a single region specifically for EU users.
+                                     Your company must be able to delete all user account information upon user request.
+                                     All EU user data must be stored in a single region specifically for EU users.
                                     Which two actions should you take? (Choose two.)</p>
                                  <p>A. Use BigQuery federated queries to query data from Cloud Storage.<br/> 
                                     B. Create a dataset in the EU region that will keep information about EU users only.<br/> 
@@ -234,7 +234,7 @@
                                     E. Use DML statements in BigQuery to update/delete user records based on their requests.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: BE</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: BE<br/><a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language">https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language</a></div>
                                  </div>
                                </div>
 
@@ -250,12 +250,12 @@
                                     D. basic_scaling: max_instances: 5 idle_timeout: 10m</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D<br/><a href="https://cloud.google.com/appengine/docs/standard/python/how-instances-are-managed">https://cloud.google.com/appengine/docs/standard/python/how-instances-are-managed</a></a></div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>65. YYour analytics system executes queries against a BigQuery dataset. The SQL query is executed in batch and passes the contents of a SQL file to the BigQuery
+											<p>65. Your analytics system executes queries against a BigQuery dataset. The SQL query is executed in batch and passes the contents of a SQL file to the BigQuery
                                     CLI. Then it redirects the BigQuery CLI output to another process. However, you are getting a permission error from the BigQuery CLI when the queries are executed.
                                     You want to resolve the issue. What should you do?</p>
                                  <p>A. Grant the service account BigQuery Data Viewer and BigQuery Job User roles.<br/> 
@@ -265,7 +265,7 @@
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A<br/><a href="https://cloud.google.com/bigquery/docs/access-control#bigquery">https://cloud.google.com/bigquery/docs/access-control#bigquery</a></div>
                                  </div>
                                </div>
 
@@ -286,7 +286,7 @@
                                <div class="entry-content">
 											<p>67. You configured your Compute Engine instance group to scale automatically according to overall CPU usage. However, your application's response latency increases sharply before the cluster has finished adding up instances. You want to provide a more consistent latency experience for your end users by changing the configuration of the instance group autoscaler.
                                     Which two configuration changes should you make? (Choose two.)</p>
-                                 <p>A. Add the label ג€AUTOSCALEג€ to the instance group template.<br/> 
+                                 <p>A. Add the label AUTOSCALE to the instance group template.<br/> 
                                     B. Decrease the cool-down period for instances added to the group.<br/> 
                                     C. Decrease the target CPU usage for the instance group autoscaler.<br/>
                                     D. Remove the health-check for individual VMs in the instance group.</p>
@@ -318,7 +318,7 @@
                                     D. Commit the credential JSON file into your application's source repository, and have your CI/CD process package it with the software that is deployed to the instance.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><a href="https://cloud.google.com/docs/authentication/production#automatically">https://cloud.google.com/docs/authentication/production#automatically</a></div>
                                  </div>
                                </div>
 
@@ -332,7 +332,7 @@
                                     D. Configure a GKE Service resource with type: LoadBalancer.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A<br/><a href="https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer">https://cloud.google.com/kubernetes-engine/docs/tutorials/http-balancer</a></div>
                                  </div>
                                </div>
 
@@ -354,13 +354,13 @@
                                     You want to research the issue to provide details to the GCP support team.
                                     Which command should you run?
                                  </p>
-                                 <p>A. gsutil test ג€"o output.json gs://my-bucket<br/> 
-                                    B. gsutil perfdiag ג€"o output.json gs://my-bucket<br/> 
-                                    C. gcloud compute scp example-instance:~/test-data ג€"o output.json gs://my-bucket<br/>
-                                    D. gcloud services test ג€"o output.json gs://my-bucket</p>
+                                 <p>A. gsutil test -o output.json gs://my-bucket<br/> 
+                                    B. gsutil perfdiag -o output.json gs://my-bucket<br/> 
+                                    C. gcloud compute scp example-instance:~/test-data o output.json gs://my-bucket<br/>
+                                    D. gcloud services test -o output.json gs://my-bucket</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><a href="https://cloud.google.com/storage/docs/gsutil/commands/perfdiag#providing-diagnostic-output-to-cloud-storage-team">https://cloud.google.com/storage/docs/gsutil/commands/perfdiag#providing-diagnostic-output-to-cloud-storage-team</a></div>
                                  </div>
                                </div>
 
@@ -443,7 +443,7 @@
                                     D. Configure Cloud Armor Security Policies to restrict access to only corporate IP address ranges. Issue client side certificates to everybody in the finance team and verify the certificates in the application.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
 
@@ -458,7 +458,7 @@
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AC</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: AC <br/><a href="https://cloud.google.com/trace/docs/zipkin">https://cloud.google.com/trace/docs/zipkin</a></div>
                                  </div>
                                </div>
 
@@ -483,29 +483,36 @@
                                     
                                     Existing Technical Environment -
                                     HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
-                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
-                                    ג€¢ State is stored in a single instance MySQL database in GCP.
-                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
-                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
-                                    ג€¢ The application has no logging.
-                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
-                                    
+                                    <ul>
+                                    <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.</li>
+                                     <li>State is stored in a single instance MySQL database in GCP.</li>
+                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.</li>
+                                     <li>Data analytics is performed in an on-premises Hadoop environment.</li>
+                                     <li>The application has no logging.</li>
+                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.</li>
+                                    </ul>
+
                                     Business Requirements -
                                     HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
-                                    ג€¢ Expand availability of the application to new regions.
-                                    ג€¢ Increase the number of concurrent users that can be supported.
-                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
-                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
-                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
-                                    ג€¢ Reduce infrastructure management time and cost.
-                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
-                                    
+                                    <ul>
+                                    <li>Expand availability of the application to new regions.</li>
+                                     <li>Increase the number of concurrent users that can be supported.</li>
+                                     <li>Ensure a consistent experience for users when they travel to different regions.</li>
+                                     <li>Obtain user activity metrics to better understand how to monetize their product.</li>
+                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).</li>
+                                     <li>Reduce infrastructure management time and cost.</li>
+                                     <li>Adopt the Google-recommended practices for cloud computing.</li>
+                                    </ul>
+
                                     Technical Requirements -
-                                    ג€¢ The application and backend must provide usage metrics and monitoring.
-                                    ג€¢ APIs require strong authentication and authorization.
-                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
-                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
-                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                    <ul>
+                                     <li>The application and backend must provide usage metrics and monitoring.</li>
+                                     <li>APIs require strong authentication and authorization.</li>
+                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.</li>
+                                     <li>Move to serverless architecture to facilitate elastic scaling.</li>
+                                     <li>Provide authorized access to internal apps in a secure manner.</li>
+                                    </ul>
+                                    
                                     Which database should HipLocal use for storing user activity?
                                  </p>
                                  <p>A. BigQuery<br/> 
@@ -539,29 +546,29 @@
                                     
                                     Existing Technical Environment -
                                     HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
-                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
-                                    ג€¢ State is stored in a single instance MySQL database in GCP.
-                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
-                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
-                                    ג€¢ The application has no logging.
-                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                     <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                     <li>State is stored in a single instance MySQL database in GCP.
+                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                     <li>Data analytics is performed in an on-premises Hadoop environment.
+                                     <li>The application has no logging.
+                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
                                     
                                     Business Requirements -
                                     HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
-                                    ג€¢ Expand availability of the application to new regions.
-                                    ג€¢ Increase the number of concurrent users that can be supported.
-                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
-                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
-                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
-                                    ג€¢ Reduce infrastructure management time and cost.
-                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                     <li>Expand availability of the application to new regions.
+                                     <li>Increase the number of concurrent users that can be supported.
+                                     <li>Ensure a consistent experience for users when they travel to different regions.
+                                     <li>Obtain user activity metrics to better understand how to monetize their product.
+                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).
+                                     <li>Reduce infrastructure management time and cost.
+                                     <li>Adopt the Google-recommended practices for cloud computing.
                                     
                                     Technical Requirements -
-                                    ג€¢ The application and backend must provide usage metrics and monitoring.
-                                    ג€¢ APIs require strong authentication and authorization.
-                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
-                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
-                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                     <li>The application and backend must provide usage metrics and monitoring.
+                                     <li>APIs require strong authentication and authorization.
+                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.
+                                     <li>Move to serverless architecture to facilitate elastic scaling.
+                                     <li>Provide authorized access to internal apps in a secure manner.
                                     HipLocal is configuring their access controls.
                                     Which firewall configuration should they implement?
                                  </p>
@@ -596,29 +603,29 @@
                                     
                                     Existing Technical Environment -
                                     HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
-                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
-                                    ג€¢ State is stored in a single instance MySQL database in GCP.
-                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
-                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
-                                    ג€¢ The application has no logging.
-                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                     <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                     <li>State is stored in a single instance MySQL database in GCP.
+                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                     <li>Data analytics is performed in an on-premises Hadoop environment.
+                                     <li>The application has no logging.
+                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
                                     
                                     Business Requirements -
                                     HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
-                                    ג€¢ Expand availability of the application to new regions.
-                                    ג€¢ Increase the number of concurrent users that can be supported.
-                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
-                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
-                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
-                                    ג€¢ Reduce infrastructure management time and cost.
-                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                     <li>Expand availability of the application to new regions.
+                                     <li>Increase the number of concurrent users that can be supported.
+                                     <li>Ensure a consistent experience for users when they travel to different regions.
+                                     <li>Obtain user activity metrics to better understand how to monetize their product.
+                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).
+                                     <li>Reduce infrastructure management time and cost.
+                                     <li>Adopt the Google-recommended practices for cloud computing.
                                     
                                     Technical Requirements -
-                                    ג€¢ The application and backend must provide usage metrics and monitoring.
-                                    ג€¢ APIs require strong authentication and authorization.
-                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
-                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
-                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                     <li>The application and backend must provide usage metrics and monitoring.
+                                     <li>APIs require strong authentication and authorization.
+                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.
+                                     <li>Move to serverless architecture to facilitate elastic scaling.
+                                     <li>Provide authorized access to internal apps in a secure manner.
                                     HipLocal's data science team wants to analyze user reviews.
                                     How should they prepare the data?
                                  </p>
@@ -653,29 +660,29 @@
                                     
                                     Existing Technical Environment -
                                     HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
-                                    ג€¢ Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
-                                    ג€¢ State is stored in a single instance MySQL database in GCP.
-                                    ג€¢ Data is exported to an on-premises Teradata/Vertica data warehouse.
-                                    ג€¢ Data analytics is performed in an on-premises Hadoop environment.
-                                    ג€¢ The application has no logging.
-                                    ג€¢ There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
+                                     <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
+                                     <li>State is stored in a single instance MySQL database in GCP.
+                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.
+                                     <li>Data analytics is performed in an on-premises Hadoop environment.
+                                     <li>The application has no logging.
+                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
                                     
                                     Business Requirements -
                                     HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
-                                    ג€¢ Expand availability of the application to new regions.
-                                    ג€¢ Increase the number of concurrent users that can be supported.
-                                    ג€¢ Ensure a consistent experience for users when they travel to different regions.
-                                    ג€¢ Obtain user activity metrics to better understand how to monetize their product.
-                                    ג€¢ Ensure compliance with regulations in the new regions (for example, GDPR).
-                                    ג€¢ Reduce infrastructure management time and cost.
-                                    ג€¢ Adopt the Google-recommended practices for cloud computing.
+                                     <li>Expand availability of the application to new regions.
+                                     <li>Increase the number of concurrent users that can be supported.
+                                     <li>Ensure a consistent experience for users when they travel to different regions.
+                                     <li>Obtain user activity metrics to better understand how to monetize their product.
+                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).
+                                     <li>Reduce infrastructure management time and cost.
+                                     <li>Adopt the Google-recommended practices for cloud computing.
                                     
                                     Technical Requirements -
-                                    ג€¢ The application and backend must provide usage metrics and monitoring.
-                                    ג€¢ APIs require strong authentication and authorization.
-                                    ג€¢ Logging must be increased, and data should be stored in a cloud analytics platform.
-                                    ג€¢ Move to serverless architecture to facilitate elastic scaling.
-                                    ג€¢ Provide authorized access to internal apps in a secure manner.
+                                     <li>The application and backend must provide usage metrics and monitoring.
+                                     <li>APIs require strong authentication and authorization.
+                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.
+                                     <li>Move to serverless architecture to facilitate elastic scaling.
+                                     <li>Provide authorized access to internal apps in a secure manner.
                                     In order for HipLocal to store application state and meet their stated business requirements, which database service should they migrate to?
                                  </p>
                                  <p>A. Cloud Spanner<br/> 
@@ -721,9 +728,9 @@
 											<p>86. You are developing an application that will be launched on Compute Engine instances into multiple distinct projects, each corresponding to the environments in your software development process (development, QA, staging, and production). The instances in each project have the same application code but a different configuration. During deployment, each instance should receive the application's configuration based on the environment it serves. You want to minimize the number of steps to configure this flow. What should you do?
                                  </p>
                                  <p>A. When creating your instances, configure a startup script using the gcloud command to determine the project name that indicates the correct environment.<br/> 
-                                    B. In each project, configure a metadata key ג€environmentג€ whose value is the environment it serves. Use your deployment tool to query the instance metadata and configure the application based on the ג€environmentג€ value.<br/> 
+                                    B. In each project, configure a metadata key environment whose value is the environment it serves. Use your deployment tool to query the instance metadata and configure the application based on the environment value.<br/> 
                                     C. Deploy your chosen deployment tool on an instance in each project. Use a deployment job to retrieve the appropriate configuration file from your version control system, and apply the configuration when deploying the application on each instance.<br/>
-                                    D. During each instance launch, configure an instance custom-metadata key named ג€environmentג€ whose value is the environment the instance serves. Use your deployment tool to query the instance metadata, and configure the application based on the ג€environmentג€ value.
+                                    D. During each instance launch, configure an instance custom-metadata key named environment whose value is the environment the instance serves. Use your deployment tool to query the instance metadata, and configure the application based on the environment value.
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -829,9 +836,9 @@
 
                                <div class="entry-content">
 											<p>94. You need to redesign the ingestion of audit events from your authentication service to allow it to handle a large increase in traffic. Currently, the audit service and the authentication system run in the same Compute Engine virtual machine. You plan to use the following Google Cloud tools in the new architecture:
-                                    ✑ Multiple Compute Engine machines, each running an instance of the authentication service
-                                    ✑ Multiple Compute Engine machines, each running an instance of the audit service
-                                    ✑ Pub/Sub to send the events from the authentication services.
+                                     Multiple Compute Engine machines, each running an instance of the authentication service
+                                     Multiple Compute Engine machines, each running an instance of the audit service
+                                     Pub/Sub to send the events from the authentication services.
                                     How should you set up the topics and subscriptions to ensure that the system can handle a large volume of messages and can scale efficiently?</p>
                                  <p>A. Create one Pub/Sub topic. Create one pull subscription to allow the audit services to share the messages.<br/> 
                                     B. Create one Pub/Sub topic. Create one pull subscription per audit service instance to allow the services to share the messages.<br/> 
