@@ -512,7 +512,7 @@
                                      <li>Move to serverless architecture to facilitate elastic scaling.</li>
                                      <li>Provide authorized access to internal apps in a secure manner.</li>
                                     </ul>
-                                    
+
                                     Which database should HipLocal use for storing user activity?
                                  </p>
                                  <p>A. BigQuery<br/> 
@@ -546,31 +546,36 @@
                                     
                                     Existing Technical Environment -
                                     HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
-                                     <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
-                                     <li>State is stored in a single instance MySQL database in GCP.
-                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.
-                                     <li>Data analytics is performed in an on-premises Hadoop environment.
-                                     <li>The application has no logging.
-                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
-                                    
+                                    <ul>
+                                    <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.</li>
+                                     <li>State is stored in a single instance MySQL database in GCP.</li>
+                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.</li>
+                                     <li>Data analytics is performed in an on-premises Hadoop environment.</li>
+                                     <li>The application has no logging.</li>
+                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.</li>
+                                    </ul>
+
                                     Business Requirements -
                                     HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
-                                     <li>Expand availability of the application to new regions.
-                                     <li>Increase the number of concurrent users that can be supported.
-                                     <li>Ensure a consistent experience for users when they travel to different regions.
-                                     <li>Obtain user activity metrics to better understand how to monetize their product.
-                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).
-                                     <li>Reduce infrastructure management time and cost.
-                                     <li>Adopt the Google-recommended practices for cloud computing.
+                                    <ul>
+                                    <li>Expand availability of the application to new regions.</li>
+                                     <li>Increase the number of concurrent users that can be supported.</li>
+                                     <li>Ensure a consistent experience for users when they travel to different regions.</li>
+                                     <li>Obtain user activity metrics to better understand how to monetize their product.</li>
+                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).</li>
+                                     <li>Reduce infrastructure management time and cost.</li>
+                                     <li>Adopt the Google-recommended practices for cloud computing.</li>
+                                 </ul>
                                     
                                     Technical Requirements -
-                                     <li>The application and backend must provide usage metrics and monitoring.
-                                     <li>APIs require strong authentication and authorization.
-                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.
-                                     <li>Move to serverless architecture to facilitate elastic scaling.
-                                     <li>Provide authorized access to internal apps in a secure manner.
-                                    HipLocal is configuring their access controls.
-                                    Which firewall configuration should they implement?
+                                    <ul>
+                                     <li>The application and backend must provide usage metrics and monitoring.</li>
+                                     <li>APIs require strong authentication and authorization.</li>
+                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.</li>
+                                     <li>Move to serverless architecture to facilitate elastic scaling.</li>
+                                     <li>Provide authorized access to internal apps in a secure manner.</li>
+                                    </ul>
+                                    HipLocal is configuring their access controls. Which firewall configuration should they implement?
                                  </p>
                                  <p>A. Block all traffic on port 443.<br/> 
                                     B. Allow all traffic into the network.<br/> 
@@ -603,29 +608,36 @@
                                     
                                     Existing Technical Environment -
                                     HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
-                                     <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
-                                     <li>State is stored in a single instance MySQL database in GCP.
-                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.
-                                     <li>Data analytics is performed in an on-premises Hadoop environment.
-                                     <li>The application has no logging.
-                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
-                                    
+                                    <ul>
+                                    <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.</li>
+                                     <li>State is stored in a single instance MySQL database in GCP.</li>
+                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.</li>
+                                     <li>Data analytics is performed in an on-premises Hadoop environment.</li>
+                                     <li>The application has no logging.</li>
+                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.</li>
+                                    </ul>
+
                                     Business Requirements -
                                     HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
-                                     <li>Expand availability of the application to new regions.
-                                     <li>Increase the number of concurrent users that can be supported.
-                                     <li>Ensure a consistent experience for users when they travel to different regions.
-                                     <li>Obtain user activity metrics to better understand how to monetize their product.
-                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).
-                                     <li>Reduce infrastructure management time and cost.
-                                     <li>Adopt the Google-recommended practices for cloud computing.
-                                    
+                                    <ul>
+                                    <li>Expand availability of the application to new regions.</li>
+                                     <li>Increase the number of concurrent users that can be supported.</li>
+                                     <li>Ensure a consistent experience for users when they travel to different regions.</li>
+                                     <li>Obtain user activity metrics to better understand how to monetize their product.</li>
+                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).</li>
+                                     <li>Reduce infrastructure management time and cost.</li>
+                                     <li>Adopt the Google-recommended practices for cloud computing.</li>
+                                    </ul>
+
                                     Technical Requirements -
-                                     <li>The application and backend must provide usage metrics and monitoring.
-                                     <li>APIs require strong authentication and authorization.
-                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.
-                                     <li>Move to serverless architecture to facilitate elastic scaling.
-                                     <li>Provide authorized access to internal apps in a secure manner.
+                                    <ul>
+                                     <li>The application and backend must provide usage metrics and monitoring.</li>
+                                     <li>APIs require strong authentication and authorization.</li>
+                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.</li>
+                                     <li>Move to serverless architecture to facilitate elastic scaling.</li>
+                                     <li>Provide authorized access to internal apps in a secure manner.</li>
+                                    </ul>
+
                                     HipLocal's data science team wants to analyze user reviews.
                                     How should they prepare the data?
                                  </p>
@@ -660,29 +672,36 @@
                                     
                                     Existing Technical Environment -
                                     HipLocal's environment is a mix of on-premises hardware and infrastructure running in Google Cloud Platform. The HipLocal team understands their application well, but has limited experience in global scale applications. Their existing technical environment is as follows:
-                                     <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.
-                                     <li>State is stored in a single instance MySQL database in GCP.
-                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.
-                                     <li>Data analytics is performed in an on-premises Hadoop environment.
-                                     <li>The application has no logging.
-                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.
-                                    
+                                    <ul>
+                                    <li>Existing APIs run on Compute Engine virtual machine instances hosted in GCP.</li>
+                                     <li>State is stored in a single instance MySQL database in GCP.</li>
+                                     <li>Data is exported to an on-premises Teradata/Vertica data warehouse.</li>
+                                     <li>Data analytics is performed in an on-premises Hadoop environment.</li>
+                                     <li>The application has no logging.</li>
+                                     <li>There are basic indicators of uptime; alerts are frequently fired when the APIs are unresponsive.</li>
+                                    </ul>
+
                                     Business Requirements -
                                     HipLocal's investors want to expand their footprint and support the increase in demand they are seeing. Their requirements are:
-                                     <li>Expand availability of the application to new regions.
-                                     <li>Increase the number of concurrent users that can be supported.
-                                     <li>Ensure a consistent experience for users when they travel to different regions.
-                                     <li>Obtain user activity metrics to better understand how to monetize their product.
-                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).
-                                     <li>Reduce infrastructure management time and cost.
-                                     <li>Adopt the Google-recommended practices for cloud computing.
-                                    
+                                    <ul>
+                                    <li>Expand availability of the application to new regions.</li>
+                                     <li>Increase the number of concurrent users that can be supported.</li>
+                                     <li>Ensure a consistent experience for users when they travel to different regions.</li>
+                                     <li>Obtain user activity metrics to better understand how to monetize their product.</li>
+                                     <li>Ensure compliance with regulations in the new regions (for example, GDPR).</li>
+                                     <li>Reduce infrastructure management time and cost.</li>
+                                     <li>Adopt the Google-recommended practices for cloud computing.</li>
+                                    </ul>
+
                                     Technical Requirements -
-                                     <li>The application and backend must provide usage metrics and monitoring.
-                                     <li>APIs require strong authentication and authorization.
-                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.
-                                     <li>Move to serverless architecture to facilitate elastic scaling.
-                                     <li>Provide authorized access to internal apps in a secure manner.
+                                    <ul>
+                                     <li>The application and backend must provide usage metrics and monitoring.</li>
+                                     <li>APIs require strong authentication and authorization.</li>
+                                     <li>Logging must be increased, and data should be stored in a cloud analytics platform.</li>
+                                     <li>Move to serverless architecture to facilitate elastic scaling.</li>
+                                     <li>Provide authorized access to internal apps in a secure manner.</li>
+                                    </ul>   
+
                                     In order for HipLocal to store application state and meet their stated business requirements, which database service should they migrate to?
                                  </p>
                                  <p>A. Cloud Spanner<br/> 
@@ -720,7 +739,7 @@
                                     D. Package the application in a single container. Use a bash script as an entrypoint to the container, and then spawn each component as a background job.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A<br/><a href="https://cloud.google.com/architecture/best-practices-for-building-containers">https://cloud.google.com/architecture/best-practices-for-building-containers</a></a></div>
                                  </div>
                                </div>
 
@@ -747,7 +766,7 @@
                                     D. The use of LIKE instead of STARTS_WITH keyword for parameterized SQL queries.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C<br/><a href="https://cloud.google.com/spanner/docs/schema-and-data-model#choosing_a_primary_key">https://cloud.google.com/spanner/docs/schema-and-data-model#choosing_a_primary_key</a></a></div>
                                  </div>
                                </div>
 
@@ -816,7 +835,7 @@
                                     D. Use A/B testing with traffic mirroring during deployment</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
 
@@ -886,7 +905,7 @@
                                     D. Build a custom image of the blogging software and use Binary Authorization to prevent untrusted image deployments.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><a href="https://cloud.google.com/kubernetes-engine/docs/concepts/multitenancy-overview">https://cloud.google.com/kubernetes-engine/docs/concepts/multitenancy-overview</a></a></div>
                                  </div>
                                </div>
 
@@ -917,7 +936,7 @@
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><a href="https://cloud.google.com/blog/topics/developers-practitioners/control-access-your-web-sites-identity-aware-proxy">https://cloud.google.com/blog/topics/developers-practitioners/control-access-your-web-sites-identity-aware-proxy</a></a></div>
                                  </div>
                                </div>
 
