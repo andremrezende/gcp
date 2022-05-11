@@ -89,12 +89,12 @@
                                </div>
 
                                <div class="entry-content">
-											<p>103. You want to create ג€fully bakedג€ or ג€goldenג€ Compute Engine images for your application. You need to bootstrap your application to connect to the appropriate database according to the environment the application is running on (test, staging, production).
+											<p>103. You want to create fully baked or golden Compute Engine images for your application. You need to bootstrap your application to connect to the appropriate database according to the environment the application is running on (test, staging, production).
                                      What should you do?</p>
                                  <p>A. Embed the appropriate database connection string in the image. Create a different image for each environment.<br/> 
                                     B. When creating the Compute Engine instance, add a tag with the name of the database to be connected. In your application, query the Compute Engine API to pull the tags for the current instance, and use the tag to construct the appropriate database connection string.<br/> 
-                                    C. When creating the Compute Engine instance, create a metadata item with a key of ג€DATABASEג€ and a value for the appropriate database connection string. In your application, read the ג€DATABASEג€ environment variable, and use the value to connect to the appropriate database.<br/>
-                                    D. When creating the Compute Engine instance, create a metadata item with a key of ג€DATABASEג€ and a value for the appropriate database connection string. In your application, query the metadata server for the ג€DATABASEג€ value, and use the value to connect to the appropriate database.</p>
+                                    C. When creating the Compute Engine instance, create a metadata item with a key of DATABASE and a value for the appropriate database connection string. In your application, read the DATABASE environment variable, and use the value to connect to the appropriate database.<br/>
+                                    D. When creating the Compute Engine instance, create a metadata item with a key of DATABASE and a value for the appropriate database connection string. In your application, query the metadata server for the DATABASE value, and use the value to connect to the appropriate database.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
@@ -124,7 +124,7 @@
                                     D. Assign the Cloud SQL Editor role.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C<br/><a href="https://cloud.google.com/sql/docs/mysql/roles-and-permissions">https://cloud.google.com/sql/docs/mysql/roles-and-permissions</a></div>
                                  </div>
                                </div>
 
@@ -137,7 +137,7 @@
                                     D. Use a Horizontal Pod Autoscaler to scale the containers, and expose them via a NodePort Service.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C<br/><a href="https://cloud.google.com/kubernetes-engine/docs/concepts/service">https://cloud.google.com/kubernetes-engine/docs/concepts/service</a></div>
                                  </div>
                                </div>
 
@@ -156,8 +156,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>108. Topic 1
-                                    You are developing an application that will allow users to read and post comments on news articles. You want to configure your application to store and display user-submitted comments using Firestore.
+											<p>108. You are developing an application that will allow users to read and post comments on news articles. You want to configure your application to store and display user-submitted comments using Firestore.
                                     How should you design the schema to support an unknown number of comments and articles?</p>
                                  <p>A. Store each comment in a subcollection of the article.<br/> 
                                     B. Add each comment to an array property on the article.<br/> 
@@ -179,7 +178,7 @@
                                     D. Use Private Google Access</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><a href="https://cloud.google.com/vpc/docs/private-google-access">https://cloud.google.com/vpc/docs/private-google-access</a></div>
                                  </div>
                                </div>
 
@@ -192,7 +191,7 @@
                                     D. Check Compute Engine OS logs using the serial port, and check the Cloud Logging logs to confirm access to the serial port.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D<br/><a href="https://cloud.google.com/compute/docs/troubleshooting/troubleshooting-using-serial-console">https://cloud.google.com/compute/docs/troubleshooting/troubleshooting-using-serial-console</a></div>
                                  </div>
                                </div>
 
@@ -206,7 +205,7 @@
                                     D. Internal HTTP(S) Load Balancing</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D <br/><a href="https://cloud.google.com/load-balancing/docs/l7-internal/traffic-management">https://cloud.google.com/load-balancing/docs/l7-internal/traffic-management</a></div>
                                  </div>
                                </div>
 
@@ -225,7 +224,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>113. YYou are designing a resource-sharing policy for applications used by different teams in a Google Kubernetes Engine cluster. You need to ensure that all applications can access the resources needed to run. What should you do? (Choose two.)
+											<p>113. You are designing a resource-sharing policy for applications used by different teams in a Google Kubernetes Engine cluster. You need to ensure that all applications can access the resources needed to run. What should you do? (Choose two.)
                                  </p>
                                  <p>A. Specify the resource limits and requests in the object specifications.<br/> 
                                     B. Create a namespace for each team, and attach resource quotas to each namespace.<br/> 
@@ -240,7 +239,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>114You are developing a new application that has the following design requirements:
+											<p>114. You are developing a new application that has the following design requirements:
                                     ✑ Creation and changes to the application infrastructure are versioned and auditable.
                                     ✑ The application and deployment infrastructure uses Google-managed services as much as possible.
                                     ✑ The application runs on a serverless compute platform.
