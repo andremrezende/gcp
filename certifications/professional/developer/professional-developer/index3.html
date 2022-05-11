@@ -240,9 +240,11 @@
 
                                <div class="entry-content">
 											<p>114. You are developing a new application that has the following design requirements:
-                                    ✑ Creation and changes to the application infrastructure are versioned and auditable.
-                                    ✑ The application and deployment infrastructure uses Google-managed services as much as possible.
-                                    ✑ The application runs on a serverless compute platform.
+                                    <ul>
+                                       <li>Creation and changes to the application infrastructure are versioned and auditable.</li>
+                                       <li>The application and deployment infrastructure uses Google-managed services as much as possible.</li>
+                                       <li>The application runs on a serverless compute platform.</li>
+                                    </ul>
                                     How should you design the application's architecture?
                                  </p>
                                  <p>A. 1. Store the application and infrastructure source code in a Git repository. 2. Use Cloud Build to deploy the application infrastructure with Terraform. 3. Deploy the application to a Cloud Function as a pipeline step.<br/> 
@@ -267,7 +269,7 @@
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><a href="https://cloud.google.com/kubernetes-engine/docs/concepts/workload-identity">https://cloud.google.com/kubernetes-engine/docs/concepts/workload-identity</a></div>
                                  </div>
                                </div>
 
@@ -281,12 +283,12 @@
                                     D. Add a startup script to the GKE instance group to mount the NFS share at node startup. Copy the configuration files into the container, and start the service using an ENTRYPOINT script.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
-											<p>117. YYour team is developing a new application using a PostgreSQL database and Cloud Run. You are responsible for ensuring that all traffic is kept private on Google
+											<p>117. Your team is developing a new application using a PostgreSQL database and Cloud Run. You are responsible for ensuring that all traffic is kept private on Google
                                     Cloud. You want to use managed services and follow Google-recommended best practices. What should you do?
                                  </p>
                                  <p>A. 1. Enable Cloud SQL and Cloud Run in the same project. 2. Configure a private IP address for Cloud SQL. Enable private services access. 3. Create a Serverless VPC Access connector. 4. Configure Cloud Run to use the connector to connect to Cloud SQL.<br/> 
@@ -295,7 +297,7 @@
                                     D. 1. Install PostgreSQL on a Compute Engine VM, and enable Cloud Run in different projects. 2. Configure a private IP address for the VM. Enable private services access. 3. Create a Serverless VPC Access connector. 4. Set up a VPN connection between the two projects. Configure Cloud Run to use the connector to access the VM hosting PostgreSQL</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A<br/><a href="https://cloud.google.com/sql/docs/postgres/connect-run#private-ip">https://cloud.google.com/sql/docs/postgres/connect-run#private-ip</a></div>
                                  </div>
                                </div>
 
@@ -344,18 +346,32 @@
 											<p>121. You have been tasked with planning the migration of your company's application from on-premises to Google Cloud. Your company's monolithic application is an ecommerce website. The application will be migrated to microservices deployed on Google Cloud in stages. The majority of your company's revenue is generated through online sales, so it is important to minimize risk during the migration. You need to prioritize features and select the first functionality to migrate. 
                                     What should you do?
                                  </p>
-                                 <p>A. Use Spinnaker to automate building container images from code based on Git tags.<br/> 
-                                    B. Use Cloud Build to automate building container images from code based on Git tags.<br/> 
-                                    C. Use Spinnaker to automate deploying container images to the production environment.<br/>
-                                    D. Use Cloud Build to automate building container images from code based on forked versions.</p>
+                                 <p>A. Migrate the Product catalog, which has integrations to the frontend and product database.<br/> 
+                                    B. Migrate Payment processing, which has integrations to the frontend, order database, and third-party payment vendor.<br/> 
+                                    C. Migrate Order fulfillment, which has integrations to the order database, inventory system, and third-party shipping vendor.<br/>
+                                    D. Migrate the Shopping cart, which has integrations to the frontend, cart database, inventory system, and payment processing system.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
 											<p>122. Your team is developing an application in Google Cloud that executes with user identities maintained by Cloud Identity. Each of your application's users will have an associated Pub/Sub topic to which messages are published, and a Pub/Sub subscription where the same user will retrieve published messages. You need to ensure that only authorized users can publish and subscribe to their own specific Pub/Sub topic and subscription. 
+                                    What should you do?
+                                 </p>
+                                 <p>A. Use Spinnaker to automate building container images from code based on Git tags.<br/> 
+                                    B. Use Cloud Build to automate building container images from code based on Git tags.<br/> 
+                                    C. Use Spinnaker to automate deploying container images to the production environment.<br/>
+                                    D.  Use Cloud Build to automate building container images from code based on forked versions.</p>
+                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
+                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                 </div>
+                               </div>
+
+                               <div class="entry-content">
+											<p>123. Your team is developing an application in Google Cloud that executes with user identities maintained by Cloud Identity. Each of your application's users will have an associated Pub/Sub topic to which messages are published, and a Pub/Sub subscription where the same user will retrieve published messages. You need to ensure that only authorized users can publish and subscribe to their own specific Pub/Sub topic and subscription. 
                                     What should you do?
                                     <img src="https://www.examtopics.com/assets/media/exam-media/04137/0008100001.jpg">
                                  </p>
@@ -370,25 +386,13 @@
                                </div>
 
                                <div class="entry-content">
-											<p>123. You are evaluating developer tools to help drive Google Kubernetes Engine adoption and integration with your development environment, which includes VS Code and IntelliJ.
-                                     What should you do?</p>
+											<p>124. You are evaluating developer tools to help drive Google Kubernetes Engine adoption and integration with your development environment, which includes VS Code and IntelliJ. 
+                                    What should you do?
+                                 </p>
                                  <p>A. Use Cloud Code to develop applications.<br/> 
                                     B. Use the Cloud Shell integrated Code Editor to edit code and configuration files.<br/> 
                                     C. Use a Cloud Notebook instance to ingest and process data and deploy models.<br/>
-                                    D. Use Cloud Shell to manage your infrastructure and applications from the command line.</p>
-                                 <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
-                                    <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
-                                 </div>
-                               </div>
-
-                               <div class="entry-content">
-											<p>124. Your company has an application deployed on Anthos clusters (formerly Anthos GKE) that is running multiple microservices. The cluster has both Anthos Service
-                                    Mesh and Anthos Config Management configured. End users inform you that the application is responding very slowly. You want to identify the microservice that is causing the delay. What should you do?</p>
-                                 <p>A. Use the Service Mesh visualization in the Cloud Console to inspect the telemetry between the microservices.<br/> 
-                                    B. Use Anthos Config Management to create a ClusterSelector selecting the relevant cluster. On the Google Cloud Console page for Google Kubernetes Engine, view the Workloads and filter on the cluster. Inspect the configurations of the filtered workloads.<br/> 
-                                    C. Use Anthos Config Management to create a namespaceSelector selecting the relevant cluster namespace. On the Google Cloud Console page for Google Kubernetes Engine, visit the workloads and filter on the namespace. Inspect the configurations of the filtered workloads.<br/>
-                                    D. Reinstall istio using the default istio profile in order to collect request latency. Evaluate the telemetry between the microservices in the Cloud Console.
+                                    D. Use Cloud Shell to manage your infrastructure and applications from the command line.
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -407,7 +411,7 @@
                                     D. You configured your application to use a Serverless VPC Access connector on a different subnet in a different availability zone than your App Engine instance.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><a href="https://cloud.google.com/vpc/docs/configure-serverless-vpc-access">https://cloud.google.com/vpc/docs/configure-serverless-vpc-access</a></div>
                                  </div>
                                </div>
 
@@ -421,7 +425,8 @@
                                     D. Create an OAuth 2.0 client ID for your calling service in the same project as the function you want to secure. Use those credentials to invoke the function.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C<br/><a href="https://cloud.google.com/functions/docs/securing#authentication">https://cloud.google.com/functions/docs/securing#authentication</a>
+                                       <br/><a href="https://cloud.google.com/functions/docs/reference/iam/roles#cloud-functions-roles">https://cloud.google.com/functions/docs/reference/iam/roles#cloud-functions-roles</a></div>
                                  </div>
                                </div>
 
@@ -487,7 +492,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>131.Your security team is auditing all deployed applications running in Google Kubernetes Engine. After completing the audit, your team discovers that some of the applications send traffic within the cluster in clear text. You need to ensure that all application traffic is encrypted as quickly as possible while minimizing changes to your applications and maintaining support from Google. 
+											<p>131. Your security team is auditing all deployed applications running in Google Kubernetes Engine. After completing the audit, your team discovers that some of the applications send traffic within the cluster in clear text. You need to ensure that all application traffic is encrypted as quickly as possible while minimizing changes to your applications and maintaining support from Google. 
                                     What should you do?
                                  </p>
                                  <p>A. Use Network Policies to block traffic between applications.<br/> 
@@ -497,7 +502,7 @@
                                  </p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
                                  </div>
                                </div>
                                
@@ -553,15 +558,17 @@
                                     D. Use a Pub/Sub subscriber in push mode and use a data store to manage ordering.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C <br/><a href="https://cloud.google.com/pubsub/docs/pull">https://cloud.google.com/pubsub/docs/pull</a></div>
                                  </div>
                                </div>
 
                                <div class="entry-content">
 											<p>136. Your company needs a database solution that stores customer purchase history and meets the following requirements:
-                                    ✑ Customers can query their purchase immediately after submission.
-                                    ✑ Purchases can be sorted on a variety of fields.
-                                    ✑ Distinct record formats can be stored at the same time.
+                                    <ul>
+                                       <li>Customers can query their purchase immediately after submission.</li>
+                                       <li>Purchases can be sorted on a variety of fields.</li>
+                                       <li>Distinct record formats can be stored at the same time.</li>
+                                    </ul>
                                     Which storage option satisfies these requirements?
                                  </p>
                                  <p>A. Firestore in Native mode<br/> 
@@ -570,7 +577,7 @@
                                     D. Firestore in Datastore mode using a global query</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A<br/><a href="https://cloud.google.com/datastore/docs/firestore-or-datastore">https://cloud.google.com/datastore/docs/firestore-or-datastore</a></div>
                                  </div>
                                </div>
 
@@ -585,7 +592,7 @@
                                     D. reate a Compute Engine instance that uses a LAMP stack image from the Marketplace, and use Apache Bench to generate load tests against the service. Analyze the results using Cloud Trace.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B<br/><a href="https://cloud.google.com/architecture/distributed-load-testing-using-gke">https://cloud.google.com/architecture/distributed-load-testing-using-gke</a></div>
                                  </div>
                                </div>
 
@@ -600,7 +607,7 @@
                                     D. Add a build argument that runs an HTTP POST via curl to a separate web server to persist the value in one builder. Use an HTTP GET via curl from the subsequent build step to read the value.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
                                  </div>
                                </div>                               
                               </div>
