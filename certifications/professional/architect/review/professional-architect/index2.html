@@ -63,7 +63,7 @@
 											<p>51. You have found an error in your App Engine application caused by missing Cloud Datastore indexes. You have created a YAML file with the required indexes and want to deploy these new indexes to Cloud Datastore. What should you do?
                                  </p>
                                  <p>A. Point gcloud datastore create-indexes to your configuration file<br/> 
-                                    B. Upload the configuration file to App Engineג€™s default Cloud Storage bucket, and have App Engine detect the new indexes<br/> 
+                                    B. Upload the configuration file to App Engines default Cloud Storage bucket, and have App Engine detect the new indexes<br/> 
                                     C. In the GCP Console, use Datastore Admin to delete the current indexes and upload the new configuration file<br/>
                                     D. Create an HTTP request to the built-in python module to send the index configuration file to your application</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
@@ -127,8 +127,8 @@
                                      The deployment is exposed using a Service called echo-service. You need to perform an update to the application with minimal downtime to the application. What should you do?</p>
                                  <p>A. Use kubectl set image deployment/echo-deployment <new-image><br/> 
                                     B. Use the rolling update functionality of the Instance Group behind the Kubernetes cluster<br/> 
-                                    C. Update the deployment yaml file with the new container image. Use kubectl delete deployment/echo-deployment and kubectl create ג€"f <yaml-file><br/>
-                                    D. Update the service yaml file which the new container image. Use kubectl delete service/echo-service and kubectl create ג€"f <yaml-file></p>
+                                    C. Update the deployment yaml file with the new container image. Use kubectl delete deployment/echo-deployment and kubectl create <yaml-file><br/>
+                                    D. Update the service yaml file which the new container image. Use kubectl delete service/echo-service and kubectl create <yaml-file></p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
@@ -137,7 +137,7 @@
 
                                <div class="entry-content">
 											<p>57. Your company is using BigQuery as its enterprise data warehouse. Data is distributed over several Google Cloud projects. All queries on BigQuery need to be billed on a single project. You want to make sure that no query costs are incurred on the projects that contain the data. Users should be able to query the datasets, but not edit them.
-                                    How should you configure usersג€™ access roles?
+                                    How should you configure users access roles?
                                     </p>
                                  <p>A. Add all users to a group. Grant the group the role of BigQuery user on the billing project and BigQuery dataViewer on the projects that contain the data.<br/> 
                                     B. Add all users to a group. Grant the group the roles of BigQuery dataViewer on the billing project and BigQuery user on the projects that contain the data.<br/> 
@@ -163,7 +163,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>59. Your web application must comply with the requirements of the European Unionג€™s General Data Protection Regulation (GDPR). You are responsible for the technical architecture of your web application. What should you do?</p>
+											<p>59. Your web application must comply with the requirements of the European Unions General Data Protection Regulation (GDPR). You are responsible for the technical architecture of your web application. What should you do?</p>
                                  <p>A. Ensure that a firewall rules exists to allow source traffic on HTTP/HTTPS to reach the load balancer.<br/> 
                                     B. Enable the relevant GDPR compliance setting within the GCPConsole for each of the services in use within your application.<br/> 
                                     C. Ensure that Cloud Security Scanner is part of your test planning strategy in order to pick up any compliance gaps.<br/>
@@ -175,7 +175,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>60. You need to set up Microsoft SQL Server on GCP. Management requires that thereג€™s no downtime in case of a data center outage in any of the zones within a
+											<p>60. You need to set up Microsoft SQL Server on GCP. Management requires that theres no downtime in case of a data center outage in any of the zones within a
                                     GCP region. What should you do?</p>
                                  <p>A. Configure a Cloud SQL instance with high availability enabled.<br/> 
                                     B. Configure a Cloud Spanner instance with a regional instance configuration.<br/> 
@@ -213,7 +213,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>63. You are designing an application for use only during business hours. For the minimum viable product release, youג€™d like to use a managed product that automatically ג€scales to zeroג€ so you donג€™t incur costs when there is no activity.
+											<p>63. You are designing an application for use only during business hours. For the minimum viable product release, youd like to use a managed product that automatically scales to zero so you dont incur costs when there is no activity.
                                     Which primary compute resource should you choose?</p>
                                  <p>A. Cloud Functions<br/> 
                                     B. Compute Engine<br/> 
@@ -226,7 +226,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>64.You are creating an App Engine application that uses Cloud Datastore as its persistence layer. You need to retrieve several root entities for which you have the identifiers. You want to minimize the overhead in operations performed by Cloud Datastore. What should you do?</p>
+											<p>64. You are creating an App Engine application that uses Cloud Datastore as its persistence layer. You need to retrieve several root entities for which you have the identifiers. You want to minimize the overhead in operations performed by Cloud Datastore. What should you do?</p>
                                  <p>A. Create the Key object for each Entity and run a batch get operation<br/> 
                                     B. Create the Key object for each Entity and run multiple get operations, one operation for each entity<br/> 
                                     C. Use the identifiers to create a query filter and run a batch query operation<br/>
@@ -299,7 +299,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>70. Your companyג€™s user-feedback portal comprises a standard LAMP stack replicated across two zones. It is deployed in the us-central1 region and uses autoscaled managed instance groups on all layers, except the database. Currently, only a small group of select customers have access to the portal. The portal meets a
+											<p>70. Your companys user-feedback portal comprises a standard LAMP stack replicated across two zones. It is deployed in the us-central1 region and uses autoscaled managed instance groups on all layers, except the database. Currently, only a small group of select customers have access to the portal. The portal meets a
                                     99,99% availability SLA under these conditions. However next quarter, your company will be making the portal available to all users, including unauthenticated users. You need to develop a resiliency testing strategy to ensure the system maintains the SLA once they introduce additional user load.
                                     What should you do?</p>
                                  <p>A. Create a read replica instance in a different region<br/> 
@@ -313,7 +313,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>71. Your company is running a stateless application on a Compute Engine instance. The application is used heavily during regular business hours and lightly outside of business hours. Users are reporting that the application is slow during peak hours. You need to optimize the applicationג€™s performance. What should you do?</p>
+											<p>71. Your company is running a stateless application on a Compute Engine instance. The application is used heavily during regular business hours and lightly outside of business hours. Users are reporting that the application is slow during peak hours. You need to optimize the applications performance. What should you do?</p>
                                  <p>A. Create a snapshot of the existing disk. Create an instance template from the snapshot. Create an autoscaled managed instance group from the instance template.<br/> 
                                     B. Create a snapshot of the existing disk. Create a custom image from the snapshot. Create an autoscaled managed instance group from the custom image.<br/> 
                                     C. Create a custom image from the existing disk. Create an instance template from the custom image. Create an autoscaled managed instance group from the instance template.<br/>
@@ -325,7 +325,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>72. Your web application has several VM instances running within a VPC. You want to restrict communications between instances to only the paths and ports you authorize, but you donג€™t want to rely on static IP addresses or subnets because the app can autoscale. How should you restrict communications?
+											<p>72. Your web application has several VM instances running within a VPC. You want to restrict communications between instances to only the paths and ports you authorize, but you dont want to rely on static IP addresses or subnets because the app can autoscale. How should you restrict communications?
                                  </p>
                                  <p>A. Use separate VPCs to restrict traffic<br/> 
                                     B. Use firewall rules based on network tags attached to the compute instances<br/> 
@@ -339,7 +339,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>73. You are using Cloud SQL as the database backend for a large CRM deployment. You want to scale as usage increases and ensure that you donג€™t run out of storage, maintain 75% CPU usage cores, and keep replication lag below 60 seconds. What are the correct steps to meet your requirements?</p>
+											<p>73. You are using Cloud SQL as the database backend for a large CRM deployment. You want to scale as usage increases and ensure that you dont run out of storage, maintain 75% CPU usage cores, and keep replication lag below 60 seconds. What are the correct steps to meet your requirements?</p>
                                  <p>A. 1. Enable automatic storage increase for the instance. 2. Create a Stackdriver alert when CPU usage exceeds 75%, and change the instance type to reduce CPU usage. 3. Create a Stackdriver alert for replication lag, and shard the database to reduce replication time.<br/> 
                                     B. 1. Enable automatic storage increase for the instance. 2. Change the instance type to a 32-core machine type to keep CPU usage below 75%. 3. Create a Stackdriver alert for replication lag, and deploy memcache to reduce load on the master.<br/> 
                                     C. 1. Create a Stackdriver alert when storage exceeds 75%, and increase the available storage on the instance to create more space. 2. Deploy memcached to reduce CPU load. 3. Change the instance type to a 32-core machine type to reduce replication lag.<br/>
@@ -371,7 +371,7 @@
                                     D. In the GCP Console, navigate to Cloud SQL. Restore the latest backup. Use kubectl to restart all pods.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
                                  </div>
                                </div>
 
@@ -405,7 +405,7 @@
                                     You want to optimize storage and follow Google-recommended practices. What should you do?</p>
                                  <p>A. Configure the expiration time for your tables at 45 days<br/> 
                                     B. Make the tables time-partitioned, and configure the partition expiration at 45 days<br/> 
-                                    C. Rely on BigQueryג€™s default behavior to prune application logs older than 45 days<br/>
+                                    C. Rely on BigQuerys default behavior to prune application logs older than 45 days<br/>
                                     D. Create a script that uses the BigQuery command line tool (bq) to remove records older than 45 days</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -455,7 +455,7 @@
                                <div class="entry-content">
 											<p>82. Your customer wants to do resilience testing of their authentication layer. This consists of a regional managed instance group serving a public REST API that reads from and writes to a Cloud SQL instance.
                                     What should you do?</p>
-                                 <p>A. Engage with a security company to run web scrapers that look your for usersג€™ authentication data om malicious websites and notify you if any is found.br/> 
+                                 <p>A. Engage with a security company to run web scrapers that look your for users authentication data om malicious websites and notify you if any is found.br/> 
                                     B. Deploy intrusion detection software to your virtual machines to detect and log unauthorized access.<br/> 
                                     C. Schedule a disaster simulation exercise during which you can shut off all VMs in a zone to see how your application behaves.br/>
                                     D. Configure a read replica for your Cloud SQL instance in a different zone than the master, and then manually trigger a failover while monitoring KPIs for our REST API./p>
@@ -469,7 +469,7 @@
 											<p>83. Your BigQuery project has several users. For audit purposes, you need to see how many queries each user ran in the last month. What should you do?</p>
                                  <p>A. Connect Google Data Studio to BigQuery. Create a dimension for the users and a metric for the amount of queries per user.<br/> 
                                     B. In the BigQuery interface, execute a query on the JOBS table to get the required information.<br/> 
-                                    C. Use ג€˜bq showג€™ to list all jobs. Per job, use ג€˜bq lsג€™ to list job information and get the required information.<br/>
+                                    C. Use ˜bq show to list all jobs. Per job, use ˜bq ls to list job information and get the required information.<br/>
                                     D. Use Cloud Audit Logging to view Cloud Audit Logs, and create a filter on the query operation to get the required information.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -495,10 +495,10 @@
 											<p>85. Your company captures all web traffic data in Google Analytics 360 and stores it in BigQuery. Each country has its own dataset. Each dataset has multiple tables.
                                     You want analysts from each country to be able to see and query only the data for their respective countries.
                                     How should you configure the access rights?</p>
-                                 <p>A. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery jobUser. Share the appropriate dataset with view access with each respective analyst country-group.<br/> 
-                                    B. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery jobUser. Share the appropriate tables with view access with each respective analyst country-group.<br/> 
-                                    C. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery dataViewer. Share the appropriate dataset with view access with each respective analyst country- group.<br/>
-                                    D. Create a group per country. Add analysts to their respective country-groups. Create a single group ג€˜all_analystsג€™, and add all country-groups as members. Grant the ג€˜all_analystsג€™ group the IAM role of BigQuery dataViewer. Share the appropriate table with view access with each respective analyst country-group.</p>
+                                 <p>A. Create a group per country. Add analysts to their respective country-groups. Create a single group ˜all_analysts, and add all country-groups as members. Grant the ˜all_analysts group the IAM role of BigQuery jobUser. Share the appropriate dataset with view access with each respective analyst country-group.<br/> 
+                                    B. Create a group per country. Add analysts to their respective country-groups. Create a single group ˜all_analysts, and add all country-groups as members. Grant the ˜all_analysts group the IAM role of BigQuery jobUser. Share the appropriate tables with view access with each respective analyst country-group.<br/> 
+                                    C. Create a group per country. Add analysts to their respective country-groups. Create a single group ˜all_analysts, and add all country-groups as members. Grant the ˜all_analysts group the IAM role of BigQuery dataViewer. Share the appropriate dataset with view access with each respective analyst country- group.<br/>
+                                    D. Create a group per country. Add analysts to their respective country-groups. Create a single group ˜all_analysts, and add all country-groups as members. Grant the ˜all_analysts group the IAM role of BigQuery dataViewer. Share the appropriate table with view access with each respective analyst country-group.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
@@ -535,7 +535,7 @@
                                     What should you do?</p>
                                  <p>A. Customize the cache keys to omit the protocol from the key.<br/> 
                                     B. Shorten the expiration time of the cached objects.<br/> 
-                                    C. Make sure the HTTP(S) header ג€Cache-Regionג€ points to the closest region of your users.<br/>
+                                    C. Make sure the HTTP(S) header Cache-Region points to the closest region of your users.<br/>
                                     D. Replicate the static content in a Cloud Storage bucket. Point CloudCDN toward a load balancer on that bucket.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -561,8 +561,8 @@
                                     What should you do?</p>
                                  <p>A. Deploy the update using the Instance Group Updater to create a partial rollout, which allows for canary testing.<br/> 
                                     B. Deploy the update as a new version in the App Engine application, and split traffic between the new and current versions.<br/> 
-                                    C. Deploy the update in a new VPC, and use Googleג€™s global HTTP load balancing to split traffic between the update and current applications.<br/>
-                                    D. Deploy the update as a new App Engine application, and use Googleג€™s global HTTP load balancing to split traffic between the new and current applications.</p>
+                                    C. Deploy the update in a new VPC, and use Googles global HTTP load balancing to split traffic between the update and current applications.<br/>
+                                    D. Deploy the update as a new App Engine application, and use Googles global HTTP load balancing to split traffic between the new and current applications.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -584,7 +584,7 @@
 
                                <div class="entry-content">
 											<p>92. Your customer runs a web service used by e-commerce sites to offer product recommendations to users. The company has begun experimenting with a machine learning model on Google Cloud Platform to improve the quality of results.
-                                    What should the customer do to improve their modelג€™s results over time?</p>
+                                    What should the customer do to improve their models results over time?</p>
                                  <p>A. Export Cloud Machine Learning Engine performance metrics from Stackdriver to BigQuery, to be used to analyze the efficiency of the model.<br/> 
                                     B. Build a roadmap to move the machine learning model training from Cloud GPUs to Cloud TPUs, which offer better results.<br/> 
                                     C. Monitor Compute Engine announcements for availability of newer CPU architectures, and deploy the model to them as soon as they are available for additional performance.<br/>
@@ -662,7 +662,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>98. YYour company acquired a healthcare startup and must retain its customersג€™ medical information for up to 4 more years, depending on when it was created. Your corporate policy is to securely retain this data, and then delete it as soon as regulations allow.
+											<p>98. YYour company acquired a healthcare startup and must retain its customers medical information for up to 4 more years, depending on when it was created. Your corporate policy is to securely retain this data, and then delete it as soon as regulations allow.
                                     Which approach should you take?</p>
                                  <p>A. Store the data in Google Drive and manually delete records as they expire.<br/> 
                                     B. Anonymize the data using the Cloud Data Loss Prevention API and store it indefinitely.<br/> 
@@ -679,8 +679,8 @@
                                     What should you do?</p>
                                  <p>A. Set the memcache service level to dedicated. Create a key from the hash of the query, and return database values from memcache before issuing a query to Cloud SQL.<br/> 
                                     B. Set the memcache service level to dedicated. Create a cron task that runs every minute to populate the cache with keys containing query results.<br/> 
-                                    C. Set the memcache service level to shared. Create a cron task that runs every minute to save all expected queries to a key called ג€cached_queriesג€.<br/>
-                                    D. Set the memcache service level to shared. Create a key called ג€cached_queriesג€, and return database values from the key before using a query to Cloud SQL.</p>
+                                    C. Set the memcache service level to shared. Create a cron task that runs every minute to save all expected queries to a key called cached_queries.<br/>
+                                    D. Set the memcache service level to shared. Create a key called cached_queries, and return database values from the key before using a query to Cloud SQL.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
