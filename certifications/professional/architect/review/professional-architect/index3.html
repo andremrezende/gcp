@@ -60,8 +60,8 @@
                            <div class="post-content">
                               <h2 class="entry-title">Google Cloud Professional Architect Exam Part 3</h2>
                               <div class="entry-content">
-											<p>101. Your company is building a new architecture to support its data-centric business focus. You are responsible for setting up the network. Your companyג€™s mobile and web-facing applications will be deployed on-premises, and all data analysis will be conducted in GCP. The plan is to process and load 7 years of archived .csv files totaling 900 TB of data and then continue loading 10 TB of data daily. You currently have an existing 100-MB internet connection.
-                                    What actions will meet your companyג€™s needs?</p>
+											<p>101. Your company is building a new architecture to support its data-centric business focus. You are responsible for setting up the network. Your company mobile and web-facing applications will be deployed on-premises, and all data analysis will be conducted in GCP. The plan is to process and load 7 years of archived .csv files totaling 900 TB of data and then continue loading 10 TB of data daily. You currently have an existing 100-MB internet connection.
+                                    What actions will meet your company needs?</p>
                                  <p>A. Compress and upload both archived files and files uploaded daily using the gsutil ג€"m option.<br/> 
                                     B. Lease a Transfer Appliance, upload archived files to it, and send it to Google to transfer archived data to Cloud Storage. Establish a connection with Google using a Dedicated Interconnect or Direct Peering connection and use it to upload files daily.<br/> 
                                     C. Lease a Transfer Appliance, upload archived files to it, and send it to Google to transfer archived data to Cloud Storage. Establish one Cloud VPN Tunnel to VPC networks over the public internet, and compress and upload files daily using the gsutil ג€"m option.<br/>
@@ -163,7 +163,7 @@
 											<p>109. You are working at a sports association whose members range in age from 8 to 30. The association collects a large amount of health data, such as sustained injuries. You are storing this data in BigQuery. Current legislation requires you to delete such information upon request of the subject. You want to design a solution that can accommodate such a request. What should you do?</p>
                                  <p>A. Use a unique identifier for each individual. Upon a deletion request, delete all rows from BigQuery with this identifier.<br/> 
                                     B. When ingesting new data in BigQuery, run the data through the Data Loss Prevention (DLP) API to identify any personal information. As part of the DLP scan, save the result to Data Catalog. Upon a deletion request, query Data Catalog to find the column with personal information.<br/> 
-                                    C. Create a BigQuery view over the table that contains all data. Upon a deletion request, exclude the rows that affect the subjectג€™s data from this view. Use this view instead of the source table for all analysis tasks.<br/>
+                                    C. Create a BigQuery view over the table that contains all data. Upon a deletion request, exclude the rows that affect the subject data from this view. Use this view instead of the source table for all analysis tasks.<br/>
                                     D. Use a unique identifier for each individual. Upon a deletion request, overwrite the column with the unique identifier with a salted SHA256 of its value.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
@@ -271,7 +271,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>118. Your company has just acquired another company, and you have been asked to integrate their existing Google Cloud environment into your companyג€™s data center. Upon investigation, you discover that some of the RFC 1918 IP ranges being used in the new companyג€™s Virtual Private Cloud (VPC) overlap with your data center IP space. What should you do to enable connectivity and make sure that there are no routing conflicts when connectivity is established?</p>
+											<p>118. Your company has just acquired another company, and you have been asked to integrate their existing Google Cloud environment into your company data center. Upon investigation, you discover that some of the RFC 1918 IP ranges being used in the new company Virtual Private Cloud (VPC) overlap with your data center IP space. What should you do to enable connectivity and make sure that there are no routing conflicts when connectivity is established?</p>
                                  <p>A. Create a Cloud VPN connection from the new VPC to the data center, create a Cloud Router, and apply new IP addresses so there is no overlapping IP space.<br/> 
                                     B. Create a Cloud VPN connection from the new VPC to the data center, and create a Cloud NAT instance to perform NAT on the overlapping IP space.<br/> 
                                     C. Create a Cloud VPN connection from the new VPC to the data center, create a Cloud Router, and apply a custom route advertisement to block the overlapping IP space.<br/>
@@ -283,7 +283,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>119. You need to migrate Hadoop jobs for your companyג€™s Data Science team without modifying the underlying infrastructure. You want to minimize costs and infrastructure management effort. What should you do?</p>
+											<p>119. You need to migrate Hadoop jobs for your company Data Science team without modifying the underlying infrastructure. You want to minimize costs and infrastructure management effort. What should you do?</p>
                                  <p>A. Create a Dataproc cluster using standard worker instances.<br/> 
                                     B. Create a Dataproc cluster using preemptible worker instances.<br/> 
                                     C. Manually deploy a Hadoop cluster on Compute Engine using standard instances.<br/>
@@ -295,14 +295,14 @@
                                </div>
 
                                <div class="entry-content">
-											<p>120. YYour company has a project in Google Cloud with three Virtual Private Clouds (VPCs). There is a Compute Engine instance on each VPC. Network subnets do not overlap and must remain separated. The network configuration is shown below.
+											<p>120. Your company has a project in Google Cloud with three Virtual Private Clouds (VPCs). There is a Compute Engine instance on each VPC. Network subnets do not overlap and must remain separated. The network configuration is shown below.
                                     <img src="https://www.examtopics.com/assets/media/exam-media/04136/0013300001.jpg">
                                     Instance #1 is an exception and must communicate directly with both Instance #2 and Instance #3 via internal IPs. How should you accomplish this?
                                  </p>
                                  <p>A. Create a cloud router to advertise subnet #2 and subnet #3 to subnet #1.<br/> 
-                                    B. Add two additional NICs to Instance #1 with the following configuration: ג€¢ NIC1 ג—‹ VPC: VPC #2 ג—‹ SUBNETWORK: subnet #2 ג€¢ NIC2 ג—‹ VPC: VPC #3 ג—‹ SUBNETWORK: subnet #3 Update firewall rules to enable traffic between instances.<br/> 
-                                    C. Create two VPN tunnels via CloudVPN: ג€¢ 1 between VPC #1 and VPC #2. ג€¢ 1 between VPC #2 and VPC #3. Update firewall rules to enable traffic between the instances.<br/>
-                                    D. Peer all three VPCs: ג€¢ Peer VPC #1 with VPC #2. ג€¢ Peer VPC #2 with VPC #3. Update firewall rules to enable traffic between the instances.</p>
+                                    B. Add two additional NICs to Instance #1 with the following configuration:  NIC1 ג—‹ VPC: VPC #2 ג—‹ SUBNETWORK: subnet #2  NIC2 ג—‹ VPC: VPC #3 ג—‹ SUBNETWORK: subnet #3 Update firewall rules to enable traffic between instances.<br/> 
+                                    C. Create two VPN tunnels via CloudVPN:  1 between VPC #1 and VPC #2.  1 between VPC #2 and VPC #3. Update firewall rules to enable traffic between the instances.<br/>
+                                    D. Peer all three VPCs:  Peer VPC #1 with VPC #2.  Peer VPC #2 with VPC #3. Update firewall rules to enable traffic between the instances.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
@@ -388,7 +388,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>127. YYour operations team has asked you to help diagnose a performance issue in a production application that runs on Compute Engine. The application is dropping requests that reach it when under heavy load. The process list for affected instances shows a single application process that is consuming all available CPU, and autoscaling has reached the upper limit of instances. There is no abnormal load on any other related systems,
+											<p>127. Your operations team has asked you to help diagnose a performance issue in a production application that runs on Compute Engine. The application is dropping requests that reach it when under heavy load. The process list for affected instances shows a single application process that is consuming all available CPU, and autoscaling has reached the upper limit of instances. There is no abnormal load on any other related systems,
                                      including the database. You want to allow production traffic to be served again as quickly as possible. Which action should you recommend?</p>
                                  <p>A. Change the autoscaling metric to agent.googleapis.com/memory/percent_used.<br/> 
                                     B. Restart the affected instances on a staggered schedule.<br/> 
@@ -404,7 +404,7 @@
 											<p>128. You are implementing the infrastructure for a web service on Google Cloud. The web service needs to receive and store the data from 500,000 requests per second. The data will be queried later in real time, based on exact matches of a known set of attributes. There will be periods where the web service will not receive any requests. 
                                     The business wants to keep costs low. Which web service platform and database should you use for the application?</p>
                                  <p>A. Cloud Run and BigQuery<br/> 
-                                    B. MCloud Run and Cloud Bigtable<br/> 
+                                    B. Cloud Run and Cloud Bigtable<br/> 
                                     C. A Compute Engine autoscaling managed instance group and BigQuery<br/>
                                     D. A Compute Engine autoscaling managed instance group and Cloud Bigtable</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
@@ -434,7 +434,7 @@
                                     D. 1. Create a project with a standalone VPC and assign the Network Admin role to the networking team. 2. Create a second project with a standalone VPC and assign the Compute Admin role to the development team. 3. Use VPC Peering to join the two VPCs.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
                                  </div>
                                </div>
 
@@ -493,9 +493,9 @@
 											<p>135. You are developing your microservices application on
                                      Google Kubernetes Engine. During testing, you want to validate the behavior of your application in case a specific microservice should suddenly crash. What should you do?</p>
                                  <p>A. Add a taint to one of the nodes of the Kubernetes cluster. For the specific microservice, configure a pod anti-affinity label that has the name of the tainted node as a value.<br/> 
-                                    B. Use Istioג€™s fault injection on the particular microservice whose faulty behavior you want to simulate.<br/> 
+                                    B. Use Istio fault injection on the particular microservice whose faulty behavior you want to simulate.<br/> 
                                     C. Destroy one of the nodes of the Kubernetes cluster to observe the behavior.<br/>
-                                    D. Configure Istioג€™s traffic management features to steer the traffic away from a crashing microservice.</p>
+                                    D. Configure Istio traffic management features to steer the traffic away from a crashing microservice.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: B</div>
