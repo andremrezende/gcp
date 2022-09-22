@@ -521,7 +521,7 @@
                                  <p>A. Create a distribution list of all customers to inform them of an upcoming backward-incompatible change at least one month before replacing the old API with the new API.<br/> 
                                     B. Create an automated process to generate API documentation, and update the public API documentation as part of the CI/CD process when deploying an update to the API.<br/> 
                                     C. Use a versioning strategy for the APIs that increases the version number on every backward-incompatible change.<br/>
-                                    D. </p>
+                                    D. Use a versioning strategy for the APIs that adds the suffix ג€DEPRECATEDג€ to the current API version number on every backward-incompatible change. Use the current version number for the new API.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
                                     <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
@@ -542,7 +542,7 @@
                                </div>
 
                                <div class="entry-content">
-											<p>139. YYour team is developing a web application that will be deployed on Google Kubernetes Engine (GKE). Your CTO expects a successful launch and you need to ensure your application can handle the expected
+											<p>139. Your team is developing a web application that will be deployed on Google Kubernetes Engine (GKE). Your CTO expects a successful launch and you need to ensure your application can handle the expected
                                      load of tens of thousands of users. You want to test the current deployment to ensure the latency of your application stays below a certain threshold. What should you do?</p>
                                  <p>A. Use a load testing tool to simulate the expected number of concurrent users and total requests to your application, and inspect the results.<br/> 
                                     B. Enable autoscaling on the GKE cluster and enable horizontal pod autoscaling on your application deployments. Send curl requests to your application, and validate if the auto scaling works.<br/> 
@@ -609,7 +609,7 @@
 											<p>144. You are responsible for the Google Cloud environment in your company. Multiple departments need access to their own projects, and the members within each department will have the same project responsibilities. You want to structure your Google Cloud environment for minimal maintenance and maximum overview of
                                     IAM permissions as each department's projects start and end. You want to follow Google-recommended practices. What should you do?</p>
                                  <p>A. Grant all department members the required IAM permissions for their respective projects.<br/> 
-                                    B. Create an HTTPS load balancer with URL Maps.<br/> 
+                                    B. Create a Google Group per department and add all department members to their respective groups. Create a folder per department and grant the respective group the required IAM permissions at the folder level. Add the projects under the respective folders.<br/> 
                                     C. Create a folder per department and grant the respective members of the department the required IAM permissions at the folder level. Structure all projects for each department under the respective folders.<br/>
                                     D. Create a Google Group per department and add all department members to their respective groups. Grant each group the required IAM permissions for their respective projects.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
