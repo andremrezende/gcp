@@ -418,7 +418,7 @@
                                     Organization and configure gcloud to be executed with technical user credentials. Configure a cron job that executes the bash script every hour.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A/div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
 
@@ -1044,13 +1044,13 @@ What are three potential bottlenecks? (Choose three.)
                                     Question
                                     For this question, refer to the Helicopter Racing League (HRL) case study. Recently HRL started a new regional racing league in Cape Town, South Africa. In an effort to give customers in Cape Town a better user experience, HRL has partnered with the Content Delivery Network provider, Fastly. HRL needs to allow traffic coming from all of the Fastly IP address ranges into their Virtual Private Cloud network (VPC network). 
                                     You are a member of the HRL security team and you need to configure the update that will allow only the Fastly IP address ranges through the External HTTP(S) load balancer. Which command should you use?</p>
-                                 <p>A. <img sr="https://www.examtopics.com/assets/media/exam-media/04136/0006100001.png"><br/> 
-                                    B. <img src="https://www.examtopics.com/assets/media/exam-media/04136/0006100002.png"><br/> 
-                                    C. <img src="https://www.examtopics.com/assets/media/exam-media/04136/0006100003.png"><br/>
-                                    D. <img src="https://www.examtopics.com/assets/media/exam-media/04136/0006100004.png"></p>
+                                 <p>A. gcloud compute security-policies rules update 1000 \ --security-policy from-fastly \ --src-ip-ranges * \ --action ג€allowג€<br/> 
+                                    B. gcloud compute firewall rules update sourceiplist-fastly \ --priority 100 \ --allow tcp:443<br/> 
+                                    C. gcloud compute firewall rules update hir-policy \ --priority 100 \ --target-tags=sourceiplist-fastly \ --allow tcp:443<br/>
+                                    D. gcloud compute security-policies rules update 1000 \ --security-policy hir-policy \ --expression ג€evaluatePreconfiguredExpr('sourceiplist-fastly')ג€ \ --action ג€allowג€</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: D</div>
                                  </div>
                                </div>
 
@@ -1101,7 +1101,7 @@ What are three potential bottlenecks? (Choose three.)
                                     D. Set up Identity and Access Management (IAM) and Confidential Computing to trigger a Cloud Function.</p>
                                  <div class="su-spoiler su-spoiler-style-fancy su-spoiler-icon-chevron su-spoiler-closed" data-scroll-offset="0" data-anchor-in-url="no">
                                     <div class="su-spoiler-title" tabindex="0" role="button"><span class="su-spoiler-icon"></span>Reveal</div>
-                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: C</div>
+                                    <div class="su-spoiler-content su-u-clearfix su-u-trim"> Answer: A</div>
                                  </div>
                                </div>
 
